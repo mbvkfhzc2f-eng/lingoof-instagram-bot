@@ -1,6 +1,60 @@
 [
  {
   "n": 1,
+  "date": "2026-11-15",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "tek-kelime-cok-anlam",
+  "media": [
+   "2026-11-15/01.jpg",
+   "2026-11-15/02.jpg",
+   "2026-11-15/03.jpg",
+   "2026-11-15/04.jpg",
+   "2026-11-15/05.jpg",
+   "2026-11-15/06.jpg"
+  ],
+  "caption": "Türkçede tek kelime, İngilizcede birkaç karşılık 🤯 Kazanmak: win mi earn mü? Saat: hour mu clock mu watch mu? Kaydet, karıştırınca bak. Hangisi seni şaşırttı?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+ },
+ {
+  "n": 2,
+  "date": "2026-11-15",
+  "time": "19:30",
+  "kind": "reels",
+  "title": "POV",
+  "media": "2026-11-15/reels.mp4",
+  "caption": "POV: Turist senden fotoğrafını çekmeni istiyor 📸\n\nCould you take a photo of us? = Fotoğrafımızı çeker misin?\nVertical or horizontal? = Dikey mi, yatay mı?\nJust in case = Ne olur ne olmaz\n\nSen olsan ne derdin? Yorumlara yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #pov #ingilizcekonuşma",
+  "cover": "2026-11-15/kapak.jpg",
+  "audio_name": "Goof · POV"
+ },
+ {
+  "n": 3,
+  "date": "2026-11-16",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "yds-edatli-fiiller",
+  "media": [
+   "2026-11-16/01.jpg",
+   "2026-11-16/02.jpg",
+   "2026-11-16/03.jpg",
+   "2026-11-16/04.jpg",
+   "2026-11-16/05.jpg",
+   "2026-11-16/06.jpg"
+  ],
+  "caption": "YDS'ye 6 gün kala edatıyla gelen 12 fiil 📌 depend on, consist of, result in / result from… Edatı bilen boşluk doldurmada hızlanır. Kaydet, sınav sabahı bir kez daha bak.\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
+ },
+ {
+  "n": 4,
+  "date": "2026-11-16",
+  "time": "19:30",
+  "kind": "reels",
+  "title": "POV",
+  "media": "2026-11-16/reels.mp4",
+  "caption": "POV: İngilizce iş görüşmesi ve ilk soru: “Tell me about yourself.” 💼😳\n\nFormül: kim olduğun → güçlü yönün → neden orası.\nI'm a fast learner, and I work well in a team.\n\nKaydet, mülakatta lazım olur 📌\n\n#ingilizce #ingilizceöğren #lingoof #pov #işingilizcesi",
+  "cover": "2026-11-16/kapak.jpg",
+  "audio_name": "Goof · POV"
+ },
+ {
+  "n": 5,
   "date": "2026-11-17",
   "time": "12:30",
   "kind": "carousel",
@@ -17,7 +71,7 @@
   "caption": "YDS'ye 5 gün kala puanı kurtaran 5 taktik 📌 Yeni konu yok, panik yok: son haftayı doğru kullan. Kaydet, sınav sabahı bir kez daha bak.\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
  },
  {
-  "n": 2,
+  "n": 6,
   "date": "2026-11-17",
   "time": "19:30",
   "kind": "reels",
@@ -28,7 +82,7 @@
   "audio_name": "Goof · Hatayı bul"
  },
  {
-  "n": 3,
+  "n": 7,
   "date": "2026-11-18",
   "time": "12:30",
   "kind": "carousel",
@@ -44,7 +98,7 @@
   "caption": "YDS'ye 4 gün kala bağlaç tekrarı 📌 Zıtlık, sebep-sonuç ve koşul bağlaçlarını tek yerde topladık. Kaydet, sınav sabahı bir kez daha bak.\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
  },
  {
-  "n": 4,
+  "n": 8,
   "date": "2026-11-18",
   "time": "19:30",
   "kind": "reels",
@@ -56,7 +110,7 @@
   "trial": "SS_PERFORMANCE"
  },
  {
-  "n": 5,
+  "n": 9,
   "date": "2026-11-19",
   "time": "12:30",
   "kind": "carousel",
@@ -72,7 +126,7 @@
   "caption": "YDS'de sık karşılaşılan 12 akademik fiil ✍️ Anlamlarıyla birlikte kaydet, kelimeleri cümle içinde tekrar et.\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
  },
  {
-  "n": 6,
+  "n": 10,
   "date": "2026-11-19",
   "time": "19:30",
   "kind": "reels",
@@ -83,7 +137,7 @@
   "audio_name": "Goof · Ders kitabı vs gerçek hayat"
  },
  {
-  "n": 7,
+  "n": 11,
   "date": "2026-11-20",
   "time": "12:30",
   "kind": "carousel",
@@ -99,7 +153,7 @@
   "caption": "YDS'ye 2 gün kala mini deneme 🧩 3 soru, cevaplar son sayfada. Kaç doğru yaptığını yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
  },
  {
-  "n": 8,
+  "n": 12,
   "date": "2026-11-20",
   "time": "19:30",
   "kind": "reels",
@@ -111,7 +165,7 @@
   "trial": "SS_PERFORMANCE"
  },
  {
-  "n": 9,
+  "n": 13,
   "date": "2026-11-21",
   "time": "12:30",
   "kind": "carousel",
@@ -128,7 +182,7 @@
   "caption": "Yarın YDS 🍀 Sınava giriş belgesi, geçerli kimlik ve saat 10.00 kuralı: son kontrol listesi bu karuselde. Sınava girecek arkadaşını etiketle!\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
  },
  {
-  "n": 10,
+  "n": 14,
   "date": "2026-11-21",
   "time": "19:30",
   "kind": "reels",
@@ -138,7 +192,7 @@
   "cover": "2026-11-21/kapak.jpg"
  },
  {
-  "n": 11,
+  "n": 15,
   "date": "2026-11-22",
   "time": "19:30",
   "kind": "carousel",
@@ -155,7 +209,7 @@
   "caption": "YDS bitti ama İngilizce bitmedi 💜 Sınav sonrası 5 günlük mini plan: her gün sadece 15 dakika. Sonuçlar 10 Aralık'ta açıklanacak.\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
  },
  {
-  "n": 12,
+  "n": 16,
   "date": "2026-11-22",
   "time": "07:45",
   "kind": "reels",
@@ -165,7 +219,7 @@
   "cover": "2026-11-22/kapak.jpg"
  },
  {
-  "n": 13,
+  "n": 17,
   "date": "2026-11-23",
   "time": "12:30",
   "kind": "carousel",
@@ -181,7 +235,7 @@
   "caption": "Günlük hayatta en çok kullanılan 12 phrasal verb 📚 Kaydet, her birini bir cümleyle dene. Hangisini en çok kullanıyorsun?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 14,
+  "n": 18,
   "date": "2026-11-23",
   "time": "19:30",
   "kind": "reels",
@@ -192,7 +246,7 @@
   "audio_name": "Goof · Nasıl dersin?"
  },
  {
-  "n": 15,
+  "n": 19,
   "date": "2026-11-24",
   "time": "12:30",
   "kind": "carousel",
@@ -206,7 +260,7 @@
   "caption": "Öğretmenler Günün kutlu olsun 🍎 Öğretmenine İngilizce yazabileceğin 8 kart mesajı. Kaydet, gönder, bir öğretmenini etiketle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 16,
+  "n": 20,
   "date": "2026-11-24",
   "time": "19:30",
   "kind": "reels",
@@ -216,7 +270,7 @@
   "cover": "2026-11-24/kapak.jpg"
  },
  {
-  "n": 17,
+  "n": 21,
   "date": "2026-11-25",
   "time": "12:30",
   "kind": "carousel",
@@ -233,7 +287,7 @@
   "caption": "Make mi, do mu? 🤔 Ortaya bir şey çıkıyorsa make, görev ve iş ise do. Sonda 2 mini soru var; cevaplarını yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 18,
+  "n": 22,
   "date": "2026-11-25",
   "time": "19:30",
   "kind": "reels",
@@ -244,7 +298,7 @@
   "audio_name": "Goof · Birebir çeviri"
  },
  {
-  "n": 19,
+  "n": 23,
   "date": "2026-11-26",
   "time": "12:30",
   "kind": "carousel",
@@ -261,7 +315,7 @@
   "caption": "say, tell, speak, talk: hepsi 'söylemek' ama kullanımları farklı. En sık yapılan hata: 'He said me' ✕ → 'He told me' ✓. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 20,
+  "n": 24,
   "date": "2026-11-26",
   "time": "19:30",
   "kind": "reels",
@@ -272,7 +326,7 @@
   "audio_name": "Goof · Hatayı bul"
  },
  {
-  "n": 21,
+  "n": 25,
   "date": "2026-11-27",
   "time": "12:30",
   "kind": "carousel",
@@ -287,7 +341,7 @@
   "caption": "Efsane Cuma'da yurt dışından ya da turist mağazasında alışveriş yapacaksan bu 12 kalıp lazım 🛍️ Kaydet, alışveriş arkadaşını etiketle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 22,
+  "n": 26,
   "date": "2026-11-27",
   "time": "19:30",
   "kind": "reels",
@@ -297,7 +351,7 @@
   "cover": "2026-11-27/kapak.jpg"
  },
  {
-  "n": 23,
+  "n": 27,
   "date": "2026-11-28",
   "time": "12:30",
   "kind": "carousel",
@@ -314,7 +368,7 @@
   "caption": "in, on, at ile zaman: 4 soruluk mini test ⏰ Ay ve yıl için in, gün için on, saat için at. Kaç doğru yaptın?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 24,
+  "n": 28,
   "date": "2026-11-28",
   "time": "19:30",
   "kind": "reels",
@@ -326,7 +380,7 @@
   "trial": "SS_PERFORMANCE"
  },
  {
-  "n": 25,
+  "n": 29,
   "date": "2026-11-29",
   "time": "12:30",
   "kind": "carousel",
@@ -341,7 +395,7 @@
   "caption": "Kafede İngilizce sipariş vermek için 8 kalıp ☕ İpucu: 'I want' yerine 'Can I get…?' ya da 'Could I have…?' daha kibar.\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 26,
+  "n": 30,
   "date": "2026-11-29",
   "time": "19:30",
   "kind": "reels",
@@ -351,7 +405,7 @@
   "cover": "2026-11-29/kapak.jpg"
  },
  {
-  "n": 27,
+  "n": 31,
   "date": "2026-11-30",
   "time": "12:30",
   "kind": "carousel",
@@ -365,7 +419,7 @@
   "caption": "Türkçeye benzeyen ama bambaşka anlama gelen 8 kelime 🤥 sympathetic 'sempatik' değil, 'anlayışlı'! Bildiğin başka yalancı kelime var mı?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 28,
+  "n": 32,
   "date": "2026-11-30",
   "time": "19:30",
   "kind": "reels",
@@ -377,7 +431,7 @@
   "trial": "SS_PERFORMANCE"
  },
  {
-  "n": 29,
+  "n": 33,
   "date": "2026-12-01",
   "time": "12:30",
   "kind": "carousel",
@@ -393,7 +447,7 @@
   "caption": "Aralık geldi ❄️ Hava durumunu, kış giysilerini ve kış keyfini anlatan 12 kelime. Kaydet, en sevdiğin kış kelimesini yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 30,
+  "n": 34,
   "date": "2026-12-01",
   "time": "19:30",
   "kind": "reels",
@@ -404,7 +458,7 @@
   "audio_name": "Goof · Hatayı bul"
  },
  {
-  "n": 31,
+  "n": 35,
   "date": "2026-12-02",
   "time": "12:30",
   "kind": "carousel",
@@ -419,7 +473,7 @@
   "caption": "Havalimanında lazım olan 12 İngilizce kalıp ✈️ Check-in, pasaport kontrolü ve bagaj. Goof'un Londra macerası da bugün başlıyor!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 32,
+  "n": 36,
   "date": "2026-12-02",
   "time": "19:30",
   "kind": "reels",
@@ -430,7 +484,7 @@
   "audio_name": "Goof · Goof Londra'da"
  },
  {
-  "n": 33,
+  "n": 37,
   "date": "2026-12-03",
   "time": "12:30",
   "kind": "carousel",
@@ -445,7 +499,7 @@
   "caption": "Yazılıyor ama okunmuyor 🤫 knife, island, hour, Wednesday... 12 kelimede sessiz harfler. Hangisini biliyordun?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 34,
+  "n": 38,
   "date": "2026-12-03",
   "time": "19:30",
   "kind": "reels",
@@ -455,7 +509,7 @@
   "cover": "2026-12-03/kapak.jpg"
  },
  {
-  "n": 35,
+  "n": 39,
   "date": "2026-12-04",
   "time": "12:30",
   "kind": "carousel",
@@ -470,7 +524,7 @@
   "caption": "Small talk korkusu bitsin 💬 Tanışırken ve sohbeti sürdürürken kullanabileceğin sorular ve doğal cevaplar. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 36,
+  "n": 40,
   "date": "2026-12-04",
   "time": "19:30",
   "kind": "reels",
@@ -481,7 +535,7 @@
   "audio_name": "Goof · Ders kitabı vs gerçek hayat"
  },
  {
-  "n": 37,
+  "n": 41,
   "date": "2026-12-05",
   "time": "12:30",
   "kind": "carousel",
@@ -495,7 +549,7 @@
   "caption": "Otelde lazım olan 8 İngilizce kalıp 🏨 Rezervasyon, kahvaltı, geç çıkış ve küçük ricalar. Goof'un Londra macerası Bölüm 2 reels'te!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 38,
+  "n": 42,
   "date": "2026-12-05",
   "time": "19:30",
   "kind": "reels",
@@ -506,7 +560,7 @@
   "audio_name": "Goof · Goof Londra'da"
  },
  {
-  "n": 39,
+  "n": 43,
   "date": "2026-12-06",
   "time": "12:30",
   "kind": "carousel",
@@ -522,7 +576,7 @@
   "caption": "Phrasal verb testi 🧠 look after, run out of, give up: anlamlarını tahmin et, cevaplar son sayfada. Kaç doğru yaptın?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 40,
+  "n": 44,
   "date": "2026-12-06",
   "time": "19:30",
   "kind": "reels",
@@ -532,7 +586,7 @@
   "cover": "2026-12-06/kapak.jpg"
  },
  {
-  "n": 41,
+  "n": 45,
   "date": "2026-12-07",
   "time": "12:30",
   "kind": "carousel",
@@ -547,7 +601,7 @@
   "caption": "Yemekle ilgili 8 İngilizce deyim 🍰 'a piece of cake' çok kolay, 'butter someone up' yağ çekmek! Hangisi favorin?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 42,
+  "n": 46,
   "date": "2026-12-07",
   "time": "19:30",
   "kind": "reels",
@@ -558,7 +612,7 @@
   "audio_name": "Goof · Nasıl dersin?"
  },
  {
-  "n": 43,
+  "n": 47,
   "date": "2026-12-08",
   "time": "12:30",
   "kind": "carousel",
@@ -575,7 +629,7 @@
   "caption": "Present Simple mı, Present Continuous mu? Alışkanlıklar için simple, şu an olanlar için continuous. Know, like, want gibi fiillere dikkat!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 44,
+  "n": 48,
   "date": "2026-12-08",
   "time": "19:30",
   "kind": "reels",
@@ -586,7 +640,7 @@
   "audio_name": "Goof · Hatayı bul"
  },
  {
-  "n": 45,
+  "n": 49,
   "date": "2026-12-09",
   "time": "12:30",
   "kind": "carousel",
@@ -600,7 +654,7 @@
   "caption": "Hayvanlı 8 İngilizce deyim 🐱 'when pigs fly' = balık kavağa çıkınca, 'kill two birds with one stone' = bir taşla iki kuş vurmak!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 46,
+  "n": 50,
   "date": "2026-12-09",
   "time": "19:30",
   "kind": "reels",
@@ -611,7 +665,7 @@
   "audio_name": "Goof · Birebir çeviri"
  },
  {
-  "n": 47,
+  "n": 51,
   "date": "2026-12-10",
   "time": "12:30",
   "kind": "carousel",
@@ -625,7 +679,7 @@
   "caption": "Derste kullanabileceğin 8 İngilizce soru 🙋 'Could you say that again?' ve 'What does … mean?' ile başla. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 48,
+  "n": 52,
   "date": "2026-12-10",
   "time": "19:30",
   "kind": "reels",
@@ -637,7 +691,7 @@
   "trial": "SS_PERFORMANCE"
  },
  {
-  "n": 49,
+  "n": 53,
   "date": "2026-12-11",
   "time": "12:30",
   "kind": "carousel",
@@ -654,7 +708,7 @@
   "caption": "Türklerin en sık yaptığı 5 İngilizce hata 🙈 I am agree ✕, I have 25 years ✕, He don't ✕... Hata yapmak sorun değil, düzeltmek yeter. Sen hangisini yapıyordun?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 50,
+  "n": 54,
   "date": "2026-12-11",
   "time": "19:30",
   "kind": "reels",
@@ -665,7 +719,7 @@
   "audio_name": "Goof · Türk İngilizcesi"
  },
  {
-  "n": 51,
+  "n": 55,
   "date": "2026-12-12",
   "time": "12:30",
   "kind": "carousel",
@@ -682,7 +736,7 @@
   "caption": "Since mı, for mu? ⏳ Başlangıç anı için since (since 2020), süre için for (for five years). Sondaki 2 soruyu çöz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 52,
+  "n": 56,
   "date": "2026-12-12",
   "time": "19:30",
   "kind": "reels",
@@ -693,7 +747,7 @@
   "audio_name": "Goof · Yalancı kelimeler"
  },
  {
-  "n": 53,
+  "n": 57,
   "date": "2026-12-13",
   "time": "12:30",
   "kind": "carousel",
@@ -707,7 +761,7 @@
   "caption": "Telefonda İngilizce konuşmak için 8 kalıp 📞 'Hold on a second', 'You're breaking up', 'I'll call you back'... Kaydet, telefon çalınca hazır ol!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 54,
+  "n": 58,
   "date": "2026-12-13",
   "time": "19:30",
   "kind": "reels",
@@ -718,7 +772,7 @@
   "audio_name": "Goof · POV"
  },
  {
-  "n": 55,
+  "n": 59,
   "date": "2026-12-14",
   "time": "12:30",
   "kind": "carousel",
@@ -732,7 +786,7 @@
   "caption": "Doktorda lazım olan 8 İngilizce kalıp 🩺 Randevu almak, şikâyetini anlatmak ve ilaç hakkında soru sormak için. Umarız hiç lazım olmaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 56,
+  "n": 60,
   "date": "2026-12-14",
   "time": "19:30",
   "kind": "reels",
@@ -743,7 +797,7 @@
   "audio_name": "Goof · Nasıl dersin?"
  },
  {
-  "n": 57,
+  "n": 61,
   "date": "2026-12-15",
   "time": "12:30",
   "kind": "carousel",
@@ -760,7 +814,7 @@
   "caption": "will mi, going to mu? 🔮 Anlık kararlar için will, önceden yapılmış planlar için going to. Kanıta dayalı tahminlerde de going to!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 58,
+  "n": 62,
   "date": "2026-12-15",
   "time": "19:30",
   "kind": "reels",
@@ -771,7 +825,7 @@
   "audio_name": "Goof · Hatayı bul"
  },
  {
-  "n": 59,
+  "n": 63,
   "date": "2026-12-16",
   "time": "12:30",
   "kind": "carousel",
@@ -787,7 +841,7 @@
   "caption": "Kibar rica etmenin 3 seviyesi 🙏 Can you…? samimi, Could you…? kibar, Would you mind -ing…? çok kibar. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 60,
+  "n": 64,
   "date": "2026-12-16",
   "time": "19:30",
   "kind": "reels",
@@ -798,7 +852,7 @@
   "audio_name": "Goof · Ders kitabı vs gerçek hayat"
  },
  {
-  "n": 61,
+  "n": 65,
   "date": "2026-12-17",
   "time": "12:30",
   "kind": "carousel",
@@ -815,7 +869,7 @@
   "caption": "-ed nasıl okunur? 🔊 worked /t/, played /d/, wanted /ıd/. 3 soruluk test ve kural bu karuselde; telaffuzu reels'te dinle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 62,
+  "n": 66,
   "date": "2026-12-17",
   "time": "19:30",
   "kind": "reels",
@@ -825,7 +879,7 @@
   "cover": "2026-12-17/kapak.jpg"
  },
  {
-  "n": 63,
+  "n": 67,
   "date": "2026-12-18",
   "time": "12:30",
   "kind": "carousel",
@@ -840,7 +894,7 @@
   "caption": "'Happy' ve 'sad' dışında 8 duygu kelimesi 💜 thrilled, relieved, grateful, overwhelmed... Bugün nasıl hissediyorsun? Tek kelimeyle İngilizce yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 64,
+  "n": 68,
   "date": "2026-12-18",
   "time": "19:30",
   "kind": "reels",
@@ -851,7 +905,7 @@
   "audio_name": "Goof · Birebir çeviri"
  },
  {
-  "n": 65,
+  "n": 69,
   "date": "2026-12-19",
   "time": "12:30",
   "kind": "carousel",
@@ -865,7 +919,7 @@
   "caption": "Metroda ve otobüste lazım olan 8 kalıp 🚇 'Which line goes to…?', 'Do I need to change trains?' Goof'un Londra macerası Bölüm 3 reels'te!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 66,
+  "n": 70,
   "date": "2026-12-19",
   "time": "19:30",
   "kind": "reels",
@@ -876,7 +930,7 @@
   "audio_name": "Goof · Goof Londra'da"
  },
  {
-  "n": 67,
+  "n": 71,
   "date": "2026-12-20",
   "time": "12:30",
   "kind": "carousel",
@@ -890,7 +944,7 @@
   "caption": "Restoranda lazım olan 8 İngilizce kalıp 🍽️ Masa ayırtmaktan hesabı ayrı ödemeye kadar. Hesap kimde? 😄\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 68,
+  "n": 72,
   "date": "2026-12-20",
   "time": "19:30",
   "kind": "reels",
@@ -901,7 +955,7 @@
   "audio_name": "Goof · POV"
  },
  {
-  "n": 69,
+  "n": 73,
   "date": "2026-12-21",
   "time": "12:30",
   "kind": "carousel",
@@ -915,7 +969,7 @@
   "caption": "İngilizce iltifat etmenin 8 yolu 💐 'You did an amazing job', 'You always make me laugh'... Birini etiketle ve İngilizce bir iltifat yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 70,
+  "n": 74,
   "date": "2026-12-21",
   "time": "19:30",
   "kind": "reels",
@@ -926,7 +980,7 @@
   "audio_name": "Goof · Nasıl dersin?"
  },
  {
-  "n": 71,
+  "n": 75,
   "date": "2026-12-22",
   "time": "12:30",
   "kind": "carousel",
@@ -943,7 +997,7 @@
   "caption": "in, on, at ile yer 📍 Kapalı alan ve şehir için in, yüzey ve toplu taşıma için on, belirli nokta için at. Otobüsteysen 'on the bus'!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 72,
+  "n": 76,
   "date": "2026-12-22",
   "time": "19:30",
   "kind": "reels",
@@ -954,7 +1008,7 @@
   "audio_name": "Goof · Hatayı bul"
  },
  {
-  "n": 73,
+  "n": 77,
   "date": "2026-12-23",
   "time": "12:30",
   "kind": "carousel",
@@ -969,7 +1023,7 @@
   "caption": "make, take, have ile 12 kalıp 🧩 Karar 'vermek' make, fotoğraf 'çekmek' take, rüya 'görmek' have. Türkçe düşününce karışanlar burada!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 74,
+  "n": 78,
   "date": "2026-12-23",
   "time": "19:30",
   "kind": "reels",
@@ -980,7 +1034,7 @@
   "audio_name": "Goof · Türk İngilizcesi"
  },
  {
-  "n": 75,
+  "n": 79,
   "date": "2026-12-24",
   "time": "12:30",
   "kind": "carousel",
@@ -995,7 +1049,7 @@
   "caption": "Noel kelimeleri 🎄 ornament, wreath, mistletoe, gingerbread... Christmas'taki 't' harfinin okunmadığını biliyor muydun? Reels'te dinle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 76,
+  "n": 80,
   "date": "2026-12-24",
   "time": "19:30",
   "kind": "reels",
@@ -1005,7 +1059,7 @@
   "cover": "2026-12-24/kapak.jpg"
  },
  {
-  "n": 77,
+  "n": 81,
   "date": "2026-12-25",
   "time": "12:30",
   "kind": "carousel",
@@ -1019,7 +1073,7 @@
   "caption": "Yılsonu mesajı için 8 İngilizce cümle ✨ Samimi arkadaşlarına, iş yerine ya da herkese uyan seçenekler. Kime göndereceksin?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 78,
+  "n": 82,
   "date": "2026-12-25",
   "time": "19:30",
   "kind": "reels",
@@ -1029,7 +1083,7 @@
   "cover": "2026-12-25/kapak.jpg"
  },
  {
-  "n": 79,
+  "n": 83,
   "date": "2026-12-26",
   "time": "12:30",
   "kind": "carousel",
@@ -1043,7 +1097,7 @@
   "caption": "Kış aktiviteleri için 8 İngilizce kalıp ⛄ Kayak ve kartopu mu, yoksa battaniye ve dizi maratonu mu? Sen hangi takımdasın?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 80,
+  "n": 84,
   "date": "2026-12-26",
   "time": "19:30",
   "kind": "reels",
@@ -1054,7 +1108,7 @@
   "audio_name": "Goof · Goof Londra'da"
  },
  {
-  "n": 81,
+  "n": 85,
   "date": "2026-12-27",
   "time": "12:30",
   "kind": "carousel",
@@ -1070,7 +1124,7 @@
   "caption": "Yalancı kelime testi 🤥 sympathetic, magazine, chef: hepsi tuzak! Kaç doğru yaptın? Cevaplar son sayfada.\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 82,
+  "n": 86,
   "date": "2026-12-27",
   "time": "19:30",
   "kind": "reels",
@@ -1081,7 +1135,7 @@
   "audio_name": "Goof · Yalancı kelimeler"
  },
  {
-  "n": 83,
+  "n": 87,
   "date": "2026-12-28",
   "time": "12:30",
   "kind": "carousel",
@@ -1095,7 +1149,7 @@
   "caption": "'Thank you' dışında teşekkür etmenin 8 yolu 🙏 'I owe you one', 'You're a lifesaver', 'You shouldn't have!' Bugün birine İngilizce teşekkür et!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 84,
+  "n": 88,
   "date": "2026-12-28",
   "time": "19:30",
   "kind": "reels",
@@ -1106,7 +1160,7 @@
   "audio_name": "Goof · POV"
  },
  {
-  "n": 85,
+  "n": 89,
   "date": "2026-12-29",
   "time": "12:30",
   "kind": "carousel",
@@ -1120,7 +1174,7 @@
   "caption": "2026'yı İngilizce özetle 📝 'I kept going', 'I stepped out of my comfort zone'... Senin yılın nasıldı? Bir cümleyle İngilizce yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 86,
+  "n": 90,
   "date": "2026-12-29",
   "time": "19:30",
   "kind": "reels",
@@ -1131,7 +1185,7 @@
   "audio_name": "Goof · Hatayı bul"
  },
  {
-  "n": 87,
+  "n": 91,
   "date": "2026-12-30",
   "time": "12:30",
   "kind": "carousel",
@@ -1146,7 +1200,7 @@
   "caption": "Yeni yıl hedefleri için 8 İngilizce cümle 🎯 Senin 2027 hedefin ne? Yorumlara İngilizce yaz; Goof'un hedefi belli: her gün İngilizce konuşmak!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 88,
+  "n": 92,
   "date": "2026-12-30",
   "time": "19:30",
   "kind": "reels",
@@ -1157,7 +1211,7 @@
   "audio_name": "Goof · Birebir çeviri"
  },
  {
-  "n": 89,
+  "n": 93,
   "date": "2026-12-31",
   "time": "12:30",
   "kind": "carousel",
@@ -1171,7 +1225,7 @@
   "caption": "Mutlu yıllar 🎆 Yeni yıla girerken kullanabileceğin 5 İngilizce cümle. 2027'de de her gün biraz İngilizce, Goof'la birlikte!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
  },
  {
-  "n": 90,
+  "n": 94,
   "date": "2026-12-31",
   "time": "19:30",
   "kind": "reels",
