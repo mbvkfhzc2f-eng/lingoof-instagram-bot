@@ -123,6 +123,8 @@ def check_post(post):
     if post['kind'] == 'reels':
         if not isinstance(post['media'], str) or not post['media'].lower().endswith(('.mp4', '.mov')):
             return 'reels için tek bir .mp4 ya da .mov dosyası gerekli'
+        if post.get('trial') and post['trial'] not in ('MANUAL', 'SS_PERFORMANCE'):
+            return 'trial yalnızca MANUAL ya da SS_PERFORMANCE olabilir'
     elif post['kind'] == 'carousel':
         m = post['media']
         if not isinstance(m, list) or not CAROUSEL_MIN <= len(m) <= CAROUSEL_MAX:
@@ -147,8 +149,13 @@ def build(api, ig_id, post, base, timeout):
     """Gönderinin hazırlık kaydını oluşturur ve işlenmesini bekler; yayınlamaz. Kayıt kimliğini döndürür."""
     cap = post.get('caption', '')
     if post['kind'] == 'reels':
-        params = {'media_type': 'REELS', 'video_url': base + post['media'], 'caption': cap,
-                  'share_to_feed': 'true'}
+        params = {'media_type': 'REELS', 'video_url': base + post['media'], 'caption': cap}
+        if post.get('trial'):  # deneme reels: önce takipçi olmayanlara gösterilir
+            params['trial_params'] = json.dumps({'graduation_strategy': post['trial']})
+        else:
+            params['share_to_feed'] = 'true'
+        if post.get('audio_name'):
+            params['audio_name'] = post['audio_name']
         if post.get('cover'):
             params['cover_url'] = base + post['cover']
         elif post.get('thumb_offset_ms') is not None:

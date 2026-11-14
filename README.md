@@ -41,4 +41,8 @@ Meta yenilemede yeni bir token verirse botun onu kendisi kaydedebilmesi için Gi
 {"n": 2, "date": "2026-11-17", "time": "12:30", "kind": "carousel", "title": "YDS son hafta",
  "media": ["2026-11-17/01.jpg", "2026-11-17/02.jpg"], "caption": "…"}
 ```
+İsteğe bağlı reels alanları:
+- `"trial": "SS_PERFORMANCE"` deneme reels olarak paylaşır: önce takipçi olmayanlara gösterilir, iyi giderse Instagram otomatik olarak takipçilere de açar. `"MANUAL"` dersen açma kararını uygulamadan sen verirsin.
+- `"audio_name": "Goof · Birebir çeviri"` videonun orijinal sesine ad verir; başkaları bu sesi kullanırsa adı görünür. Bir kez verilebilir.
+
 Reels: tek MP4 (H.264, AAC), 9:16, 3–90 saniye. Carousel: 2–10 JPEG, 1080×1350. Açıklama en fazla 2.200 karakter ve 30 hashtag.
