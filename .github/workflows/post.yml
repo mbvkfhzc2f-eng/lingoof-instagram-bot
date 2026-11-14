@@ -1,0 +1,51 @@
+name: Instagram paylaşımı
+
+on:
+  # GitHub'ın zamanlayıcısı gecikebildiği için bot her 15 dakikada bir yoklanır; yalnızca saati gelmiş gönderiyi
+  # paylaşır, aynı gönderi iki kez gitmez. Dakikalar saat başından uzak seçildi.
+  schedule:
+    - cron: '2,17,32,47 * * * *'
+  # Kesin saat: Claude'un zamanlanmış görevi paylaşım saatlerinde (12:31 · 19:31) .tick dosyasını güncelleyip push eder.
+  push:
+    branches: [main]
+    paths: ['.tick']
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · post: saati geleni paylaş'
+        type: choice
+        options: [dry, validate, post]
+        default: dry
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-bot
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Sıradaki paylaşım
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MODE: ${{ inputs.mode || 'post' }}
+        run: python3 bot.py
+
+      - name: Durumu kaydet
+        if: always() && (inputs.mode == '' || inputs.mode == 'post' || github.event_name != 'workflow_dispatch')
+        run: |
+          git config user.name "lingoof-bot"
+          git config user.email "lingoof-bot@users.noreply.github.com"
+          git add -A state.json media
+          if ! git diff --cached --quiet; then
+            git commit -m "Paylaşım durumu"
+            for i in 1 2 3; do git push && break; git pull --rebase; done
+          fi

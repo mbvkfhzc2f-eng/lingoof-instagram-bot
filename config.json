@@ -1,0 +1,14 @@
+{
+ "api_version": "v24.0",
+ "media_base_url": "auto",
+ "grace_hours": 6,
+ "video_timeout_seconds": 600,
+ "cleanup_after_post": true,
+ "app_store_url": "https://apps.apple.com/tr/app/lingoof/id6816741034",
+ "test_posts": [
+  {"n": "deneme-reels", "date": "2026-01-01", "time": "00:00", "kind": "reels", "title": "Deneme reels",
+   "media": "_deneme/reels.mp4", "cover": "_deneme/kapak.jpg", "caption": "Deneme, yayınlanmaz."},
+  {"n": "deneme-carousel", "date": "2026-01-01", "time": "00:00", "kind": "carousel", "title": "Deneme carousel",
+   "media": ["_deneme/kare-1.jpg", "_deneme/kare-2.jpg"], "caption": "Deneme, yayınlanmaz."}
+ ]
+}
