@@ -6,9 +6,56 @@
  "cleanup_after_post": true,
  "app_store_url": "https://apps.apple.com/tr/app/lingoof/id6816741034",
  "test_posts": [
-  {"n": "deneme-reels", "date": "2026-01-01", "time": "00:00", "kind": "reels", "title": "Deneme reels",
-   "media": "_deneme/reels.mp4", "cover": "_deneme/kapak.jpg", "caption": "Deneme, yayınlanmaz."},
-  {"n": "deneme-carousel", "date": "2026-01-01", "time": "00:00", "kind": "carousel", "title": "Deneme carousel",
-   "media": ["_deneme/kare-1.jpg", "_deneme/kare-2.jpg"], "caption": "Deneme, yayınlanmaz."}
+  {
+   "n": "dogrula-trial-reels",
+   "date": "2026-11-18",
+   "time": "19:30",
+   "kind": "reels",
+   "title": "Birebir çeviri",
+   "media": "2026-11-18/reels.mp4",
+   "caption": "Doğrulama, yayınlanmaz.",
+   "cover": "2026-11-18/kapak.jpg",
+   "audio_name": "Goof · Birebir çeviri",
+   "trial": "SS_PERFORMANCE"
+  },
+  {
+   "n": "dogrula-carousel",
+   "date": "2026-11-17",
+   "time": "12:30",
+   "kind": "carousel",
+   "title": "yds-son-hafta",
+   "media": [
+    "2026-11-17/01.jpg",
+    "2026-11-17/02.jpg",
+    "2026-11-17/03.jpg",
+    "2026-11-17/04.jpg",
+    "2026-11-17/05.jpg",
+    "2026-11-17/06.jpg",
+    "2026-11-17/07.jpg"
+   ],
+   "caption": "Doğrulama, yayınlanmaz."
+  },
+  {
+   "n": "deneme-reels",
+   "date": "2026-01-01",
+   "time": "00:00",
+   "kind": "reels",
+   "title": "Deneme reels",
+   "media": "_deneme/reels.mp4",
+   "cover": "_deneme/kapak.jpg",
+   "caption": "Deneme, yayınlanmaz."
+  },
+  {
+   "n": "deneme-carousel",
+   "date": "2026-01-01",
+   "time": "00:00",
+   "kind": "carousel",
+   "title": "Deneme carousel",
+   "media": [
+    "_deneme/kare-1.jpg",
+    "_deneme/kare-2.jpg"
+   ],
+   "caption": "Deneme, yayınlanmaz."
+  }
  ]
 }
