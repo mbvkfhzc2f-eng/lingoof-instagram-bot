@@ -377,7 +377,7 @@ def main():
             try:
                 audio = pick_audio(api, ig_id, p, state, cfg) if p['kind'] == 'reels' else None
                 if audio:
-                    print(f'Müzik: {audio["title"]} · {audio["artist"]} ({audio["id"]})')
+                    print(f'Müzik: {" · ".join(x for x in (audio["title"], audio["artist"]) if x)} ({audio["id"]})')
                 cid = build(api, ig_id, p, base, timeout, audio, None if audio else p.get('media_fallback'))
                 print(f'DOĞRULANDI · #{p["n"]} {p["kind"]}: Instagram dosyaları kabul etti ({time.time() - t0:.0f} sn). Yayınlanmadı.')
                 tested.add(p['kind'])
