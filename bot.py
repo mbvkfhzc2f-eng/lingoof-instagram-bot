@@ -189,6 +189,8 @@ def pick_audio(api, ig_id, post, state, cfg):
     if override or post.get('music_id'):
         aid = (override or {}).get('id') or post['music_id']
         return dict(id=str(aid), title=(override or {}).get('title') or post.get('music_title', ''), artist=(override or {}).get('artist', ''), ms=0, **vol)
+    if not mcfg.get('auto'):
+        return None                      # yalnızca seçilmiş parçalar; trend listesinden kendiliğinden seçim kapalı
     kind = post.get('music_type') or mcfg.get('type', 'music')
     try:
         items = audio_list(api, ig_id, kind, post.get('music_query'))

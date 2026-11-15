@@ -7,34 +7,6 @@
  "app_store_url": "https://apps.apple.com/tr/app/lingoof/id6816741034",
  "test_posts": [
   {
-   "n": "dogrula-muzikli-reels",
-   "date": "2026-11-16",
-   "time": "19:30",
-   "kind": "reels",
-   "title": "POV",
-   "media": "2026-11-16/reels.mp4",
-   "caption": "Doğrulama, yayınlanmaz.",
-   "cover": "2026-11-16/kapak.jpg",
-   "music_id": "1418611098781784",
-   "music_title": "Too Cool · Giulio Cercato"
-  },
-  {
-   "n": "dogrula-carousel",
-   "date": "2026-11-16",
-   "time": "12:30",
-   "kind": "carousel",
-   "title": "yds-edatli-fiiller",
-   "media": [
-    "2026-11-16/01.jpg",
-    "2026-11-16/02.jpg",
-    "2026-11-16/03.jpg",
-    "2026-11-16/04.jpg",
-    "2026-11-16/05.jpg",
-    "2026-11-16/06.jpg"
-   ],
-   "caption": "Doğrulama, yayınlanmaz."
-  },
-  {
    "n": "deneme-reels",
    "date": "2026-01-01",
    "time": "00:00",
@@ -62,9 +34,11 @@
  "music": {
   "enabled": true,
   "type": "music",
-  "audio_volume": 30,
+  "audio_volume": 35,
   "video_volume": 100,
   "no_repeat": 12,
-  "probe_queries": "trend|viral|funny|happy|upbeat|pop|dance|lofi|study|christmas|new year|türkçe pop|komik|eğlenceli"
- }
+  "probe_queries": "trend|viral|funny|happy|upbeat|pop|dance|lofi|study|christmas|new year|türkçe pop|komik|eğlenceli",
+  "auto": false
+ },
+ "music_overrides": {}
 }
