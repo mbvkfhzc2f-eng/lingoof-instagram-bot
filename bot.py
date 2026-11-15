@@ -149,7 +149,7 @@ def url_ok(url):
         return False
 
 
-AUDIO_PATHS = ('ig_audio', '{ig}/ig_audio')
+AUDIO_PATHS = ('ig_audio',)
 
 
 def audio_list(api, ig_id, audio_type='music', query=None):
@@ -161,7 +161,7 @@ def audio_list(api, ig_id, audio_type='music', query=None):
     last = None
     for path in AUDIO_PATHS:
         try:
-            r = api.call('GET', path.format(ig=ig_id), dict(params, ig_user_id=ig_id) if '{ig}' not in path else params)
+            r = api.call('GET', path, dict(params, ig_user_id=ig_id))
         except RuntimeError as e:
             last = e
             continue
@@ -306,6 +306,14 @@ def main():
     if mode == 'audio':
         if api.host != 'graph.facebook.com':
             sys.exit('Müzik listesi için FB_TOKEN gerekli (Instagram Audio API yalnızca Facebook ile girişte var).')
+        for q in [x.strip() for x in (os.environ.get('AUDIO_Q') or cfg.get('music', {}).get('probe_queries', '')).split('|') if x.strip()]:
+            try:
+                items = audio_list(api, ig_id, 'music', q)
+                print(f'\n== ara: {q} · {len(items)} sonuç')
+                for it in items[:12]:
+                    print(f"  {it['id']} · {it['title']} · {it['artist']} · {it['ms'] // 1000 if it['ms'] else '?'} sn")
+            except RuntimeError as e:
+                print(f'\n== ara: {q} · HATA {e}')
         for kind in ('music', 'original_sound'):
             for path in AUDIO_PATHS:
                 p = path.format(ig=ig_id)
