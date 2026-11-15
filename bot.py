@@ -114,7 +114,7 @@ def media_base(cfg):
 
 def files_of(post):
     media = post['media'] if isinstance(post['media'], list) else [post['media']]
-    return media + ([post['cover']] if post.get('cover') else [])
+    return media + ([post['cover']] if post.get('cover') else []) + ([post['media_fallback']] if post.get('media_fallback') else [])
 
 
 def check_post(post):
@@ -127,6 +127,8 @@ def check_post(post):
     if post['kind'] == 'reels':
         if not isinstance(post['media'], str) or not post['media'].lower().endswith(('.mp4', '.mov')):
             return 'reels için tek bir .mp4 ya da .mov dosyası gerekli'
+        if post.get('media_fallback') and not post['media_fallback'].lower().endswith(('.mp4', '.mov')):
+            return 'media_fallback bir .mp4 ya da .mov dosyası olmalı'
         if post.get('trial') and post['trial'] not in ('MANUAL', 'SS_PERFORMANCE'):
             return 'trial yalnızca MANUAL ya da SS_PERFORMANCE olabilir'
     elif post['kind'] == 'carousel':
@@ -182,6 +184,11 @@ def pick_audio(api, ig_id, post, state, cfg):
     mcfg = cfg.get('music', {})
     if not mcfg.get('enabled') or post.get('music') is False or api.host != 'graph.facebook.com':
         return None
+    vol = dict(audio_volume=int(post.get('music_volume', mcfg.get('audio_volume', 30))), video_volume=int(mcfg.get('video_volume', 100)))
+    override = cfg.get('music_overrides', {}).get(str(post['n']))
+    if override or post.get('music_id'):
+        aid = (override or {}).get('id') or post['music_id']
+        return dict(id=str(aid), title=(override or {}).get('title') or post.get('music_title', ''), artist=(override or {}).get('artist', ''), ms=0, **vol)
     kind = post.get('music_type') or mcfg.get('type', 'music')
     try:
         items = audio_list(api, ig_id, kind, post.get('music_query'))
@@ -196,15 +203,14 @@ def pick_audio(api, ig_id, post, state, cfg):
     pick = (fit or [a for a in items if a['id'] not in used] or items or [None])[0]
     if not pick:
         return None
-    return dict(pick, audio_volume=int(post.get('music_volume', mcfg.get('audio_volume', 30))),
-                video_volume=int(mcfg.get('video_volume', 100)))
+    return dict(pick, **vol)
 
 
-def build(api, ig_id, post, base, timeout, audio=None):
+def build(api, ig_id, post, base, timeout, audio=None, media=None):
     """Gönderinin hazırlık kaydını oluşturur ve işlenmesini bekler; yayınlamaz. Kayıt kimliğini döndürür."""
     cap = post.get('caption', '')
     if post['kind'] == 'reels':
-        params = {'media_type': 'REELS', 'video_url': base + post['media'], 'caption': cap}
+        params = {'media_type': 'REELS', 'video_url': base + (media or post['media']), 'caption': cap}
         if post.get('trial'):  # deneme reels: önce takipçi olmayanlara gösterilir
             params['trial_params'] = json.dumps({'graduation_strategy': post['trial']})
         else:
@@ -370,7 +376,7 @@ def main():
                 audio = pick_audio(api, ig_id, p, state, cfg) if p['kind'] == 'reels' else None
                 if audio:
                     print(f'Müzik: {audio["title"]} · {audio["artist"]} ({audio["id"]})')
-                cid = build(api, ig_id, p, base, timeout, audio)
+                cid = build(api, ig_id, p, base, timeout, audio, None if audio else p.get('media_fallback'))
                 print(f'DOĞRULANDI · #{p["n"]} {p["kind"]}: Instagram dosyaları kabul etti ({time.time() - t0:.0f} sn). Yayınlanmadı.')
                 tested.add(p['kind'])
             except RuntimeError as e:
@@ -400,16 +406,18 @@ def main():
     if missing:
         fail(state, now, post['n'], f'medya dosyası yayında değil (GitHub Pages açık mı, dosya yüklendi mi?): {", ".join(missing)}')
     audio = pick_audio(api, ig_id, post, state, cfg) if post['kind'] == 'reels' else None
+    # media: müziksiz (Instagram müziği altına eklenir) · media_fallback: kendi fon müziğimizle
+    plain = post.get('media_fallback') if not audio else None
     try:
         try:
-            cid = build(api, ig_id, post, base, timeout, audio)
+            cid = build(api, ig_id, post, base, timeout, audio, plain)
         except RuntimeError as e:
             if not audio:
                 raise
-            # Müzik eklenemezse gönderi kaçmasın: kendi sesiyle tekrar denenir.
-            report('Müzik eklenemedi', f'#{post["n"]}: {audio["title"]} ({audio["id"]}) → {e}. Kendi sesiyle paylaşılıyor.', 'warning')
+            # Müzik eklenemezse gönderi kaçmasın: kendi fon müziğimizle tekrar denenir.
+            report('Müzik eklenemedi', f'#{post["n"]}: {audio["title"]} ({audio["id"]}) → {e}. Kendi müziğiyle paylaşılıyor.', 'warning')
             audio = None
-            cid = build(api, ig_id, post, base, timeout)
+            cid = build(api, ig_id, post, base, timeout, None, post.get('media_fallback'))
         media_id = api.call('POST', f'{ig_id}/media_publish', {'creation_id': cid})['id']
     except RuntimeError as e:
         fail(state, now, post['n'], e)
