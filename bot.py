@@ -365,8 +365,8 @@ def main():
                       + (f'\n  EKSİK DOSYA: {", ".join(missing)}' if missing else '  · dosyalar yerinde'))
             return
         tested = set()
-        # Plandaki gönderilerden önce depodaki deneme dosyaları (media/_deneme) denenir; plan boşken de doğrulama yapılabilir.
-        for p in cfg.get('test_posts', []) + upcoming:
+        # Önce sıradaki gerçek gönderiler (müziğiyle birlikte) denenir; dosyaları yayında değilse depodaki deneme dosyaları (media/_deneme).
+        for p in upcoming[:6] + cfg.get('test_posts', []):
             if p['kind'] in tested or check_post(p):
                 continue
             missing = [f for f in files_of(p) if not url_ok(base + f)]
