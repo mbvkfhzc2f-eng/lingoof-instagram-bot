@@ -12,9 +12,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · post: saati geleni paylaş'
+        description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · audio: trend müzik listesi · post: saati geleni paylaş'
         type: choice
-        options: [dry, validate, post]
+        options: [dry, validate, audio, post]
         default: dry
 
 permissions:
@@ -36,6 +36,7 @@ jobs:
       - name: Sıradaki paylaşım
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_TOKEN: ${{ secrets.FB_TOKEN }}
           MODE: ${{ inputs.mode || 'post' }}
         run: python3 bot.py
 

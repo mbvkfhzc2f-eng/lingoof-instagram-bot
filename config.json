@@ -6,9 +6,36 @@
  "cleanup_after_post": true,
  "app_store_url": "https://apps.apple.com/tr/app/lingoof/id6816741034",
  "test_posts": [
-  {"n": "deneme-reels", "date": "2026-01-01", "time": "00:00", "kind": "reels", "title": "Deneme reels",
-   "media": "_deneme/reels.mp4", "cover": "_deneme/kapak.jpg", "caption": "Deneme, yayınlanmaz."},
-  {"n": "deneme-carousel", "date": "2026-01-01", "time": "00:00", "kind": "carousel", "title": "Deneme carousel",
-   "media": ["_deneme/kare-1.jpg", "_deneme/kare-2.jpg"], "caption": "Deneme, yayınlanmaz."}
- ]
+  {
+   "n": "deneme-reels",
+   "date": "2026-01-01",
+   "time": "00:00",
+   "kind": "reels",
+   "title": "Deneme reels",
+   "media": "_deneme/reels.mp4",
+   "cover": "_deneme/kapak.jpg",
+   "caption": "Deneme, yayınlanmaz."
+  },
+  {
+   "n": "deneme-carousel",
+   "date": "2026-01-01",
+   "time": "00:00",
+   "kind": "carousel",
+   "title": "Deneme carousel",
+   "media": [
+    "_deneme/kare-1.jpg",
+    "_deneme/kare-2.jpg"
+   ],
+   "caption": "Deneme, yayınlanmaz."
+  }
+ ],
+ "ig_username": "lingoof.app",
+ "facebook_login": false,
+ "music": {
+  "enabled": false,
+  "type": "music",
+  "audio_volume": 30,
+  "video_volume": 100,
+  "no_repeat": 12
+ }
 }

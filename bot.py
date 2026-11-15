@@ -7,11 +7,14 @@ adresle verilir; Instagram dosyayı oradan kendisi çeker. Hangi gönderinin pay
 aynı gönderi iki kez gitmez.
 
 Ortam değişkenleri:
-  IG_TOKEN   Instagram uzun ömürlü erişim token'ı (GitHub secret)
+  IG_TOKEN   Instagram uzun ömürlü erişim token'ı (GitHub secret; "Instagram ile giriş")
+  FB_TOKEN   Facebook ile giriş token'ı (GitHub secret). Varsa bot graph.facebook.com üzerinden çalışır ve reels'e
+             Instagram'ın müzik kütüphanesinden ses ekleyebilir (Instagram Audio API yalnızca Facebook ile girişte var).
   MODE       "post" (varsayılan): saati gelen gönderiyi paylaşır
              "dry":      hiçbir şey göndermez; token'ı, hesabı ve sıradaki gönderiyi gösterir
              "validate": sıradaki reels ve carousel için Instagram'da hazırlık kaydı oluşturur ama YAYINLAMAZ;
                          Instagram'ın dosyaları kabul ettiğini doğrular (hesapta hiçbir şey görünmez)
+             "audio":    trend müzik ve sesleri listeler (yalnızca FB_TOKEN ile); hiçbir şey göndermez
 Yalnızca Python standart kütüphanesi kullanılır.
 """
 import json
@@ -45,9 +48,10 @@ def save(name, obj):
 
 
 class Api:
-    def __init__(self, token, version):
+    def __init__(self, token, version, host='graph.instagram.com'):
         self.token = token
-        self.base = f'https://graph.instagram.com/{version}' if version else 'https://graph.instagram.com'
+        self.host = host
+        self.base = f'https://{host}/{version}' if version else f'https://{host}'
 
     def call(self, method, path, params=None):
         query = dict(params or {}, access_token=self.token)
@@ -145,7 +149,58 @@ def url_ok(url):
         return False
 
 
-def build(api, ig_id, post, base, timeout):
+AUDIO_PATHS = ('ig_audio', '{ig}/ig_audio')
+
+
+def audio_list(api, ig_id, audio_type='music', query=None):
+    """Instagram Audio API: sorgu yoksa o anki trend listesini döndürür. Uç noktanın tam yolu belgelerde net olmadığı
+    için bilinen iki biçim sırayla denenir; ilk çalışan kullanılır."""
+    params = {'audio_type': audio_type}
+    if query:
+        params['search_query'] = query
+    last = None
+    for path in AUDIO_PATHS:
+        try:
+            r = api.call('GET', path.format(ig=ig_id), dict(params, ig_user_id=ig_id) if '{ig}' not in path else params)
+        except RuntimeError as e:
+            last = e
+            continue
+        items = r.get('audio') or r.get('data') or []
+        out = []
+        for it in items:
+            aid = it.get('audio_id') or it.get('id')
+            if aid:
+                out.append({'id': str(aid), 'title': it.get('title', ''), 'artist': it.get('display_artist') or it.get('ig_username', ''),
+                            'ms': it.get('duration_in_ms') or it.get('duration_ms') or 0})
+        return out
+    raise RuntimeError(f'Müzik listesi alınamadı: {last}')
+
+
+def pick_audio(api, ig_id, post, state, cfg):
+    """Reels için müzik seçer: gönderide 'music_query' varsa onunla arar, yoksa trend listesini kullanır.
+    Son kullanılan parçaları tekrar etmemeye çalışır. Seçemezse None döner (gönderi kendi sesiyle gider)."""
+    mcfg = cfg.get('music', {})
+    if not mcfg.get('enabled') or post.get('music') is False or api.host != 'graph.facebook.com':
+        return None
+    kind = post.get('music_type') or mcfg.get('type', 'music')
+    try:
+        items = audio_list(api, ig_id, kind, post.get('music_query'))
+        if not items and post.get('music_query'):
+            items = audio_list(api, ig_id, kind)
+    except RuntimeError as e:
+        print(f'(Not) {e}')
+        return None
+    used = set(state.get('audio_used', [])[-int(mcfg.get('no_repeat', 12)):])
+    need = int(post.get('duration_ms', 0))
+    fit = [a for a in items if a['id'] not in used and (not need or not a['ms'] or a['ms'] >= need)]
+    pick = (fit or [a for a in items if a['id'] not in used] or items or [None])[0]
+    if not pick:
+        return None
+    return dict(pick, audio_volume=int(post.get('music_volume', mcfg.get('audio_volume', 30))),
+                video_volume=int(mcfg.get('video_volume', 100)))
+
+
+def build(api, ig_id, post, base, timeout, audio=None):
     """Gönderinin hazırlık kaydını oluşturur ve işlenmesini bekler; yayınlamaz. Kayıt kimliğini döndürür."""
     cap = post.get('caption', '')
     if post['kind'] == 'reels':
@@ -154,7 +209,10 @@ def build(api, ig_id, post, base, timeout):
             params['trial_params'] = json.dumps({'graduation_strategy': post['trial']})
         else:
             params['share_to_feed'] = 'true'
-        if post.get('audio_name'):
+        if audio:
+            params['audio_configuration'] = json.dumps({'audio_id': audio['id'], 'audio_volume': audio['audio_volume'],
+                                                        'video_volume': audio['video_volume']})
+        elif post.get('audio_name'):
             params['audio_name'] = post['audio_name']
         if post.get('cover'):
             params['cover_url'] = base + post['cover']
@@ -213,18 +271,54 @@ def main():
     posts = load('posts.json', [])
     mode = (os.environ.get('MODE') or 'post').strip().lower()
     token = os.environ.get('IG_TOKEN', '').strip()
+    fb_token = os.environ.get('FB_TOKEN', '').strip()
     now = datetime.now(TZ)
     timeout = int(cfg.get('video_timeout_seconds', 600))
+    version = cfg.get('api_version', 'v24.0')
 
-    if not token:
-        sys.exit('IG_TOKEN tanımlı değil: GitHub > Settings > Secrets and variables > Actions altına ekle.')
-    api = Api(token, cfg.get('api_version', 'v24.0'))
-    try:
-        me = api.call('GET', 'me', {'fields': 'user_id,username,account_type'})
-    except RuntimeError as e:
-        fail(state, now, None, f'Instagram hesabına bağlanılamadı (token geçersiz ya da süresi dolmuş olabilir): {e}')
-    ig_id = me.get('user_id') or me.get('id')
-    print(f'Hesap: @{me.get("username")} ({me.get("account_type", "?")})  ·  Türkiye saati: {now:%d.%m.%Y %H:%M}')
+    api = None
+    if fb_token and (cfg.get('facebook_login') or mode == 'audio'):
+        # Facebook ile giriş: hesabı bağlı Facebook sayfası üzerinden bulur. Olmazsa IG_TOKEN'a düşer.
+        fapi = Api(fb_token, version, 'graph.facebook.com')
+        want = cfg.get('ig_username', 'lingoof.app').lstrip('@').lower()
+        try:
+            pages = fapi.call('GET', 'me/accounts', {'fields': 'name,instagram_business_account{id,username}', 'limit': '100'}).get('data', [])
+            acc = next((p['instagram_business_account'] for p in pages
+                        if p.get('instagram_business_account', {}).get('username', '').lower() == want), None)
+            if acc:
+                api, ig_id = fapi, acc['id']
+                print(f'Hesap: @{acc["username"]} (Facebook ile giriş)  ·  Türkiye saati: {now:%d.%m.%Y %H:%M}')
+            else:
+                report('Facebook bağlantısı', f'@{want} bu token ile erişilen Facebook sayfalarına bağlı görünmüyor; IG_TOKEN kullanılıyor.', 'warning')
+        except RuntimeError as e:
+            report('Facebook bağlantısı', f'FB_TOKEN ile bağlanılamadı, IG_TOKEN kullanılıyor: {e}', 'warning')
+    if api is None:
+        if not token:
+            sys.exit('IG_TOKEN tanımlı değil: GitHub > Settings > Secrets and variables > Actions altına ekle.')
+        api = Api(token, version)
+        try:
+            me = api.call('GET', 'me', {'fields': 'user_id,username,account_type'})
+        except RuntimeError as e:
+            fail(state, now, None, f'Instagram hesabına bağlanılamadı (token geçersiz ya da süresi dolmuş olabilir): {e}')
+        ig_id = me.get('user_id') or me.get('id')
+        print(f'Hesap: @{me.get("username")} ({me.get("account_type", "?")})  ·  Türkiye saati: {now:%d.%m.%Y %H:%M}')
+
+    if mode == 'audio':
+        if api.host != 'graph.facebook.com':
+            sys.exit('Müzik listesi için FB_TOKEN gerekli (Instagram Audio API yalnızca Facebook ile girişte var).')
+        for kind in ('music', 'original_sound'):
+            for path in AUDIO_PATHS:
+                p = path.format(ig=ig_id)
+                prm = {'audio_type': kind} if '{ig}' in path else {'audio_type': kind, 'ig_user_id': ig_id}
+                try:
+                    r = api.call('GET', p, prm)
+                    items = r.get('audio') or r.get('data') or []
+                    print(f'\n== {kind} · {p}: {len(items)} sonuç · alanlar: {sorted(items[0].keys()) if items else "-"}')
+                    for it in items[:15]:
+                        print(f"  {it.get('audio_id') or it.get('id')} · {it.get('title', '')} · {it.get('display_artist') or it.get('ig_username', '')} · {it.get('duration_in_ms', '')}")
+                except RuntimeError as e:
+                    print(f'\n== {kind} · {p}: HATA {e}')
+        return
     base = media_base(cfg)
 
     bad = [(p['n'], check_post(p)) for p in posts if check_post(p)]
@@ -265,7 +359,10 @@ def main():
                 continue
             t0 = time.time()
             try:
-                cid = build(api, ig_id, p, base, timeout)
+                audio = pick_audio(api, ig_id, p, state, cfg) if p['kind'] == 'reels' else None
+                if audio:
+                    print(f'Müzik: {audio["title"]} · {audio["artist"]} ({audio["id"]})')
+                cid = build(api, ig_id, p, base, timeout, audio)
                 print(f'DOĞRULANDI · #{p["n"]} {p["kind"]}: Instagram dosyaları kabul etti ({time.time() - t0:.0f} sn). Yayınlanmadı.')
                 tested.add(p['kind'])
             except RuntimeError as e:
@@ -294,12 +391,24 @@ def main():
     missing = [f for f in files_of(post) if not url_ok(base + f)]
     if missing:
         fail(state, now, post['n'], f'medya dosyası yayında değil (GitHub Pages açık mı, dosya yüklendi mi?): {", ".join(missing)}')
+    audio = pick_audio(api, ig_id, post, state, cfg) if post['kind'] == 'reels' else None
     try:
-        cid = build(api, ig_id, post, base, timeout)
+        try:
+            cid = build(api, ig_id, post, base, timeout, audio)
+        except RuntimeError as e:
+            if not audio:
+                raise
+            # Müzik eklenemezse gönderi kaçmasın: kendi sesiyle tekrar denenir.
+            report('Müzik eklenemedi', f'#{post["n"]}: {audio["title"]} ({audio["id"]}) → {e}. Kendi sesiyle paylaşılıyor.', 'warning')
+            audio = None
+            cid = build(api, ig_id, post, base, timeout)
         media_id = api.call('POST', f'{ig_id}/media_publish', {'creation_id': cid})['id']
     except RuntimeError as e:
         fail(state, now, post['n'], e)
     entry = {'id': media_id, 'at': now.isoformat(timespec='seconds'), 'kind': post['kind']}
+    if audio:
+        entry['audio'] = {k: audio[k] for k in ('id', 'title', 'artist')}
+        state.setdefault('audio_used', []).append(audio['id'])
     try:
         entry['permalink'] = api.call('GET', media_id, {'fields': 'permalink'}).get('permalink')
     except RuntimeError:
