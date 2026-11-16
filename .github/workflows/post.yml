@@ -33,6 +33,10 @@ jobs:
         with:
           ref: main
 
+      - name: Ölçüm araçları
+        if: inputs.mode == 'olc'
+        run: pip install -q numpy imageio-ffmpeg
+
       - name: Sıradaki paylaşım
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}

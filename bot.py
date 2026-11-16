@@ -358,6 +358,16 @@ def main():
             print(f'#{n} · {info.get("permalink")} · müzik: {(e.get("audio") or {}).get("title", "-")} · ' + ('indiriliyor' if url else 'media_url verilmedi'))
             if url:
                 urllib.request.urlretrieve(url, f'olcum/reels_{n}.mp4')
+                try:
+                    # 0,25 sn'lik pencerelerde ses seviyesi (dBFS); müziksiz sürümle karşılaştırmak için loga yazılır.
+                    import subprocess, numpy as np, imageio_ffmpeg
+                    raw = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), '-v', 'error', '-i', f'olcum/reels_{n}.mp4', '-ac', '1', '-ar', '48000', '-f', 'f32le', '-'],
+                                         capture_output=True, check=True).stdout
+                    x = np.frombuffer(raw, np.float32); w = 12000; k = len(x) // w
+                    db = 20 * np.log10(np.sqrt(np.mean(x[:k * w].reshape(k, w) ** 2, axis=1) + 1e-12))
+                    print(f'PROFIL #{n} ' + json.dumps([round(float(v), 1) for v in db]))
+                except Exception as err:
+                    print(f'Ses profili çıkarılamadı: {err}')
         return
     base = media_base(cfg)
 
