@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · audio: trend müzik listesi · olc: yayındaki reels'i indir · post: saati geleni paylaş'
+        description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · audio: trend müzik listesi · olc: yayındaki reelsi indir · post: saati geleni paylaş'
         type: choice
         options: [dry, validate, audio, olc, post]
         default: dry
