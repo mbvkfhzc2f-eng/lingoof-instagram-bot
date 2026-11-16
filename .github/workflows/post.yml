@@ -12,9 +12,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · audio: trend müzik listesi · post: saati geleni paylaş'
+        description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · audio: trend müzik listesi · olc: yayındaki reels'i indir · post: saati geleni paylaş'
         type: choice
-        options: [dry, validate, audio, post]
+        options: [dry, validate, audio, olc, post]
         default: dry
 
 permissions:
@@ -39,6 +39,15 @@ jobs:
           FB_TOKEN: ${{ secrets.FB_TOKEN }}
           MODE: ${{ inputs.mode || 'post' }}
         run: python3 bot.py
+
+      - name: Ölçüm dosyaları
+        if: inputs.mode == 'olc'
+        uses: actions/upload-artifact@v4
+        with:
+          name: olcum
+          path: olcum/
+          retention-days: 1
+          if-no-files-found: ignore
 
       - name: Durumu kaydet
         if: always() && (inputs.mode == '' || inputs.mode == 'post' || github.event_name != 'workflow_dispatch')

@@ -15,6 +15,7 @@ Ortam değişkenleri:
              "validate": sıradaki reels ve carousel için Instagram'da hazırlık kaydı oluşturur ama YAYINLAMAZ;
                          Instagram'ın dosyaları kabul ettiğini doğrular (hesapta hiçbir şey görünmez)
              "audio":    trend müzik ve sesleri listeler (yalnızca FB_TOKEN ile); hiçbir şey göndermez
+             "olc":      paylaşılmış son reels'leri Instagram'daki son halleriyle indirir (ses dengesi ölçümü için)
 Yalnızca Python standart kütüphanesi kullanılır.
 """
 import json
@@ -334,6 +335,29 @@ def main():
                         print(f"  {it.get('audio_id') or it.get('id')} · {it.get('title', '')} · {it.get('display_artist') or it.get('ig_username', '')} · {it.get('duration_in_ms', '')}")
                 except RuntimeError as e:
                     print(f'\n== {kind} · {p}: HATA {e}')
+        return
+    if mode == 'olc':
+        # Paylaşılmış reels'leri Instagram'ın yayındaki haliyle indirir (müzik eklenmiş son karışım);
+        # dosyalar iş akışında 1 günlük artifact olarak saklanır, ses dengesi ölçülür.
+        import urllib.request
+        os.makedirs('olcum', exist_ok=True)
+        if token:
+            try:
+                me = Api(token, version).call('GET', 'me', {'fields': 'username,account_type'})
+                print(f'Hesap türü: {me.get("account_type")}')
+            except RuntimeError as e:
+                print(f'Hesap türü okunamadı: {e}')
+        reels = sorted(((n, e) for n, e in state['posted'].items() if e.get('kind') == 'reels'), key=lambda kv: kv[1].get('at', ''))
+        for n, e in reels[-int(os.environ.get('OLC_ADET', '2')):]:
+            try:
+                info = api.call('GET', e['id'], {'fields': 'media_type,media_product_type,media_url,permalink,timestamp'})
+            except RuntimeError as err:
+                print(f'#{n} okunamadı: {err}')
+                continue
+            url = info.pop('media_url', None)
+            print(f'#{n} · {info.get("permalink")} · müzik: {(e.get("audio") or {}).get("title", "-")} · ' + ('indiriliyor' if url else 'media_url verilmedi'))
+            if url:
+                urllib.request.urlretrieve(url, f'olcum/reels_{n}.mp4')
         return
     base = media_base(cfg)
 
