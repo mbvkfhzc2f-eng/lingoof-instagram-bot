@@ -34,7 +34,7 @@
  "music": {
   "enabled": true,
   "type": "music",
-  "audio_volume": 35,
+  "audio_volume": 18,
   "video_volume": 100,
   "no_repeat": 12,
   "probe_queries": "trend|viral|funny|happy|upbeat|pop|dance|lofi|study|christmas|new year|türkçe pop|komik|eğlenceli",
