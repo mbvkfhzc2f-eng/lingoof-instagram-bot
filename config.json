@@ -40,5 +40,5 @@
   "probe_queries": "trend|viral|funny|happy|upbeat|pop|dance|lofi|study|christmas|new year|türkçe pop|komik|eğlenceli",
   "auto": false
  },
- "music_overrides": {"6": {"id": "8856427164403238", "title": "Fail Fiesta · Giulio Cercato"}}
+ "music_overrides": {}
 }

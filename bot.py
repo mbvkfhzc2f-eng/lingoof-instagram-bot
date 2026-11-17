@@ -15,6 +15,7 @@ Ortam değişkenleri:
              "validate": sıradaki reels ve carousel için Instagram'da hazırlık kaydı oluşturur ama YAYINLAMAZ;
                          Instagram'ın dosyaları kabul ettiğini doğrular (hesapta hiçbir şey görünmez)
              "audio":    trend müzik ve sesleri listeler (yalnızca FB_TOKEN ile); hiçbir şey göndermez
+             "muzik":    planlanan müzik parçalarını Instagram'a sorar, reddedilenleri listeler (yayınlamaz)
              "olc":      paylaşılmış son reels'leri Instagram'daki son halleriyle indirir (ses dengesi ölçümü için)
 Yalnızca Python standart kütüphanesi kullanılır.
 """
@@ -335,6 +336,40 @@ def main():
                         print(f"  {it.get('audio_id') or it.get('id')} · {it.get('title', '')} · {it.get('display_artist') or it.get('ig_username', '')} · {it.get('duration_in_ms', '')}")
                 except RuntimeError as e:
                     print(f'\n== {kind} · {p}: HATA {e}')
+        return
+    if mode == 'muzik':
+        # Planlanan her müzik parçasını kısa deneme videosuyla Instagram'a sorar (yayınlamaz):
+        # hangi parçaların kabul edilmediği önceden görülür.
+        base = media_base(cfg)
+        test = next(p for p in cfg.get('test_posts', []) if p['kind'] == 'reels')
+        ids = {}
+        for p in posts:
+            if str(p['n']) in state['posted']:
+                continue
+            if p.get('music_id'):
+                ids.setdefault(str(p['music_id']), [p.get('music_title', ''), []])[1].append(p['n'])
+        for o in cfg.get('music_overrides', {}).values():
+            ids.setdefault(str(o['id']), [o.get('title', ''), []])
+        print(f'{len(ids)} farklı parça deneniyor')
+        cids = {}
+        for aid in ids:
+            try:
+                r = api.call('POST', f'{ig_id}/media', {'media_type': 'REELS', 'video_url': base + test['media'], 'share_to_feed': 'false',
+                    'audio_configuration': json.dumps({'audio_id': aid, 'audio_volume': 18, 'video_volume': 100})})
+                cids[aid] = r['id']
+            except RuntimeError as e:
+                print(f'RED  {aid} · {ids[aid][0]} · gönderiler {ids[aid][1]} · {e}')
+        t0 = time.time(); left = dict(cids)
+        while left and time.time() - t0 < 600:
+            time.sleep(15)
+            for aid, cid in list(left.items()):
+                st = api.call('GET', cid, {'fields': 'status_code,status'})
+                if st.get('status_code') in ('FINISHED', 'PUBLISHED'):
+                    print(f'TAMAM {aid} · {ids[aid][0]}'); left.pop(aid)
+                elif st.get('status_code') == 'ERROR':
+                    print(f'RED  {aid} · {ids[aid][0]} · gönderiler {ids[aid][1]} · {st.get("status")}'); left.pop(aid)
+        for aid in left:
+            print(f'BELİRSİZ {aid} · {ids[aid][0]}')
         return
     if mode == 'olc':
         # Paylaşılmış reels'leri Instagram'ın yayındaki haliyle indirir (müzik eklenmiş son karışım);

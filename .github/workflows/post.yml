@@ -14,7 +14,7 @@ on:
       mode:
         description: 'dry: sadece kontrol · validate: Instagram dosyaları kabul ediyor mu (yayınlamadan) · audio: trend müzik listesi · olc: yayındaki reelsi indir · post: saati geleni paylaş'
         type: choice
-        options: [dry, validate, audio, olc, post]
+        options: [dry, validate, audio, muzik, olc, post]
         default: dry
 
 permissions:
