@@ -192,6 +192,17 @@
    "at": "2026-11-26T12:32:24+03:00",
    "kind": "carousel",
    "permalink": "https://www.instagram.com/p/DgMyqCFj8eC/"
+  },
+  "24": {
+   "id": "17985560703125205",
+   "at": "2026-11-26T19:32:39+03:00",
+   "kind": "reels",
+   "audio": {
+    "id": "932486288340954",
+    "title": "Moment · Global Genius",
+    "artist": ""
+   },
+   "permalink": "https://www.instagram.com/reel/DgNitmUnDzM/"
   }
  },
  "skipped": [],
@@ -206,6 +217,7 @@
   "1744712439298788",
   "2410807962410879",
   "1519015175461186",
-  "417003198161987"
+  "417003198161987",
+  "932486288340954"
  ]
 }
