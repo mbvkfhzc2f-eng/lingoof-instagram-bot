@@ -1,14 +1,53 @@
 {
- "guncelleme": "2026-11-27T22:02+03:00",
+ "guncelleme": "2026-11-27T22:08+03:00",
  "hesap": {
-  "id": "17841421461891254",
+  "username": "lingoof.app",
   "followers_count": 288,
   "follows_count": 8,
   "media_count": 48,
-  "username": "lingoof.app",
-  "son_1_gun": {},
-  "son_7_gun": {},
-  "son_28_gun": {}
+  "id": "40083269334653529",
+  "son_1_gun": {
+   "reach": 193,
+   "views": 429,
+   "accounts_engaged": 8,
+   "total_interactions": 28,
+   "likes": 23,
+   "comments": 0,
+   "shares": 0,
+   "saves": 2,
+   "follows_and_unfollows": null,
+   "follows_and_unfollows:FOLLOWER": 1,
+   "follows_and_unfollows:NON_FOLLOWER": 1,
+   "profile_links_taps": 0
+  },
+  "son_7_gun": {
+   "reach": 3019,
+   "views": 6676,
+   "accounts_engaged": 113,
+   "total_interactions": 381,
+   "likes": 241,
+   "comments": 14,
+   "shares": 13,
+   "saves": 45,
+   "follows_and_unfollows": null,
+   "follows_and_unfollows:FOLLOWER": 26,
+   "follows_and_unfollows:NON_FOLLOWER": 12,
+   "profile_links_taps": 0
+  },
+  "son_28_gun": {
+   "reach": 5433,
+   "views": 13762,
+   "accounts_engaged": 155,
+   "total_interactions": 690,
+   "likes": 407,
+   "comments": 15,
+   "shares": 33,
+   "saves": 91,
+   "follows_and_unfollows": null,
+   "follows_and_unfollows:FOLLOWER": 103,
+   "follows_and_unfollows:NON_FOLLOWER": 24,
+   "profile_links_taps": 0
+  }
  },
  "desteklenmeyen_metrikler": [],
  "media": {
@@ -17,104 +56,192 @@
    "n": "26",
    "tur": "reels",
    "tarih": "2026-11-27T19:33+03:00",
-   "yas_saat": 2.5,
+   "yas_saat": 2.6,
    "link": "https://www.instagram.com/reel/DgQHg80gXve/",
    "ilk_satir": "Efsane Cuma'da yurt dışında alışveriş? 🛍️",
    "seri": "s_2026-11-27",
    "sure_sn": 38.0,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 149,
+    "reach": 111,
+    "likes": 7,
+    "comments": 0,
+    "shares": 0,
+    "saved": 2,
+    "total_interactions": 10,
+    "ig_reels_avg_watch_time": 2691,
+    "ig_reels_video_view_total_time": 304156,
+    "reels_skip_rate": 86.6
+   }
   },
   "17945909547389979": {
    "id": "17945909547389979",
    "n": "25",
    "tur": "carousel_album",
    "tarih": "2026-11-27T12:33+03:00",
-   "yas_saat": 9.5,
+   "yas_saat": 9.6,
    "link": "https://www.instagram.com/p/DgPXdwEjdiK/",
    "ilk_satir": "Efsane Cuma'da yurt dışından ya da turist mağazasında alışveriş yapacaksan bu 12 kalıp laz",
    "seri": "alisveris-12",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 87,
+    "reach": 26,
+    "likes": 6,
+    "comments": 0,
+    "shares": 0,
+    "saved": 2,
+    "total_interactions": 10,
+    "follows": 0,
+    "profile_visits": 1,
+    "profile_activity": 0
+   }
   },
   "17985560703125205": {
    "id": "17985560703125205",
    "n": "24",
    "tur": "reels",
    "tarih": "2026-11-26T19:33+03:00",
-   "yas_saat": 26.5,
+   "yas_saat": 26.6,
    "link": "https://www.instagram.com/reel/DgNitmUnDzM/",
    "ilk_satir": "Hatayı bul #2 👀 Bu cümlede 1 hata var:",
    "seri": "Hatayı bul",
    "sure_sn": 27.5,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 208,
+    "reach": 149,
+    "likes": 10,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 15,
+    "ig_reels_avg_watch_time": 5203,
+    "ig_reels_video_view_total_time": 837803,
+    "reels_skip_rate": 71.1
+   }
   },
   "18464083792179920": {
    "id": "18464083792179920",
    "n": "23",
    "tur": "carousel_album",
    "tarih": "2026-11-26T12:32+03:00",
-   "yas_saat": 33.5,
+   "yas_saat": 33.6,
    "link": "https://www.instagram.com/p/DgMyqCFj8eC/",
    "ilk_satir": "say, tell, speak, talk: hepsi 'söylemek' ama kullanımları farklı. En sık yapılan hata: 'He",
    "seri": "say-tell",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 127,
+    "reach": 44,
+    "likes": 8,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 10,
+    "follows": 0,
+    "profile_visits": 0,
+    "profile_activity": 0
+   }
   },
   "18118063223110030": {
    "id": "18118063223110030",
    "n": "22",
    "tur": "reels",
    "tarih": "2026-11-25T19:34+03:00",
-   "yas_saat": 50.5,
+   "yas_saat": 50.6,
    "link": "https://www.instagram.com/reel/DgK9-AwFk1c/",
    "ilk_satir": "Türkçe deyimleri BİREBİR çevirince 💀 #2",
    "seri": "Birebir çeviri",
    "sure_sn": 24.9,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 172,
+    "reach": 141,
+    "likes": 8,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 10,
+    "ig_reels_avg_watch_time": 3707,
+    "ig_reels_video_view_total_time": 533922,
+    "reels_skip_rate": 79.7
+   }
   },
   "17875467477649177": {
    "id": "17875467477649177",
    "n": "21",
    "tur": "carousel_album",
    "tarih": "2026-11-25T12:32+03:00",
-   "yas_saat": 57.5,
+   "yas_saat": 57.6,
    "link": "https://www.instagram.com/p/DgKN2bsmt2z/",
    "ilk_satir": "Make mi, do mu? 🤔 Ortaya bir şey çıkıyorsa make, görev ve iş ise do. Sonda 2 mini soru var",
    "seri": "make-do",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 193,
+    "reach": 59,
+    "likes": 12,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 15,
+    "follows": 0,
+    "profile_visits": 1,
+    "profile_activity": 0
+   }
   },
   "17905534467377539": {
    "id": "17905534467377539",
    "n": "20",
    "tur": "reels",
    "tarih": "2026-11-24T19:33+03:00",
-   "yas_saat": 74.5,
+   "yas_saat": 74.6,
    "link": "https://www.instagram.com/reel/DgIZG1cnOfd/",
    "ilk_satir": "Öğretmenler Günün kutlu olsun 🍎",
    "seri": "s_2026-11-24",
    "sure_sn": 26.7,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 179,
+    "reach": 133,
+    "likes": 7,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 10,
+    "ig_reels_avg_watch_time": 2962,
+    "ig_reels_video_view_total_time": 447357,
+    "reels_skip_rate": 81.3
+   }
   },
   "17957353932289424": {
    "id": "17957353932289424",
    "n": "19",
    "tur": "carousel_album",
    "tarih": "2026-11-24T12:33+03:00",
-   "yas_saat": 81.5,
+   "yas_saat": 81.6,
    "link": "https://www.instagram.com/p/DgHpGWzDP0w/",
    "ilk_satir": "Öğretmenler Günün kutlu olsun 🍎 Öğretmenine İngilizce yazabileceğin 8 kart mesajı. Kaydet,",
    "seri": "ogretmen-mesaj",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 287,
+    "reach": 119,
+    "likes": 11,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 14,
+    "follows": 0,
+    "profile_visits": 1,
+    "profile_activity": 0
+   }
   },
   "18390361621239378": {
    "id": "18390361621239378",
@@ -127,163 +254,306 @@
    "seri": null,
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 3072,
+    "reach": 2310,
+    "likes": 80,
+    "comments": 13,
+    "shares": 13,
+    "saved": 24,
+    "total_interactions": 144,
+    "ig_reels_avg_watch_time": 4897,
+    "ig_reels_video_view_total_time": 12390695,
+    "reels_skip_rate": 77.5
+   }
   },
   "18112858879932694": {
    "id": "18112858879932694",
    "n": "18",
    "tur": "reels",
    "tarih": "2026-11-23T19:33+03:00",
-   "yas_saat": 98.5,
+   "yas_saat": 98.6,
    "link": "https://www.instagram.com/reel/DgF0ZqGj9bA/",
    "ilk_satir": "“Kolay gelsin” İngilizcede nasıl denir? 🤔",
    "seri": "Nasıl dersin?",
    "sure_sn": 19.2,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 254,
+    "reach": 197,
+    "likes": 10,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 14,
+    "ig_reels_avg_watch_time": 2946,
+    "ig_reels_video_view_total_time": 607068,
+    "reels_skip_rate": 84.9
+   }
   },
   "18119599187118991": {
    "id": "18119599187118991",
    "n": "17",
    "tur": "carousel_album",
    "tarih": "2026-11-23T12:33+03:00",
-   "yas_saat": 105.5,
+   "yas_saat": 105.6,
    "link": "https://www.instagram.com/p/DgFEUppF6EC/",
    "ilk_satir": "Günlük hayatta en çok kullanılan 12 phrasal verb 📚 Kaydet, her birini bir cümleyle dene. H",
    "seri": "phrasal-12",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 125,
+    "reach": 48,
+    "likes": 8,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 10,
+    "follows": 0,
+    "profile_visits": 3,
+    "profile_activity": 2
+   }
   },
   "18277840678305416": {
    "id": "18277840678305416",
    "n": "15",
    "tur": "carousel_album",
    "tarih": "2026-11-22T19:33+03:00",
-   "yas_saat": 122.5,
+   "yas_saat": 122.6,
    "link": "https://www.instagram.com/p/DgDPmCLGDUG/",
    "ilk_satir": "YDS bitti ama İngilizce bitmedi 💜 Sınav sonrası 5 günlük mini plan: her gün sadece 15 daki",
    "seri": "yds-sonrasi",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 306,
+    "reach": 140,
+    "likes": 12,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 17,
+    "follows": 0,
+    "profile_visits": 2,
+    "profile_activity": 1
+   }
   },
   "18100071404440503": {
    "id": "18100071404440503",
    "n": "16",
    "tur": "reels",
    "tarih": "2026-11-22T07:47+03:00",
-   "yas_saat": 134.2,
+   "yas_saat": 134.3,
    "link": "https://www.instagram.com/reel/DgB-0LjnF93/",
    "ilk_satir": "Bugün YDS günü 🍀 Sınava giriş belgen ve kimliğin yanında mı? Saat 10.00'dan sonra binaya a",
    "seri": "s_2026-11-22",
    "sure_sn": 19.1,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 255,
+    "reach": 193,
+    "likes": 11,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 17,
+    "ig_reels_avg_watch_time": 4904,
+    "ig_reels_video_view_total_time": 966110,
+    "reels_skip_rate": 70.4
+   }
   },
   "18118111733140794": {
    "id": "18118111733140794",
    "n": "14",
    "tur": "reels",
    "tarih": "2026-11-21T19:32+03:00",
-   "yas_saat": 146.5,
+   "yas_saat": 146.6,
    "link": "https://www.instagram.com/reel/DgAqrV9iID5/",
    "ilk_satir": "YDS'den önceki gece ben 🌙📚 Abandon neydi?!",
    "seri": "s_2026-11-21",
    "sure_sn": 25.5,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 256,
+    "reach": 210,
+    "likes": 13,
+    "comments": 1,
+    "shares": 0,
+    "saved": 5,
+    "total_interactions": 23,
+    "ig_reels_avg_watch_time": 3724,
+    "ig_reels_video_view_total_time": 774667,
+    "reels_skip_rate": 82.6
+   }
   },
   "18142435357715171": {
    "id": "18142435357715171",
    "n": "13",
    "tur": "carousel_album",
    "tarih": "2026-11-21T12:33+03:00",
-   "yas_saat": 153.5,
+   "yas_saat": 153.6,
    "link": "https://www.instagram.com/p/Df_6u_xl1MW/",
    "ilk_satir": "Yarın YDS 🍀 Sınava giriş belgesi, geçerli kimlik ve saat 10.00 kuralı: son kontrol listesi",
    "seri": "yds-canta",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 197,
+    "reach": 66,
+    "likes": 7,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 10,
+    "follows": 0,
+    "profile_visits": 0,
+    "profile_activity": 0
+   }
   },
   "18082551908395608": {
    "id": "18082551908395608",
    "n": "12",
    "tur": "reels",
    "tarih": "2026-11-20T19:32+03:00",
-   "yas_saat": 170.5,
+   "yas_saat": 170.6,
    "link": "https://www.instagram.com/reel/Df-F5UOAHhv/",
    "ilk_satir": "Türkçe düşünüp İngilizce konuşunca 🤯 #1",
    "seri": "Türk İngilizcesi",
    "sure_sn": 22.7,
    "deneme": "SS_PERFORMANCE",
-   "metrikler": {}
+   "metrikler": {
+    "views": 252,
+    "reach": 208,
+    "likes": 15,
+    "comments": 0,
+    "shares": 0,
+    "saved": 3,
+    "total_interactions": 24,
+    "ig_reels_avg_watch_time": 4871,
+    "ig_reels_video_view_total_time": 1013246,
+    "reels_skip_rate": 73.1
+   }
   },
   "18095012192679346": {
    "id": "18095012192679346",
    "n": "11",
    "tur": "carousel_album",
    "tarih": "2026-11-20T12:33+03:00",
-   "yas_saat": 177.5,
+   "yas_saat": 177.6,
    "link": "https://www.instagram.com/p/Df9V6RmkT1v/",
    "ilk_satir": "YDS'ye 2 gün kala mini deneme 🧩 3 soru, cevaplar son sayfada. Kaç doğru yaptığını yorumlar",
    "seri": "yds-quiz",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 260,
+    "reach": 135,
+    "likes": 13,
+    "comments": 0,
+    "shares": 0,
+    "saved": 3,
+    "total_interactions": 23,
+    "follows": 0,
+    "profile_visits": 1,
+    "profile_activity": 0
+   }
   },
   "17921441193533658": {
    "id": "17921441193533658",
    "n": "10",
    "tur": "reels",
    "tarih": "2026-11-19T19:33+03:00",
-   "yas_saat": 194.5,
+   "yas_saat": 194.6,
    "link": "https://www.instagram.com/reel/Df7hJhLghLr/",
    "ilk_satir": "Ders kitabı İngilizcesi vs gerçek hayat 📘😎 #1",
    "seri": "Ders kitabı vs gerçek hayat",
    "sure_sn": 23.5,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 297,
+    "reach": 232,
+    "likes": 10,
+    "comments": 0,
+    "shares": 0,
+    "saved": 5,
+    "total_interactions": 20,
+    "ig_reels_avg_watch_time": 2827,
+    "ig_reels_video_view_total_time": 681313,
+    "reels_skip_rate": 85.4
+   }
   },
   "17959331859272164": {
    "id": "17959331859272164",
    "n": "9",
    "tur": "carousel_album",
    "tarih": "2026-11-19T12:32+03:00",
-   "yas_saat": 201.5,
+   "yas_saat": 201.6,
    "link": "https://www.instagram.com/p/Df6xFjfF0Zm/",
    "ilk_satir": "YDS'de sık karşılaşılan 12 akademik fiil ✍️ Anlamlarıyla birlikte kaydet, kelimeleri cümle",
    "seri": "yds-fiiller",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 209,
+    "reach": 101,
+    "likes": 12,
+    "comments": 0,
+    "shares": 0,
+    "saved": 2,
+    "total_interactions": 17,
+    "follows": 0,
+    "profile_visits": 0,
+    "profile_activity": 0
+   }
   },
   "17910579984656920": {
    "id": "17910579984656920",
    "n": "8",
    "tur": "reels",
    "tarih": "2026-11-18T19:33+03:00",
-   "yas_saat": 218.5,
+   "yas_saat": 218.6,
    "link": "https://www.instagram.com/reel/Df48VbUgh4J/",
    "ilk_satir": "Türkçe deyimleri İngilizceye BİREBİR çevirince 💀",
    "seri": "Birebir çeviri",
    "sure_sn": 26.7,
    "deneme": "SS_PERFORMANCE",
-   "metrikler": {}
+   "metrikler": {
+    "views": 1146,
+    "reach": 942,
+    "likes": 14,
+    "comments": 1,
+    "shares": 1,
+    "saved": 7,
+    "total_interactions": 28,
+    "ig_reels_avg_watch_time": 2847,
+    "ig_reels_video_view_total_time": 2822347,
+    "reels_skip_rate": 87.4
+   }
   },
   "17990395898931506": {
    "id": "17990395898931506",
    "n": "7",
    "tur": "carousel_album",
    "tarih": "2026-11-18T12:33+03:00",
-   "yas_saat": 225.5,
+   "yas_saat": 225.6,
    "link": "https://www.instagram.com/p/Df4MYrWmDjz/",
    "ilk_satir": "YDS'ye 4 gün kala bağlaç tekrarı 📌 Zıtlık, sebep-sonuç ve koşul bağlaçlarını tek yerde top",
    "seri": "yds-baglaclar",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 265,
+    "reach": 104,
+    "likes": 11,
+    "comments": 0,
+    "shares": 0,
+    "saved": 4,
+    "total_interactions": 18,
+    "follows": 0,
+    "profile_visits": 0,
+    "profile_activity": 0
+   }
   },
   "18030147287697372": {
    "id": "18030147287697372",
@@ -296,72 +566,138 @@
    "seri": "Hatayı bul",
    "sure_sn": 30.0,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 218,
+    "reach": 174,
+    "likes": 16,
+    "comments": 0,
+    "shares": 0,
+    "saved": 3,
+    "total_interactions": 23,
+    "ig_reels_avg_watch_time": 5384,
+    "ig_reels_video_view_total_time": 953027,
+    "reels_skip_rate": 71.1
+   }
   },
   "18100002260234688": {
    "id": "18100002260234688",
    "n": "5",
    "tur": "carousel_album",
    "tarih": "2026-11-17T12:33+03:00",
-   "yas_saat": 249.5,
+   "yas_saat": 249.6,
    "link": "https://www.instagram.com/p/Df1nlJgl0Qe/",
    "ilk_satir": "YDS'ye 5 gün kala puanı kurtaran 5 taktik 📌 Yeni konu yok, panik yok: son haftayı doğru ku",
    "seri": "yds-son-hafta",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 335,
+    "reach": 129,
+    "likes": 14,
+    "comments": 0,
+    "shares": 10,
+    "saved": 3,
+    "total_interactions": 34,
+    "follows": 0,
+    "profile_visits": 5,
+    "profile_activity": 0
+   }
   },
   "18133479619891280": {
    "id": "18133479619891280",
    "n": "4",
    "tur": "reels",
    "tarih": "2026-11-16T19:34+03:00",
-   "yas_saat": 266.5,
+   "yas_saat": 266.6,
    "link": "https://www.instagram.com/reel/Dfzy11TGb5p/",
    "ilk_satir": "POV: İngilizce iş görüşmesi ve ilk soru: “Tell me about yourself.” 💼😳",
    "seri": "POV",
    "sure_sn": 40.6,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 1408,
+    "reach": 1095,
+    "likes": 18,
+    "comments": 0,
+    "shares": 2,
+    "saved": 5,
+    "total_interactions": 33,
+    "ig_reels_avg_watch_time": 3083,
+    "ig_reels_video_view_total_time": 3739859,
+    "reels_skip_rate": 90.6
+   }
   },
   "18136871362732068": {
    "id": "18136871362732068",
    "n": "3",
    "tur": "carousel_album",
    "tarih": "2026-11-16T12:34+03:00",
-   "yas_saat": 273.5,
+   "yas_saat": 273.6,
    "link": "https://www.instagram.com/p/DfzC1cSnE_g/",
    "ilk_satir": "YDS'ye 6 gün kala edatıyla gelen 12 fiil 📌 depend on, consist of, result in / result from…",
    "seri": "yds-edatli-fiiller",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 346,
+    "reach": 137,
+    "likes": 15,
+    "comments": 0,
+    "shares": 1,
+    "saved": 3,
+    "total_interactions": 25,
+    "follows": 0,
+    "profile_visits": 3,
+    "profile_activity": 0
+   }
   },
   "18003656336814227": {
    "id": "18003656336814227",
    "n": "2",
    "tur": "reels",
    "tarih": "2026-11-15T19:35+03:00",
-   "yas_saat": 290.5,
+   "yas_saat": 290.6,
    "link": "https://www.instagram.com/reel/DfxOISVj222/",
    "ilk_satir": "POV: Turist senden fotoğrafını çekmeni istiyor 📸",
    "seri": "POV",
    "sure_sn": 32.2,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 693,
+    "reach": 597,
+    "likes": 21,
+    "comments": 0,
+    "shares": 3,
+    "saved": 4,
+    "total_interactions": 31,
+    "ig_reels_avg_watch_time": 4815,
+    "ig_reels_video_view_total_time": 2908700,
+    "reels_skip_rate": 80.1
+   }
   },
   "18230276707335313": {
    "id": "18230276707335313",
    "n": "1",
    "tur": "carousel_album",
    "tarih": "2026-11-15T12:32+03:00",
-   "yas_saat": 297.5,
+   "yas_saat": 297.6,
    "link": "https://www.instagram.com/p/Dfwd4CmG8cD/",
    "ilk_satir": "Türkçede tek kelime, İngilizcede birkaç karşılık 🤯 Kazanmak: win mi earn mü? Saat: hour mu",
    "seri": "tek-kelime-cok-anlam",
    "sure_sn": null,
    "deneme": null,
-   "metrikler": {}
+   "metrikler": {
+    "views": 405,
+    "reach": 148,
+    "likes": 13,
+    "comments": 0,
+    "shares": 1,
+    "saved": 4,
+    "total_interactions": 20,
+    "follows": 0,
+    "profile_visits": 15,
+    "profile_activity": 2
+   }
   },
   "18339756529273818": {
    "id": "18339756529273818",
