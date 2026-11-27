@@ -31,12 +31,25 @@ ACCOUNT_METRICS = ['reach', 'views', 'accounts_engaged', 'total_interactions', '
                    'saves', 'follows_and_unfollows', 'profile_links_taps']
 MILESTONES = [('24s', 24), ('72s', 72), ('7g', 168)]
 unsupported = set()
+errors = []
+debug_shown = []
 
 
-def connect(cfg):
+def connect(cfg, prefer='ig'):
+    """İstatistik izni (instagram_business_manage_insights) Instagram ile giriş token'ında olduğu için önce IG_TOKEN denenir."""
     version = cfg.get('api_version', 'v24.0')
     fb_token = os.environ.get('FB_TOKEN', '').strip()
     token = os.environ.get('IG_TOKEN', '').strip()
+    if prefer == 'fb':
+        token, fb_token = '', fb_token
+    if token and prefer == 'ig':
+        try:
+            api = Api(token, version)
+            me = api.call('GET', 'me', {'fields': 'user_id,username'})
+            print('Bağlantı: Instagram ile giriş (IG_TOKEN)')
+            return api, me.get('user_id') or me.get('id')
+        except RuntimeError as e:
+            print(f'(Not) IG_TOKEN ile bağlanılamadı, FB_TOKEN deneniyor: {e}')
     if fb_token and cfg.get('facebook_login'):
         fapi = Api(fb_token, version, 'graph.facebook.com')
         want = cfg.get('ig_username', 'lingoof.app').lstrip('@').lower()
@@ -82,12 +95,15 @@ def media_insights(api, mid, metrics):
         return metric_values(raw)
     except RuntimeError as e:
         errors.append(f'toplu istek: {str(e)[:300]}')
+        if '(#10)' in str(e):
+            return {}
     out = {}
     for m in wanted:
         try:
             out.update(metric_values(api.call('GET', f'{mid}/insights', {'metric': m})))
         except RuntimeError as e:
-            if 'not supported' in str(e).lower() or 'invalid' in str(e).lower() or '(#100)' in str(e):
+            errors.append(f'{m}: {str(e)[:300]}')
+            if 'not supported' in str(e).lower() or '(#100)' in str(e):
                 unsupported.add(m)
     return out
 
@@ -109,7 +125,8 @@ def account_summary(api, ig_id):
                 params['breakdown'] = 'follow_type'
             try:
                 vals.update(metric_values(api.call('GET', f'{ig_id}/insights', params)))
-            except RuntimeError:
+            except RuntimeError as e:
+                errors.append(f'hesap {m}: {str(e)[:300]}')
                 continue
         info[f'son_{days}_gun'] = vals
     return info
@@ -191,6 +208,10 @@ def main():
                 f.write(json.dumps(s, ensure_ascii=False) + '\n')
     write_report(media_out, account, now)
     print(f'{len(media_out)} gönderi okundu, {len(new_snaps)} yeni ölçüm kaydı. Takipçi: {account.get("followers_count")}')
+    for e in sorted(set(errors))[:12]:
+        print(f'(Hata örneği) {e}')
+    if errors and all('(#10)' in e or 'permission' in e.lower() for e in errors):
+        print('::warning title=İstatistik izni yok::Token istatistik iznine sahip değil. Meta uygulamasında instagram_business_manage_insights iznini ekleyip yeni token üretin ve IG_TOKEN secret\'ını güncelleyin.')
 
 
 def write_report(media_out, account, now):
