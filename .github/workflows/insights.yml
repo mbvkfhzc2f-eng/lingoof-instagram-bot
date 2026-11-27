@@ -27,6 +27,7 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           FB_TOKEN: ${{ secrets.FB_TOKEN }}
+          INSIGHTS_DEBUG: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: python3 insights.py
 
       - name: Kaydet

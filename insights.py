@@ -75,9 +75,13 @@ def media_insights(api, mid, metrics):
     """Önce hepsini birden ister; desteklenmeyen bir metrik tüm isteği bozarsa tek tek dener ve desteklenmeyeni not eder."""
     wanted = [m for m in metrics if m not in unsupported]
     try:
-        return metric_values(api.call('GET', f'{mid}/insights', {'metric': ','.join(wanted)}))
-    except RuntimeError:
-        pass
+        raw = api.call('GET', f'{mid}/insights', {'metric': ','.join(wanted)})
+        if os.environ.get('INSIGHTS_DEBUG') and not debug_shown:
+            debug_shown.append(1)
+            print('(Ham yanıt örneği) ' + json.dumps(raw, ensure_ascii=False)[:1500])
+        return metric_values(raw)
+    except RuntimeError as e:
+        errors.append(f'toplu istek: {str(e)[:300]}')
     out = {}
     for m in wanted:
         try:
