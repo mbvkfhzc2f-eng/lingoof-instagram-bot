@@ -33,7 +33,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo('Europe/Istanbul')
 CAPTION_MAX = 2200            # Instagram açıklama sınırı
-HASHTAG_MAX = 30
+HASHTAG_MAX = 5               # Instagram Aralık 2025'ten beri gönderi başına en fazla 5 hashtag'e izin veriyor
 CAROUSEL_MIN, CAROUSEL_MAX = 2, 10
 MAX_TRIES = 3                 # aynı gönderi bu kadar kez hata verirse atlanır
 
@@ -119,13 +119,21 @@ def files_of(post):
     return media + ([post['cover']] if post.get('cover') else []) + ([post['media_fallback']] if post.get('media_fallback') else [])
 
 
+def hashtags(cap):
+    """Açıklamadaki gerçek hashtag'ler: # işaretinden sonra en az bir harf gelen kelimeler (#1, #2 gibi sayılar sayılmaz)."""
+    import re
+    return re.findall(r'#\w*[^\W\d_]\w*', cap)
+
+
 def check_post(post):
     """Gönderinin biçimini kontrol eder; sorun varsa açıklamasını döndürür."""
     cap = post.get('caption', '')
     if len(cap) > CAPTION_MAX:
         return f'açıklama {len(cap)} karakter (sınır {CAPTION_MAX})'
-    if cap.count('#') > HASHTAG_MAX:
-        return f'açıklamada {cap.count("#")} hashtag var (sınır {HASHTAG_MAX})'
+    if len(hashtags(cap)) > HASHTAG_MAX:
+        return f'açıklamada {len(hashtags(cap))} hashtag var (sınır {HASHTAG_MAX})'
+    if post.get('collaborators') and (not isinstance(post['collaborators'], list) or len(post['collaborators']) > 3):
+        return 'collaborators en fazla 3 kullanıcı adından oluşan bir liste olmalı'
     if post['kind'] == 'reels':
         if not isinstance(post['media'], str) or not post['media'].lower().endswith(('.mp4', '.mov')):
             return 'reels için tek bir .mp4 ya da .mov dosyası gerekli'
@@ -213,8 +221,13 @@ def pick_audio(api, ig_id, post, state, cfg):
 def build(api, ig_id, post, base, timeout, audio=None, media=None):
     """Gönderinin hazırlık kaydını oluşturur ve işlenmesini bekler; yayınlamaz. Kayıt kimliğini döndürür."""
     cap = post.get('caption', '')
+    extra = {}
+    if post.get('collaborators'):  # ortak gönderi: davet edilen hesap kabul edince iki profilde ve iki kitlede görünür
+        extra['collaborators'] = json.dumps([u.lstrip('@') for u in post['collaborators']])
+    if post.get('location_id'):
+        extra['location_id'] = str(post['location_id'])
     if post['kind'] == 'reels':
-        params = {'media_type': 'REELS', 'video_url': base + (media or post['media']), 'caption': cap}
+        params = {'media_type': 'REELS', 'video_url': base + (media or post['media']), 'caption': cap, **extra}
         if post.get('trial'):  # deneme reels: önce takipçi olmayanlara gösterilir
             params['trial_params'] = json.dumps({'graduation_strategy': post['trial']})
         else:
@@ -232,14 +245,34 @@ def build(api, ig_id, post, base, timeout, audio=None, media=None):
         wait_ready(api, cid, timeout)
         return cid
     children = []
-    for f in post['media']:
-        c = api.call('POST', f'{ig_id}/media', {'image_url': base + f, 'is_carousel_item': 'true'})['id']
+    alts = post.get('alt_texts') or []
+    for i, f in enumerate(post['media']):
+        item = {'image_url': base + f, 'is_carousel_item': 'true'}
+        alt = alts[i] if i < len(alts) else post.get('alt_text')
+        if alt:  # erişilebilirlik ve arama için görsel açıklaması
+            item['alt_text'] = alt[:1000]
+        try:
+            c = api.call('POST', f'{ig_id}/media', item)['id']
+        except RuntimeError:
+            if 'alt_text' not in item:
+                raise
+            item.pop('alt_text')        # alan bu API sürümünde kabul edilmezse görsel alt metinsiz gider
+            c = api.call('POST', f'{ig_id}/media', item)['id']
         children.append(c)
     for c in children:
         wait_ready(api, c, 180)
-    cid = api.call('POST', f'{ig_id}/media', {'media_type': 'CAROUSEL', 'children': ','.join(children), 'caption': cap})['id']
+    cid = api.call('POST', f'{ig_id}/media', {'media_type': 'CAROUSEL', 'children': ','.join(children), 'caption': cap, **extra})['id']
     wait_ready(api, cid, 180)
     return cid
+
+
+def post_story(api, ig_id, post, base, timeout):
+    """Yayınlanan reels'i takipçilerin Story akışında da gösterir (deneme reels'te yapılmaz: onlar önce takipçi olmayanlara gider).
+    Fon müzikli sürüm varsa o kullanılır, çünkü Story'ye Instagram müziği eklenemiyor. Hata olursa ana gönderi etkilenmez."""
+    video = post.get('media_fallback') or post['media']
+    cid = api.call('POST', f'{ig_id}/media', {'media_type': 'STORIES', 'video_url': base + video})['id']
+    wait_ready(api, cid, timeout)
+    return api.call('POST', f'{ig_id}/media_publish', {'creation_id': cid})['id']
 
 
 def report(title, msg, level='error'):
@@ -412,7 +445,8 @@ def main():
 
     grace = timedelta(hours=float(cfg.get('grace_hours', 6)))
     done = set(state['posted']) | {str(n) for n in state['skipped']}
-    pending = sorted((p for p in posts if str(p['n']) not in done), key=slot_time)
+    # "hold": true olan gönderiler beklemede: paylaşılmaz, atlanmış da sayılmaz (yeniden render ya da sonraki dönem için)
+    pending = sorted((p for p in posts if str(p['n']) not in done and not p.get('hold')), key=slot_time)
     due = [p for p in pending if slot_time(p) <= now]
     fresh = [p for p in due if now - slot_time(p) <= grace]
     stale = [p for p in due if p not in fresh]
@@ -500,6 +534,12 @@ def main():
         entry['permalink'] = api.call('GET', media_id, {'fields': 'permalink'}).get('permalink')
     except RuntimeError:
         pass
+    if post['kind'] == 'reels' and not post.get('trial') and post.get('story', cfg.get('story_after_reel', False)):
+        try:
+            entry['story'] = post_story(api, ig_id, post, base, timeout)
+            print(f'Story olarak da paylaşıldı: {entry["story"]}')
+        except RuntimeError as e:
+            report('Story paylaşılamadı', f'#{post["n"]}: {e}', 'warning')
     state['posted'][str(post['n'])] = entry
     state.get('failures', {}).pop(str(post['n']), None)
     if cfg.get('cleanup_after_post', True):

@@ -1,0 +1,41 @@
+name: Instagram istatistikleri
+
+# Her 6 saatte bir gönderilerin istatistiklerini okur; insights.md, insights_latest.json ve insights.jsonl dosyalarını
+# günceller. Hiçbir şey paylaşmaz.
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-bot
+  cancel-in-progress: false
+
+jobs:
+  insights:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: İstatistikleri oku
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_TOKEN: ${{ secrets.FB_TOKEN }}
+        run: python3 insights.py
+
+      - name: Kaydet
+        run: |
+          git config user.name "lingoof-bot"
+          git config user.email "lingoof-bot@users.noreply.github.com"
+          touch insights.jsonl
+          git add insights.md insights_latest.json insights.jsonl
+          if ! git diff --cached --quiet; then
+            git commit -m "İstatistikler"
+            for i in 1 2 3; do git push && break; git pull --rebase; done
+          fi

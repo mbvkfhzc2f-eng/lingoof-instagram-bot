@@ -26,7 +26,8 @@
   "cover": "2026-11-15/kapak.jpg",
   "music_id": "423124700418880",
   "music_title": "Good Vibes · Giulio Cercato",
-  "media_fallback": "2026-11-15/reels_muzikli.mp4"
+  "media_fallback": "2026-11-15/reels_muzikli.mp4",
+  "duration_s": 32.2
  },
  {
   "n": 3,
@@ -55,7 +56,8 @@
   "cover": "2026-11-16/kapak.jpg",
   "music_id": "1418611098781784",
   "music_title": "Too Cool · Giulio Cercato",
-  "media_fallback": "2026-11-16/reels_muzikli.mp4"
+  "media_fallback": "2026-11-16/reels_muzikli.mp4",
+  "duration_s": 40.6
  },
  {
   "n": 5,
@@ -85,7 +87,8 @@
   "cover": "2026-11-17/kapak.jpg",
   "music_id": "8344195318938437",
   "music_title": "Good Day · Alex Blue",
-  "media_fallback": "2026-11-17/reels_muzikli.mp4"
+  "media_fallback": "2026-11-17/reels_muzikli.mp4",
+  "duration_s": 30.0
  },
  {
   "n": 7,
@@ -115,7 +118,8 @@
   "music_id": "8856427164403238",
   "music_title": "Fail Fiesta · Giulio Cercato",
   "media_fallback": "2026-11-18/reels_muzikli.mp4",
-  "trial": "SS_PERFORMANCE"
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 26.7
  },
  {
   "n": 9,
@@ -144,7 +148,8 @@
   "cover": "2026-11-19/kapak.jpg",
   "music_id": "375041336265506",
   "music_title": "Fizzle Dizzle · Global Genius",
-  "media_fallback": "2026-11-19/reels_muzikli.mp4"
+  "media_fallback": "2026-11-19/reels_muzikli.mp4",
+  "duration_s": 23.5
  },
  {
   "n": 11,
@@ -174,7 +179,8 @@
   "music_id": "321349299885697",
   "music_title": "Clown Car Confusion · Global Genius",
   "media_fallback": "2026-11-20/reels_muzikli.mp4",
-  "trial": "SS_PERFORMANCE"
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 22.7
  },
  {
   "n": 13,
@@ -204,7 +210,22 @@
   "cover": "2026-11-21/kapak.jpg",
   "music_id": "1511880570018285",
   "music_title": "You Got This · Ecklectic Music",
-  "media_fallback": "2026-11-21/reels_muzikli.mp4"
+  "media_fallback": "2026-11-21/reels_muzikli.mp4",
+  "duration_s": 25.5
+ },
+ {
+  "n": 16,
+  "date": "2026-11-22",
+  "time": "07:45",
+  "kind": "reels",
+  "title": "s_2026-11-22",
+  "media": "2026-11-22/reels.mp4",
+  "caption": "Bugün YDS günü 🍀 Sınava giriş belgen ve kimliğin yanında mı? Saat 10.00'dan sonra binaya alınmıyorsun!\n\nYou've got this! 💜 Sınavdan çıkınca nasıl geçtiğini yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydsadayları",
+  "cover": "2026-11-22/kapak.jpg",
+  "music_id": "1744712439298788",
+  "music_title": "Be Creative · Giulio Cercato",
+  "media_fallback": "2026-11-22/reels_muzikli.mp4",
+  "duration_s": 19.1
  },
  {
   "n": 15,
@@ -222,19 +243,6 @@
    "2026-11-22/07.jpg"
   ],
   "caption": "YDS bitti ama İngilizce bitmedi 💜 Sınav sonrası 5 günlük mini plan: her gün sadece 15 dakika. Sonuçlar 10 Aralık'ta açıklanacak.\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydshazırlık"
- },
- {
-  "n": 16,
-  "date": "2026-11-22",
-  "time": "07:45",
-  "kind": "reels",
-  "title": "s_2026-11-22",
-  "media": "2026-11-22/reels.mp4",
-  "caption": "Bugün YDS günü 🍀 Sınava giriş belgen ve kimliğin yanında mı? Saat 10.00'dan sonra binaya alınmıyorsun!\n\nYou've got this! 💜 Sınavdan çıkınca nasıl geçtiğini yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #yds #ydsadayları",
-  "cover": "2026-11-22/kapak.jpg",
-  "music_id": "1744712439298788",
-  "music_title": "Be Creative · Giulio Cercato",
-  "media_fallback": "2026-11-22/reels_muzikli.mp4"
  },
  {
   "n": 17,
@@ -263,7 +271,8 @@
   "cover": "2026-11-23/kapak.jpg",
   "music_id": "2410807962410879",
   "music_title": "Why Not Today · Sleeping Lion",
-  "media_fallback": "2026-11-23/reels_muzikli.mp4"
+  "media_fallback": "2026-11-23/reels_muzikli.mp4",
+  "duration_s": 19.2
  },
  {
   "n": 19,
@@ -290,7 +299,8 @@
   "cover": "2026-11-24/kapak.jpg",
   "music_id": "1519015175461186",
   "music_title": "Happy · half.cool",
-  "media_fallback": "2026-11-24/reels_muzikli.mp4"
+  "media_fallback": "2026-11-24/reels_muzikli.mp4",
+  "duration_s": 26.7
  },
  {
   "n": 21,
@@ -320,7 +330,8 @@
   "cover": "2026-11-25/kapak.jpg",
   "music_id": "417003198161987",
   "music_title": "Cook It · Giulio Cercato",
-  "media_fallback": "2026-11-25/reels_muzikli.mp4"
+  "media_fallback": "2026-11-25/reels_muzikli.mp4",
+  "duration_s": 24.9
  },
  {
   "n": 23,
@@ -350,7 +361,8 @@
   "cover": "2026-11-26/kapak.jpg",
   "music_id": "932486288340954",
   "music_title": "Moment · Global Genius",
-  "media_fallback": "2026-11-26/reels_muzikli.mp4"
+  "media_fallback": "2026-11-26/reels_muzikli.mp4",
+  "duration_s": 27.5
  },
  {
   "n": 25,
@@ -378,7 +390,8 @@
   "cover": "2026-11-27/kapak.jpg",
   "music_id": "339520405260371",
   "music_title": "Dance · Chela Rivas",
-  "media_fallback": "2026-11-27/reels_muzikli.mp4"
+  "media_fallback": "2026-11-27/reels_muzikli.mp4",
+  "duration_s": 38.0
  },
  {
   "n": 27,
@@ -395,7 +408,7 @@
    "2026-11-28/06.jpg",
    "2026-11-28/07.jpg"
   ],
-  "caption": "in, on, at ile zaman: 4 soruluk mini test ⏰ Ay ve yıl için in, gün için on, saat için at. Kaç doğru yaptın?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "in, on, at ile zaman: 4 soruluk mini test ⏰ Ay ve yıl için in, gün için on, saat için at. Kaç doğru yaptın?\n\n#ingilizcegramer #ingilizcetest #ingilizceöğren #lingoof"
  },
  {
   "n": 28,
@@ -404,16 +417,42 @@
   "kind": "reels",
   "title": "POV",
   "media": "2026-11-28/reels.mp4",
-  "caption": "POV: Taksim'de bir turist sana yol soruyor 🗺️😳\n\nWalk down İstiklal Avenue… Sen de yol tarif edebilir misin? İngilizce yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #pov #ingilizcekonuşma",
+  "caption": "POV: Taksim'de bir turist sana yol soruyor 🗺️😳\n\nWalk down İstiklal Avenue… Sen de yol tarif edebilir misin? İngilizce yaz 👇\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
   "cover": "2026-11-28/kapak.jpg",
   "music_id": "1433042528097707",
   "music_title": "Main Character · stereogully",
   "media_fallback": "2026-11-28/reels_muzikli.mp4",
-  "trial": "SS_PERFORMANCE"
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 22.0
+ },
+ {
+  "n": 30,
+  "date": "2026-11-29",
+  "time": "19:30",
+  "kind": "reels",
+  "title": "hazir_2026-11-29",
+  "media": "2026-11-29/reels.mp4",
+  "caption": "Kafede İngilizce sipariş vermek = boss savaşı ☕⚔️\n\nCan I get a latte, please? ile başla, gerisi gelir.\n\nSen kafede İngilizce sipariş verdin mi? 👇\n\nBu konuşmaları LINGOOF'ta Goof'la sesli prova edebilirsin; iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
+  "cover": "2026-11-29/kapak.jpg",
+  "duration_s": 20.2
+ },
+ {
+  "n": 52,
+  "date": "2026-11-30",
+  "time": "19:30",
+  "kind": "reels",
+  "title": "POV",
+  "media": "2026-12-10/reels.mp4",
+  "caption": "POV: Hoca “Any questions?” dediğinde 🙋😳\n\nCould you say that again? · What does … mean?\nSoru sormak bu kadar kolay. Kaydet, derste lazım!\n\n#ingilizcekonuşma #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-10/kapak.jpg",
+  "music_id": "622819303274042",
+  "music_title": "Good Time · Alex Blue",
+  "media_fallback": "2026-12-10/reels_muzikli.mp4",
+  "duration_s": 20.6
  },
  {
   "n": 29,
-  "date": "2026-11-29",
+  "date": "2026-12-01",
   "time": "12:30",
   "kind": "carousel",
   "title": "kafe-8",
@@ -424,45 +463,7 @@
    "2026-11-29/04.jpg",
    "2026-11-29/05.jpg"
   ],
-  "caption": "Kafede İngilizce sipariş vermek için 8 kalıp ☕ İpucu: 'I want' yerine 'Can I get…?' ya da 'Could I have…?' daha kibar.\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 30,
-  "date": "2026-11-29",
-  "time": "19:30",
-  "kind": "reels",
-  "title": "hazir_2026-11-29",
-  "media": "2026-11-29/reels.mp4",
-  "caption": "Kafede İngilizce sipariş vermek = boss savaşı ☕⚔️\n\nCan I get a latte, please? ile başla, gerisi gelir.\n\nSen kafede İngilizce sipariş verdin mi? 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekonuşma #kafe",
-  "cover": "2026-11-29/kapak.jpg"
- },
- {
-  "n": 31,
-  "date": "2026-11-30",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "yalanci-8",
-  "media": [
-   "2026-11-30/01.jpg",
-   "2026-11-30/02.jpg",
-   "2026-11-30/03.jpg",
-   "2026-11-30/04.jpg"
-  ],
-  "caption": "Türkçeye benzeyen ama bambaşka anlama gelen 8 kelime 🤥 sympathetic 'sempatik' değil, 'anlayışlı'! Bildiğin başka yalancı kelime var mı?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 32,
-  "date": "2026-11-30",
-  "time": "19:30",
-  "kind": "reels",
-  "title": "Yalancı kelimeler",
-  "media": "2026-11-30/reels.mp4",
-  "caption": "Bu kelimeler seni kandırıyor 🤥 #1\n\nSempatik ≠ sympathetic ✕\nSempatik = likeable ✓\n\nBildiğin başka yalancı kelime var mı? Yorumlara yaz! 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #yalancıkelimeler",
-  "cover": "2026-11-30/kapak.jpg",
-  "music_id": "589255880851305",
-  "music_title": "Smile · Giulio Cercato",
-  "media_fallback": "2026-11-30/reels_muzikli.mp4",
-  "trial": "SS_PERFORMANCE"
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nKafede İngilizce sipariş vermek için 8 kalıp ☕ İpucu: 'I want' yerine 'Can I get…?' ya da 'Could I have…?' daha kibar.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
   "n": 33,
@@ -478,24 +479,41 @@
    "2026-12-01/05.jpg",
    "2026-12-01/06.jpg"
   ],
-  "caption": "Aralık geldi ❄️ Hava durumunu, kış giysilerini ve kış keyfini anlatan 12 kelime. Kaydet, en sevdiğin kış kelimesini yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Aralık geldi ❄️ Hava durumunu, kış giysilerini ve kış keyfini anlatan 12 kelime. Kaydet, en sevdiğin kış kelimesini yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 34,
+  "n": 32,
   "date": "2026-12-01",
+  "time": "20:30",
+  "kind": "reels",
+  "title": "Yalancı kelimeler",
+  "media": "2026-11-30/reels.mp4",
+  "caption": "Bu kelimeler seni kandırıyor 🤥\n\nSempatik ≠ sympathetic ✕\nSempatik = likeable ✓\n\nBildiğin başka yalancı kelime var mı? Yorumlara yaz! 👇\n\n#ingilizcekelime #yalancıkelimeler #ingilizceöğren #lingoof",
+  "cover": "2026-11-30/kapak.jpg",
+  "music_id": "589255880851305",
+  "music_title": "Smile · Giulio Cercato",
+  "media_fallback": "2026-11-30/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 20.0
+ },
+ {
+  "n": 58,
+  "date": "2026-12-02",
   "time": "19:30",
   "kind": "reels",
-  "title": "Hatayı bul",
-  "media": "2026-12-01/reels.mp4",
-  "caption": "Hatayı bul #3 👀 Bu cümlede 1 hata var:\n\n“I have 25 years old.” ✕\n“I am 25 years old.” ✓\n\nSen bildin mi? Yorumlara yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcegramer #ingilizcehataları",
-  "cover": "2026-12-01/kapak.jpg",
-  "music_id": "912937830269606",
-  "music_title": "Lofi Return · half.cool",
-  "media_fallback": "2026-12-01/reels_muzikli.mp4"
+  "title": "POV",
+  "media": "2026-12-13/reels.mp4",
+  "caption": "POV: Telefonla masa ayırtıyorsun 📞😰\n\nI'd like to book a table for two.\nTelefonda İngilizce konuşmak seni de geriyor mu? 👇\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
+  "cover": "2026-12-13/kapak.jpg",
+  "music_id": "1388161098514399",
+  "music_title": "Happy Days · Giulio Cercato",
+  "media_fallback": "2026-12-13/reels_muzikli.mp4",
+  "duration_s": 30.1
  },
  {
   "n": 35,
-  "date": "2026-12-02",
+  "date": "2026-12-03",
   "time": "12:30",
   "kind": "carousel",
   "title": "havalimani-12",
@@ -506,20 +524,7 @@
    "2026-12-02/04.jpg",
    "2026-12-02/05.jpg"
   ],
-  "caption": "Havalimanında lazım olan 12 İngilizce kalıp ✈️ Check-in, pasaport kontrolü ve bagaj. Goof'un Londra macerası da bugün başlıyor!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 36,
-  "date": "2026-12-02",
-  "time": "19:30",
-  "kind": "reels",
-  "title": "Goof Londra'da",
-  "media": "2026-12-02/reels.mp4",
-  "caption": "Goof Londra'da · Bölüm 1 ✈️ Pasaport kontrolü!\n\nWhat's the purpose of your visit? — I'm here on holiday.\nSıradaki bölüm: otel 🏨 Takip et, kaçırma!\n\n#ingilizce #ingilizceöğren #lingoof #londra #seyahatingilizcesi",
-  "cover": "2026-12-02/kapak.jpg",
-  "music_id": "593371403855914",
-  "music_title": "Go Go Go · T.H.E.",
-  "media_fallback": "2026-12-02/reels_muzikli.mp4"
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nHavalimanında lazım olan 12 İngilizce kalıp ✈️ Check-in, pasaport kontrolü ve bagaj. Goof'un Londra macerası da bugün başlıyor!\n\nBu konuşmaları LINGOOF'ta Goof'la sesli prova edebilirsin; iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
   "n": 37,
@@ -534,101 +539,80 @@
    "2026-12-03/04.jpg",
    "2026-12-03/05.jpg"
   ],
-  "caption": "Yazılıyor ama okunmuyor 🤫 knife, island, hour, Wednesday... 12 kelimede sessiz harfler. Hangisini biliyordun?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Yazılıyor ama okunmuyor 🤫 knife, island, hour, Wednesday... 12 kelimede sessiz harfler. Hangisini biliyordun?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 38,
+  "n": 36,
   "date": "2026-12-03",
+  "time": "20:30",
+  "kind": "reels",
+  "title": "Goof Londra'da",
+  "media": "2026-12-02/reels.mp4",
+  "caption": "Goof Londra'da · Bölüm 1 ✈️ Pasaport kontrolü!\n\nWhat's the purpose of your visit? — I'm here on holiday.\nSıradaki bölüm: otel 🏨 Takip et, kaçırma!\n\n#londra #yurtdışı #ingilizcekonuşma #lingoof",
+  "cover": "2026-12-02/kapak.jpg",
+  "music_id": "593371403855914",
+  "music_title": "Go Go Go · T.H.E.",
+  "media_fallback": "2026-12-02/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 29.4
+ },
+ {
+  "n": 72,
+  "date": "2026-12-04",
   "time": "19:30",
   "kind": "reels",
-  "title": "s_2026-12-03",
-  "media": "2026-12-03/reels.mp4",
-  "caption": "Bu 4 kelimeyi yıllardır yanlış söylüyor olabilirsin 👂\n\ncomfortable · vegetable · chocolate · clothes\nSesini aç, hangisini yanlış biliyordun? 👇\n\n#ingilizce #ingilizceöğren #lingoof #telaffuz #ingilizcekelimeler",
-  "cover": "2026-12-03/kapak.jpg",
-  "music_id": "544713431841568",
-  "music_title": "Lofi Street · bbox",
-  "media_fallback": "2026-12-03/reels_muzikli.mp4"
+  "title": "POV",
+  "media": "2026-12-20/reels.mp4",
+  "caption": "POV: Restoranda hesabı istiyorsun 🧾\n\nCould we get the bill, please?\n— Together or separately? 😳 Kim ısmarlıyor?! 👇\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
+  "cover": "2026-12-20/kapak.jpg",
+  "music_id": "1198038750753302",
+  "music_title": "Run It Up · SugarBeats",
+  "media_fallback": "2026-12-20/reels_muzikli.mp4",
+  "duration_s": 22.0
  },
  {
-  "n": 39,
-  "date": "2026-12-04",
+  "n": 31,
+  "date": "2026-12-05",
   "time": "12:30",
   "kind": "carousel",
-  "title": "small-talk",
+  "title": "yalanci-8",
   "media": [
-   "2026-12-04/01.jpg",
-   "2026-12-04/02.jpg",
-   "2026-12-04/03.jpg",
-   "2026-12-04/04.jpg",
-   "2026-12-04/05.jpg"
+   "2026-11-30/01.jpg",
+   "2026-11-30/02.jpg",
+   "2026-11-30/03.jpg",
+   "2026-11-30/04.jpg"
   ],
-  "caption": "Small talk korkusu bitsin 💬 Tanışırken ve sohbeti sürdürürken kullanabileceğin sorular ve doğal cevaplar. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Türkçeye benzeyen ama bambaşka anlama gelen 8 kelime 🤥 sympathetic 'sempatik' değil, 'anlayışlı'! Bildiğin başka yalancı kelime var mı?\n\n#ingilizcekelime #yalancıkelimeler #ingilizceöğren #lingoof"
  },
  {
   "n": 40,
-  "date": "2026-12-04",
-  "time": "19:30",
+  "date": "2026-12-05",
+  "time": "20:30",
   "kind": "reels",
   "title": "Ders kitabı vs gerçek hayat",
   "media": "2026-12-04/reels.mp4",
-  "caption": "Ders kitabı İngilizcesi vs gerçek hayat 📘😎 #2\n\n“Can I borrow your pen?”\n📘 Yes, you can borrow my pen.\n😎 Sure, here you go!\n\nSen hangisini kullanıyorsun? Yorumlara yaz! 👇\n\n#ingilizce #ingilizceöğren #lingoof #günlükingilizce #ingilizcekonuşma",
+  "caption": "Ders kitabı İngilizcesi vs gerçek hayat 📘😎\n\n“Can I borrow your pen?”\n📘 Yes, you can borrow my pen.\n😎 Sure, here you go!\n\nSen hangisini kullanıyorsun? Yorumlara yaz! 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
   "cover": "2026-12-04/kapak.jpg",
   "music_id": "5996085227156818",
   "music_title": "In A Pickle (Instrumental) · Neko Fuzz",
-  "media_fallback": "2026-12-04/reels_muzikli.mp4"
+  "media_fallback": "2026-12-04/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 26.7
  },
  {
-  "n": 41,
-  "date": "2026-12-05",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "otel-8",
-  "media": [
-   "2026-12-05/01.jpg",
-   "2026-12-05/02.jpg",
-   "2026-12-05/03.jpg",
-   "2026-12-05/04.jpg"
-  ],
-  "caption": "Otelde lazım olan 8 İngilizce kalıp 🏨 Rezervasyon, kahvaltı, geç çıkış ve küçük ricalar. Goof'un Londra macerası Bölüm 2 reels'te!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 42,
-  "date": "2026-12-05",
-  "time": "19:30",
-  "kind": "reels",
-  "title": "Goof Londra'da",
-  "media": "2026-12-05/reels.mp4",
-  "caption": "Goof Londra'da · Bölüm 2 🏨 Otelde check-in!\n\nI have a reservation under the name… = … adına rezervasyonum var.\nSıradaki bölüm: metro 🚇\n\n#ingilizce #ingilizceöğren #lingoof #londra #seyahatingilizcesi",
-  "cover": "2026-12-05/kapak.jpg",
-  "music_id": "227413921723384",
-  "music_title": "Llama, Llama · Kolektivo",
-  "media_fallback": "2026-12-05/reels_muzikli.mp4"
- },
- {
-  "n": 43,
-  "date": "2026-12-06",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "phrasal-quiz",
-  "media": [
-   "2026-12-06/01.jpg",
-   "2026-12-06/02.jpg",
-   "2026-12-06/03.jpg",
-   "2026-12-06/04.jpg",
-   "2026-12-06/05.jpg",
-   "2026-12-06/06.jpg"
-  ],
-  "caption": "Phrasal verb testi 🧠 look after, run out of, give up: anlamlarını tahmin et, cevaplar son sayfada. Kaç doğru yaptın?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 44,
+  "n": 46,
   "date": "2026-12-06",
   "time": "19:30",
   "kind": "reels",
-  "title": "hazir_2026-12-06",
-  "media": "2026-12-06/reels.mp4",
-  "caption": "Telaffuz düellosu 🎤 Bu 4 kelimeyi doğru söyleyebilir misin?\n\nİlki: colonel 😳 Önce sesli söyle, sonra cevabı dinle.\nKaç tanesini bildin? Yorumlara yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #telaffuz #ingilizcekonuşma",
-  "cover": "2026-12-06/kapak.jpg"
+  "title": "Nasıl dersin?",
+  "media": "2026-12-07/reels.mp4",
+  "caption": "“Afiyet olsun” İngilizcede nasıl denir? 🍽️\n\nEnjoy your meal! · Bon appétit! · Dig in!\nSofrada en samimisi: Dig in 😄 Kaydet!\n\nLINGOOF'ta günlük İngilizceyi Goof'la sesli konuşarak öğren; iPhone'da ücretsiz, link profilde.\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-07/kapak.jpg",
+  "music_id": "439644919922299",
+  "music_title": "LALALA · Giulio Cercato",
+  "media_fallback": "2026-12-07/reels_muzikli.mp4",
+  "duration_s": 15.9
  },
  {
   "n": 45,
@@ -643,20 +627,37 @@
    "2026-12-07/04.jpg",
    "2026-12-07/05.jpg"
   ],
-  "caption": "Yemekle ilgili 8 İngilizce deyim 🍰 'a piece of cake' çok kolay, 'butter someone up' yağ çekmek! Hangisi favorin?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Yemekle ilgili 8 İngilizce deyim 🍰 'a piece of cake' çok kolay, 'butter someone up' yağ çekmek! Hangisi favorin?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 46,
+  "n": 60,
   "date": "2026-12-07",
   "time": "19:30",
   "kind": "reels",
   "title": "Nasıl dersin?",
-  "media": "2026-12-07/reels.mp4",
-  "caption": "“Afiyet olsun” İngilizcede nasıl denir? 🍽️\n\nEnjoy your meal! · Bon appétit! · Dig in!\nSofrada en samimisi: Dig in 😄 Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #nasıldersin #günlükingilizce",
-  "cover": "2026-12-07/kapak.jpg",
-  "music_id": "439644919922299",
-  "music_title": "LALALA · Giulio Cercato",
-  "media_fallback": "2026-12-07/reels_muzikli.mp4"
+  "media": "2026-12-14/reels.mp4",
+  "caption": "“Geçmiş olsun” İngilizcede nasıl denir? 🤒\n\nGet well soon! · I hope you feel better soon. · Sorry to hear that.\nDuruma göre seç. Kaydet 📌\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-14/kapak.jpg",
+  "music_id": "351866282607327",
+  "music_title": "Wildflowers · Nick Gallant",
+  "media_fallback": "2026-12-14/reels_muzikli.mp4",
+  "duration_s": 15.6
+ },
+ {
+  "n": 39,
+  "date": "2026-12-08",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "small-talk",
+  "media": [
+   "2026-12-04/01.jpg",
+   "2026-12-04/02.jpg",
+   "2026-12-04/03.jpg",
+   "2026-12-04/04.jpg",
+   "2026-12-04/05.jpg"
+  ],
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nSmall talk korkusu bitsin 💬 Tanışırken ve sohbeti sürdürürken kullanabileceğin sorular ve doğal cevaplar. Kaydet!\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
   "n": 47,
@@ -673,20 +674,23 @@
    "2026-12-08/06.jpg",
    "2026-12-08/07.jpg"
   ],
-  "caption": "Present Simple mı, Present Continuous mu? Alışkanlıklar için simple, şu an olanlar için continuous. Know, like, want gibi fiillere dikkat!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Present Simple mı, Present Continuous mu? Alışkanlıklar için simple, şu an olanlar için continuous. Know, like, want gibi fiillere dikkat!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 48,
+  "n": 38,
   "date": "2026-12-08",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
-  "title": "Hatayı bul",
-  "media": "2026-12-08/reels.mp4",
-  "caption": "Hatayı bul #4 👀 Bu cümlede 1 hata var:\n\n“He don't like coffee.” ✕\n“He doesn't like coffee.” ✓\n\nSen bildin mi? Yorumlara yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcegramer #ingilizcehataları",
-  "cover": "2026-12-08/kapak.jpg",
-  "music_id": "1521369845848971",
-  "music_title": "Study In Style · ill Think in ink",
-  "media_fallback": "2026-12-08/reels_muzikli.mp4"
+  "title": "s_2026-12-03",
+  "media": "2026-12-03/reels.mp4",
+  "caption": "Bu 4 kelimeyi yıllardır yanlış söylüyor olabilirsin 👂\n\ncomfortable · vegetable · chocolate · clothes\nSesini aç, hangisini yanlış biliyordun? 👇\n\n#ingilizcetelaffuz #ingilizceöğren #lingoof",
+  "cover": "2026-12-03/kapak.jpg",
+  "music_id": "544713431841568",
+  "music_title": "Lofi Street · bbox",
+  "media_fallback": "2026-12-03/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 44.1
  },
  {
   "n": 49,
@@ -700,20 +704,36 @@
    "2026-12-09/03.jpg",
    "2026-12-09/04.jpg"
   ],
-  "caption": "Hayvanlı 8 İngilizce deyim 🐱 'when pigs fly' = balık kavağa çıkınca, 'kill two birds with one stone' = bir taşla iki kuş vurmak!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Hayvanlı 8 İngilizce deyim 🐱 'when pigs fly' = balık kavağa çıkınca, 'kill two birds with one stone' = bir taşla iki kuş vurmak!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 50,
+  "n": 74,
   "date": "2026-12-09",
   "time": "19:30",
   "kind": "reels",
-  "title": "Birebir çeviri",
-  "media": "2026-12-09/reels.mp4",
-  "caption": "Türkçe deyimleri BİREBİR çevirince 💀 #3\n\nKulağına küpe olsun. → Let it be an earring to your ear. ✕\nDoğrusu: Let that be a lesson to you. ✓\n\nYorumlara bir deyim yaz, ben çevireyim! 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcedeyimler #komik",
-  "cover": "2026-12-09/kapak.jpg",
-  "music_id": "1521900551730982",
-  "music_title": "Party In The Jungle · Chela Rivas",
-  "media_fallback": "2026-12-09/reels_muzikli.mp4"
+  "title": "Nasıl dersin?",
+  "media": "2026-12-21/reels.mp4",
+  "caption": "“Ellerine sağlık” İngilizcede nasıl denir? 🍲\n\nThis is delicious! · You're a great cook! · Thank you for the lovely meal.\nBir dahaki sofrada dene 💜\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-21/kapak.jpg",
+  "music_id": "423124700418880",
+  "music_title": "Good Vibes · Giulio Cercato",
+  "media_fallback": "2026-12-21/reels_muzikli.mp4",
+  "duration_s": 17.6
+ },
+ {
+  "n": 41,
+  "date": "2026-12-10",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "otel-8",
+  "media": [
+   "2026-12-05/01.jpg",
+   "2026-12-05/02.jpg",
+   "2026-12-05/03.jpg",
+   "2026-12-05/04.jpg"
+  ],
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nOtelde lazım olan 8 İngilizce kalıp 🏨 Rezervasyon, kahvaltı, geç çıkış ve küçük ricalar. Goof'un Londra macerası Bölüm 2 reels'te!\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
   "n": 51,
@@ -727,38 +747,23 @@
    "2026-12-10/03.jpg",
    "2026-12-10/04.jpg"
   ],
-  "caption": "Derste kullanabileceğin 8 İngilizce soru 🙋 'Could you say that again?' ve 'What does … mean?' ile başla. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Derste kullanabileceğin 8 İngilizce soru 🙋 'Could you say that again?' ve 'What does … mean?' ile başla. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 52,
+  "n": 42,
   "date": "2026-12-10",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
-  "title": "POV",
-  "media": "2026-12-10/reels.mp4",
-  "caption": "POV: Hoca “Any questions?” dediğinde 🙋😳\n\nCould you say that again? · What does … mean?\nSoru sormak bu kadar kolay. Kaydet, derste lazım!\n\n#ingilizce #ingilizceöğren #lingoof #pov #okul",
-  "cover": "2026-12-10/kapak.jpg",
-  "music_id": "622819303274042",
-  "music_title": "Good Time · Alex Blue",
-  "media_fallback": "2026-12-10/reels_muzikli.mp4",
-  "trial": "SS_PERFORMANCE"
- },
- {
-  "n": 53,
-  "date": "2026-12-11",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "turk-hatalar",
-  "media": [
-   "2026-12-11/01.jpg",
-   "2026-12-11/02.jpg",
-   "2026-12-11/03.jpg",
-   "2026-12-11/04.jpg",
-   "2026-12-11/05.jpg",
-   "2026-12-11/06.jpg",
-   "2026-12-11/07.jpg"
-  ],
-  "caption": "Türklerin en sık yaptığı 5 İngilizce hata 🙈 I am agree ✕, I have 25 years ✕, He don't ✕... Hata yapmak sorun değil, düzeltmek yeter. Sen hangisini yapıyordun?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "title": "Goof Londra'da",
+  "media": "2026-12-05/reels.mp4",
+  "caption": "Goof Londra'da · Bölüm 2 🏨 Otelde check-in!\n\nI have a reservation under the name… = … adına rezervasyonum var.\nSıradaki bölüm: metro 🚇\n\n#londra #yurtdışı #ingilizcekonuşma #lingoof",
+  "cover": "2026-12-05/kapak.jpg",
+  "music_id": "227413921723384",
+  "music_title": "Llama, Llama · Kolektivo",
+  "media_fallback": "2026-12-05/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 50.7
  },
  {
   "n": 54,
@@ -767,11 +772,28 @@
   "kind": "reels",
   "title": "Türk İngilizcesi",
   "media": "2026-12-11/reels.mp4",
-  "caption": "Türkçe düşünüp İngilizce konuşunca 🤯 #2\n\nOtobüsü kaçırdım. → I escaped the bus. ✕\nDoğrusu: I missed the bus. ✓\n\nSen de bunlardan birini yaptın mı? İtiraf et! 😄\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcehataları #komik",
+  "caption": "Türkçe düşünüp İngilizce konuşunca 🤯\n\nOtobüsü kaçırdım. → I escaped the bus. ✕\nDoğrusu: I missed the bus. ✓\n\nSen de bunlardan birini yaptın mı? İtiraf et! 😄\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
   "cover": "2026-12-11/kapak.jpg",
   "music_id": "594550719516913",
   "music_title": "Superhero Origin Story · Global Genius",
-  "media_fallback": "2026-12-11/reels_muzikli.mp4"
+  "media_fallback": "2026-12-11/reels_muzikli.mp4",
+  "duration_s": 22.9
+ },
+ {
+  "n": 43,
+  "date": "2026-12-12",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "phrasal-quiz",
+  "media": [
+   "2026-12-06/01.jpg",
+   "2026-12-06/02.jpg",
+   "2026-12-06/03.jpg",
+   "2026-12-06/04.jpg",
+   "2026-12-06/05.jpg",
+   "2026-12-06/06.jpg"
+  ],
+  "caption": "Phrasal verb testi 🧠 look after, run out of, give up: anlamlarını tahmin et, cevaplar son sayfada. Kaç doğru yaptın?\n\n#ingilizcegramer #ingilizcetest #ingilizceöğren #lingoof"
  },
  {
   "n": 55,
@@ -788,74 +810,68 @@
    "2026-12-12/06.jpg",
    "2026-12-12/07.jpg"
   ],
-  "caption": "Since mı, for mu? ⏳ Başlangıç anı için since (since 2020), süre için for (for five years). Sondaki 2 soruyu çöz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Since mı, for mu? ⏳ Başlangıç anı için since (since 2020), süre için for (for five years). Sondaki 2 soruyu çöz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 56,
+  "n": 66,
   "date": "2026-12-12",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
-  "title": "Yalancı kelimeler",
-  "media": "2026-12-12/reels.mp4",
-  "caption": "Bu kelimeler seni kandırıyor 🤥 #2\n\nKomik ≠ comic ✕\nKomik = funny ✓\n\nBildiğin başka yalancı kelime var mı? Yorumlara yaz! 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #yalancıkelimeler",
-  "cover": "2026-12-12/kapak.jpg",
-  "music_id": "2605991472998226",
-  "music_title": "Funny Us · Charlie Peacock",
-  "media_fallback": "2026-12-12/reels_muzikli.mp4"
+  "title": "s_2026-12-17",
+  "media": "2026-12-17/reels.mp4",
+  "caption": "-ed her zaman “ed” diye okunmaz 🔊\n\nworked /t/ · played /d/ · wanted /ıd/\nYorumlara bir fiil yaz, nasıl okunduğunu söyleyelim 👇\n\n#ingilizcetelaffuz #ingilizceöğren #lingoof",
+  "cover": "2026-12-17/kapak.jpg",
+  "music_id": "496700212782181",
+  "music_title": "Lofi Magic · Ella Joy Meir",
+  "media_fallback": "2026-12-17/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 46.2
  },
  {
-  "n": 57,
-  "date": "2026-12-13",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "telefon-8",
-  "media": [
-   "2026-12-13/01.jpg",
-   "2026-12-13/02.jpg",
-   "2026-12-13/03.jpg",
-   "2026-12-13/04.jpg"
-  ],
-  "caption": "Telefonda İngilizce konuşmak için 8 kalıp 📞 'Hold on a second', 'You're breaking up', 'I'll call you back'... Kaydet, telefon çalınca hazır ol!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 58,
+  "n": 64,
   "date": "2026-12-13",
   "time": "19:30",
   "kind": "reels",
-  "title": "POV",
-  "media": "2026-12-13/reels.mp4",
-  "caption": "POV: Telefonla masa ayırtıyorsun 📞😰\n\nI'd like to book a table for two.\nTelefonda İngilizce konuşmak seni de geriyor mu? 👇\n\n#ingilizce #ingilizceöğren #lingoof #pov #ingilizcekonuşma",
-  "cover": "2026-12-13/kapak.jpg",
-  "music_id": "1388161098514399",
-  "music_title": "Happy Days · Giulio Cercato",
-  "media_fallback": "2026-12-13/reels_muzikli.mp4"
+  "title": "Ders kitabı vs gerçek hayat",
+  "media": "2026-12-16/reels.mp4",
+  "caption": "Ders kitabı İngilizcesi vs gerçek hayat 📘😎\n\n“How's it going?”\n📘 It is going well, thank you.\n😎 Pretty good! You?\n\nSen hangisini kullanıyorsun? Yorumlara yaz! 👇\n\nLINGOOF'ta günlük İngilizceyi Goof'la sesli konuşarak öğren; iPhone'da ücretsiz, link profilde.\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-16/kapak.jpg",
+  "music_id": "8856427164403238",
+  "music_title": "Fail Fiesta · Giulio Cercato",
+  "media_fallback": "2026-12-16/reels_muzikli.mp4",
+  "duration_s": 23.3
  },
  {
-  "n": 59,
-  "date": "2026-12-14",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "doktor-8",
-  "media": [
-   "2026-12-14/01.jpg",
-   "2026-12-14/02.jpg",
-   "2026-12-14/03.jpg",
-   "2026-12-14/04.jpg"
-  ],
-  "caption": "Doktorda lazım olan 8 İngilizce kalıp 🩺 Randevu almak, şikâyetini anlatmak ve ilaç hakkında soru sormak için. Umarız hiç lazım olmaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 60,
+  "n": 68,
   "date": "2026-12-14",
   "time": "19:30",
   "kind": "reels",
-  "title": "Nasıl dersin?",
-  "media": "2026-12-14/reels.mp4",
-  "caption": "“Geçmiş olsun” İngilizcede nasıl denir? 🤒\n\nGet well soon! · I hope you feel better soon. · Sorry to hear that.\nDuruma göre seç. Kaydet 📌\n\n#ingilizce #ingilizceöğren #lingoof #nasıldersin #günlükingilizce",
-  "cover": "2026-12-14/kapak.jpg",
-  "music_id": "351866282607327",
-  "music_title": "Wildflowers · Nick Gallant",
-  "media_fallback": "2026-12-14/reels_muzikli.mp4"
+  "title": "Birebir çeviri",
+  "media": "2026-12-18/reels.mp4",
+  "caption": "Türkçe deyimleri BİREBİR çevirince 💀\n\nKafayı yedim. → I ate the head. ✕\nDoğrusu: I've lost my mind. ✓\n\nYorumlara bir deyim yaz, ben çevireyim! 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-18/kapak.jpg",
+  "music_id": "375041336265506",
+  "music_title": "Fizzle Dizzle · Global Genius",
+  "media_fallback": "2026-12-18/reels_muzikli.mp4",
+  "duration_s": 24.8
+ },
+ {
+  "n": 53,
+  "date": "2026-12-15",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "turk-hatalar",
+  "media": [
+   "2026-12-11/01.jpg",
+   "2026-12-11/02.jpg",
+   "2026-12-11/03.jpg",
+   "2026-12-11/04.jpg",
+   "2026-12-11/05.jpg",
+   "2026-12-11/06.jpg",
+   "2026-12-11/07.jpg"
+  ],
+  "caption": "Türklerin en sık yaptığı 5 İngilizce hata 🙈 I am agree ✕, I have 25 years ✕, He don't ✕... Hata yapmak sorun değil, düzeltmek yeter. Sen hangisini yapıyordun?\n\nGoof bu hataları uygulamada Türkçe açıklıyor; iPhone'da ücretsiz, link profilde.\n\n#ingilizcegramer #ingilizcetest #ingilizceöğren #lingoof"
  },
  {
   "n": 61,
@@ -872,20 +888,23 @@
    "2026-12-15/06.jpg",
    "2026-12-15/07.jpg"
   ],
-  "caption": "will mi, going to mu? 🔮 Anlık kararlar için will, önceden yapılmış planlar için going to. Kanıta dayalı tahminlerde de going to!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "will mi, going to mu? 🔮 Anlık kararlar için will, önceden yapılmış planlar için going to. Kanıta dayalı tahminlerde de going to!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 62,
+  "n": 70,
   "date": "2026-12-15",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
-  "title": "Hatayı bul",
-  "media": "2026-12-15/reels.mp4",
-  "caption": "Hatayı bul #5 👀 Bu cümlede 1 hata var:\n\n“I look forward to see you.” ✕\n“I look forward to seeing you.” ✓\n\nSen bildin mi? Yorumlara yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcegramer #ingilizcehataları",
-  "cover": "2026-12-15/kapak.jpg",
-  "music_id": "8344195318938437",
-  "music_title": "Good Day · Alex Blue",
-  "media_fallback": "2026-12-15/reels_muzikli.mp4"
+  "title": "Goof Londra'da",
+  "media": "2026-12-19/reels.mp4",
+  "caption": "Goof Londra'da · Bölüm 3 🚇 Mind the gap!\n\nWhich line goes to Westminster? · Do I need to change trains?\nSıradaki bölüm: Noel pazarı 🎄\n\n#londra #yurtdışı #ingilizcekonuşma #lingoof",
+  "cover": "2026-12-19/kapak.jpg",
+  "music_id": "2488847887958999",
+  "music_title": "Euphoria · Giulio Cercato",
+  "media_fallback": "2026-12-19/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 45.8
  },
  {
   "n": 63,
@@ -901,20 +920,36 @@
    "2026-12-16/05.jpg",
    "2026-12-16/06.jpg"
   ],
-  "caption": "Kibar rica etmenin 3 seviyesi 🙏 Can you…? samimi, Could you…? kibar, Would you mind -ing…? çok kibar. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Kibar rica etmenin 3 seviyesi 🙏 Can you…? samimi, Could you…? kibar, Would you mind -ing…? çok kibar. Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 64,
+  "n": 56,
   "date": "2026-12-16",
   "time": "19:30",
   "kind": "reels",
-  "title": "Ders kitabı vs gerçek hayat",
-  "media": "2026-12-16/reels.mp4",
-  "caption": "Ders kitabı İngilizcesi vs gerçek hayat 📘😎 #3\n\n“How's it going?”\n📘 It is going well, thank you.\n😎 Pretty good! You?\n\nSen hangisini kullanıyorsun? Yorumlara yaz! 👇\n\n#ingilizce #ingilizceöğren #lingoof #günlükingilizce #ingilizcekonuşma",
-  "cover": "2026-12-16/kapak.jpg",
-  "music_id": "8856427164403238",
-  "music_title": "Fail Fiesta · Giulio Cercato",
-  "media_fallback": "2026-12-16/reels_muzikli.mp4"
+  "title": "Yalancı kelimeler",
+  "media": "2026-12-12/reels.mp4",
+  "caption": "Bu kelimeler seni kandırıyor 🤥\n\nKomik ≠ comic ✕\nKomik = funny ✓\n\nBildiğin başka yalancı kelime var mı? Yorumlara yaz! 👇\n\n#ingilizcekelime #yalancıkelimeler #ingilizceöğren #lingoof",
+  "cover": "2026-12-12/kapak.jpg",
+  "music_id": "2605991472998226",
+  "music_title": "Funny Us · Charlie Peacock",
+  "media_fallback": "2026-12-12/reels_muzikli.mp4",
+  "duration_s": 18.9
+ },
+ {
+  "n": 57,
+  "date": "2026-12-17",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "telefon-8",
+  "media": [
+   "2026-12-13/01.jpg",
+   "2026-12-13/02.jpg",
+   "2026-12-13/03.jpg",
+   "2026-12-13/04.jpg"
+  ],
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nTelefonda İngilizce konuşmak için 8 kalıp 📞 'Hold on a second', 'You're breaking up', 'I'll call you back'... Kaydet, telefon çalınca hazır ol!\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
   "n": 65,
@@ -931,20 +966,23 @@
    "2026-12-17/06.jpg",
    "2026-12-17/07.jpg"
   ],
-  "caption": "-ed nasıl okunur? 🔊 worked /t/, played /d/, wanted /ıd/. 3 soruluk test ve kural bu karuselde; telaffuzu reels'te dinle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "-ed nasıl okunur? 🔊 worked /t/, played /d/, wanted /ıd/. 3 soruluk test ve kural bu karuselde; telaffuzu reels'te dinle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 66,
+  "n": 34,
   "date": "2026-12-17",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
-  "title": "s_2026-12-17",
-  "media": "2026-12-17/reels.mp4",
-  "caption": "-ed her zaman “ed” diye okunmaz 🔊\n\nworked /t/ · played /d/ · wanted /ıd/\nYorumlara bir fiil yaz, nasıl okunduğunu söyleyelim 👇\n\n#ingilizce #ingilizceöğren #lingoof #telaffuz #ingilizcegramer",
-  "cover": "2026-12-17/kapak.jpg",
-  "music_id": "496700212782181",
-  "music_title": "Lofi Magic · Ella Joy Meir",
-  "media_fallback": "2026-12-17/reels_muzikli.mp4"
+  "title": "Hatayı bul",
+  "media": "2026-12-01/reels.mp4",
+  "caption": "Hatayı bul 👀 Bu cümlede tek bir hata var:\n\n“I have 25 years old.”\n\nHata hangi kelimede? Doğrusunu yorumlara yaz, cevabı yorumlarda paylaşacağız 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
+  "cover": "2026-12-01/kapak.jpg",
+  "music_id": "912937830269606",
+  "music_title": "Lofi Return · half.cool",
+  "media_fallback": "2026-12-01/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 28.4
  },
  {
   "n": 67,
@@ -959,74 +997,65 @@
    "2026-12-18/04.jpg",
    "2026-12-18/05.jpg"
   ],
-  "caption": "'Happy' ve 'sad' dışında 8 duygu kelimesi 💜 thrilled, relieved, grateful, overwhelmed... Bugün nasıl hissediyorsun? Tek kelimeyle İngilizce yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "'Happy' ve 'sad' dışında 8 duygu kelimesi 💜 thrilled, relieved, grateful, overwhelmed... Bugün nasıl hissediyorsun? Tek kelimeyle İngilizce yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 68,
+  "n": 50,
   "date": "2026-12-18",
   "time": "19:30",
   "kind": "reels",
   "title": "Birebir çeviri",
-  "media": "2026-12-18/reels.mp4",
-  "caption": "Türkçe deyimleri BİREBİR çevirince 💀 #4\n\nKafayı yedim. → I ate the head. ✕\nDoğrusu: I've lost my mind. ✓\n\nYorumlara bir deyim yaz, ben çevireyim! 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcedeyimler #komik",
-  "cover": "2026-12-18/kapak.jpg",
-  "music_id": "375041336265506",
-  "music_title": "Fizzle Dizzle · Global Genius",
-  "media_fallback": "2026-12-18/reels_muzikli.mp4"
+  "media": "2026-12-09/reels.mp4",
+  "caption": "Türkçe deyimleri BİREBİR çevirince 💀\n\nKulağına küpe olsun. → Let it be an earring to your ear. ✕\nDoğrusu: Let that be a lesson to you. ✓\n\nYorumlara bir deyim yaz, ben çevireyim! 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-09/kapak.jpg",
+  "music_id": "1521900551730982",
+  "music_title": "Party In The Jungle · Chela Rivas",
+  "media_fallback": "2026-12-09/reels_muzikli.mp4",
+  "duration_s": 25.7
  },
  {
-  "n": 69,
+  "n": 59,
   "date": "2026-12-19",
   "time": "12:30",
   "kind": "carousel",
-  "title": "ulasim-8",
+  "title": "doktor-8",
   "media": [
-   "2026-12-19/01.jpg",
-   "2026-12-19/02.jpg",
-   "2026-12-19/03.jpg",
-   "2026-12-19/04.jpg"
+   "2026-12-14/01.jpg",
+   "2026-12-14/02.jpg",
+   "2026-12-14/03.jpg",
+   "2026-12-14/04.jpg"
   ],
-  "caption": "Metroda ve otobüste lazım olan 8 kalıp 🚇 'Which line goes to…?', 'Do I need to change trains?' Goof'un Londra macerası Bölüm 3 reels'te!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nDoktorda lazım olan 8 İngilizce kalıp 🩺 Randevu almak, şikâyetini anlatmak ve ilaç hakkında soru sormak için. Umarız hiç lazım olmaz!\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
-  "n": 70,
+  "n": 48,
   "date": "2026-12-19",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
-  "title": "Goof Londra'da",
-  "media": "2026-12-19/reels.mp4",
-  "caption": "Goof Londra'da · Bölüm 3 🚇 Mind the gap!\n\nWhich line goes to Westminster? · Do I need to change trains?\nSıradaki bölüm: Noel pazarı 🎄\n\n#ingilizce #ingilizceöğren #lingoof #londra #seyahatingilizcesi",
-  "cover": "2026-12-19/kapak.jpg",
-  "music_id": "2488847887958999",
-  "music_title": "Euphoria · Giulio Cercato",
-  "media_fallback": "2026-12-19/reels_muzikli.mp4"
+  "title": "Hatayı bul",
+  "media": "2026-12-08/reels.mp4",
+  "caption": "Hatayı bul 👀 Bu cümlede tek bir hata var:\n\n“He don't like coffee.”\n\nHata hangi kelimede? Doğrusunu yorumlara yaz, cevabı yorumlarda paylaşacağız 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
+  "cover": "2026-12-08/kapak.jpg",
+  "music_id": "1521369845848971",
+  "music_title": "Study In Style · ill Think in ink",
+  "media_fallback": "2026-12-08/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 29.6
  },
  {
-  "n": 71,
-  "date": "2026-12-20",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "restoran-8",
-  "media": [
-   "2026-12-20/01.jpg",
-   "2026-12-20/02.jpg",
-   "2026-12-20/03.jpg",
-   "2026-12-20/04.jpg"
-  ],
-  "caption": "Restoranda lazım olan 8 İngilizce kalıp 🍽️ Masa ayırtmaktan hesabı ayrı ödemeye kadar. Hesap kimde? 😄\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 72,
+  "n": 78,
   "date": "2026-12-20",
   "time": "19:30",
   "kind": "reels",
-  "title": "POV",
-  "media": "2026-12-20/reels.mp4",
-  "caption": "POV: Restoranda hesabı istiyorsun 🧾\n\nCould we get the bill, please?\n— Together or separately? 😳 Kim ısmarlıyor?! 👇\n\n#ingilizce #ingilizceöğren #lingoof #pov #restoran",
-  "cover": "2026-12-20/kapak.jpg",
-  "music_id": "1198038750753302",
-  "music_title": "Run It Up · SugarBeats",
-  "media_fallback": "2026-12-20/reels_muzikli.mp4"
+  "title": "Türk İngilizcesi",
+  "media": "2026-12-23/reels.mp4",
+  "caption": "Türkçe düşünüp İngilizce konuşunca 🤯\n\nTelefonu kapattım. → I closed the phone. ✕\nDoğrusu: I hung up. ✓\n\nSen de bunlardan birini yaptın mı? İtiraf et! 😄\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-23/kapak.jpg",
+  "music_id": "321349299885697",
+  "music_title": "Clown Car Confusion · Global Genius",
+  "media_fallback": "2026-12-23/reels_muzikli.mp4",
+  "duration_s": 22.5
  },
  {
   "n": 73,
@@ -1040,20 +1069,36 @@
    "2026-12-21/03.jpg",
    "2026-12-21/04.jpg"
   ],
-  "caption": "İngilizce iltifat etmenin 8 yolu 💐 'You did an amazing job', 'You always make me laugh'... Birini etiketle ve İngilizce bir iltifat yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "İngilizce iltifat etmenin 8 yolu 💐 'You did an amazing job', 'You always make me laugh'... Birini etiketle ve İngilizce bir iltifat yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 74,
+  "n": 86,
   "date": "2026-12-21",
   "time": "19:30",
   "kind": "reels",
-  "title": "Nasıl dersin?",
-  "media": "2026-12-21/reels.mp4",
-  "caption": "“Ellerine sağlık” İngilizcede nasıl denir? 🍲\n\nThis is delicious! · You're a great cook! · Thank you for the lovely meal.\nBir dahaki sofrada dene 💜\n\n#ingilizce #ingilizceöğren #lingoof #nasıldersin #günlükingilizce",
-  "cover": "2026-12-21/kapak.jpg",
-  "music_id": "423124700418880",
-  "music_title": "Good Vibes · Giulio Cercato",
-  "media_fallback": "2026-12-21/reels_muzikli.mp4"
+  "title": "Yalancı kelimeler",
+  "media": "2026-12-27/reels.mp4",
+  "caption": "Bu kelimeler seni kandırıyor 🤥\n\nAktüel ≠ actual ✕\nAktüel = current ✓\n\nBildiğin başka yalancı kelime var mı? Yorumlara yaz! 👇\n\n#ingilizcekelime #yalancıkelimeler #ingilizceöğren #lingoof",
+  "cover": "2026-12-27/kapak.jpg",
+  "music_id": "417003198161987",
+  "music_title": "Cook It · Giulio Cercato",
+  "media_fallback": "2026-12-27/reels_muzikli.mp4",
+  "duration_s": 18.1
+ },
+ {
+  "n": 69,
+  "date": "2026-12-22",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "ulasim-8",
+  "media": [
+   "2026-12-19/01.jpg",
+   "2026-12-19/02.jpg",
+   "2026-12-19/03.jpg",
+   "2026-12-19/04.jpg"
+  ],
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nMetroda ve otobüste lazım olan 8 kalıp 🚇 'Which line goes to…?', 'Do I need to change trains?' Goof'un Londra macerası Bölüm 3 reels'te!\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
   "n": 75,
@@ -1070,20 +1115,23 @@
    "2026-12-22/06.jpg",
    "2026-12-22/07.jpg"
   ],
-  "caption": "in, on, at ile yer 📍 Kapalı alan ve şehir için in, yüzey ve toplu taşıma için on, belirli nokta için at. Otobüsteysen 'on the bus'!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "in, on, at ile yer 📍 Kapalı alan ve şehir için in, yüzey ve toplu taşıma için on, belirli nokta için at. Otobüsteysen 'on the bus'!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 76,
+  "n": 62,
   "date": "2026-12-22",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
   "title": "Hatayı bul",
-  "media": "2026-12-22/reels.mp4",
-  "caption": "Hatayı bul #6 👀 Bu cümlede 1 hata var:\n\n“Can you explain me the rule?” ✕\n“Can you explain the rule to me?” ✓\n\nSen bildin mi? Yorumlara yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcegramer #ingilizcehataları",
-  "cover": "2026-12-22/kapak.jpg",
-  "music_id": "1511880570018285",
-  "music_title": "You Got This · Ecklectic Music",
-  "media_fallback": "2026-12-22/reels_muzikli.mp4"
+  "media": "2026-12-15/reels.mp4",
+  "caption": "Hatayı bul 👀 Bu cümlede tek bir hata var:\n\n“I look forward to see you.”\n\nHata hangi kelimede? Doğrusunu yorumlara yaz, cevabı yorumlarda paylaşacağız 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
+  "cover": "2026-12-15/kapak.jpg",
+  "music_id": "8344195318938437",
+  "music_title": "Good Day · Alex Blue",
+  "media_fallback": "2026-12-15/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 28.8
  },
  {
   "n": 77,
@@ -1098,20 +1146,36 @@
    "2026-12-23/04.jpg",
    "2026-12-23/05.jpg"
   ],
-  "caption": "make, take, have ile 12 kalıp 🧩 Karar 'vermek' make, fotoğraf 'çekmek' take, rüya 'görmek' have. Türkçe düşününce karışanlar burada!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "make, take, have ile 12 kalıp 🧩 Karar 'vermek' make, fotoğraf 'çekmek' take, rüya 'görmek' have. Türkçe düşününce karışanlar burada!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 78,
+  "n": 92,
   "date": "2026-12-23",
   "time": "19:30",
   "kind": "reels",
-  "title": "Türk İngilizcesi",
-  "media": "2026-12-23/reels.mp4",
-  "caption": "Türkçe düşünüp İngilizce konuşunca 🤯 #3\n\nTelefonu kapattım. → I closed the phone. ✕\nDoğrusu: I hung up. ✓\n\nSen de bunlardan birini yaptın mı? İtiraf et! 😄\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcehataları #komik",
-  "cover": "2026-12-23/kapak.jpg",
-  "music_id": "321349299885697",
-  "music_title": "Clown Car Confusion · Global Genius",
-  "media_fallback": "2026-12-23/reels_muzikli.mp4"
+  "title": "Birebir çeviri",
+  "media": "2026-12-30/reels.mp4",
+  "caption": "Türkçe deyimleri BİREBİR çevirince 💀\n\nEski tas eski hamam. → Old bowl, old bath. ✕\nDoğrusu: Same old, same old. ✓\n\nYorumlara bir deyim yaz, ben çevireyim! 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
+  "cover": "2026-12-30/kapak.jpg",
+  "music_id": "589255880851305",
+  "music_title": "Smile · Giulio Cercato",
+  "media_fallback": "2026-12-30/reels_muzikli.mp4",
+  "duration_s": 25.8
+ },
+ {
+  "n": 71,
+  "date": "2026-12-24",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "restoran-8",
+  "media": [
+   "2026-12-20/01.jpg",
+   "2026-12-20/02.jpg",
+   "2026-12-20/03.jpg",
+   "2026-12-20/04.jpg"
+  ],
+  "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌\nRestoranda lazım olan 8 İngilizce kalıp 🍽️ Masa ayırtmaktan hesabı ayrı ödemeye kadar. Hesap kimde? 😄\n\nBu konuşmaları LINGOOF'ta Goof'la sesli prova edebilirsin; iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof"
  },
  {
   "n": 79,
@@ -1126,24 +1190,41 @@
    "2026-12-24/04.jpg",
    "2026-12-24/05.jpg"
   ],
-  "caption": "Noel kelimeleri 🎄 ornament, wreath, mistletoe, gingerbread... Christmas'taki 't' harfinin okunmadığını biliyor muydun? Reels'te dinle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Noel kelimeleri 🎄 ornament, wreath, mistletoe, gingerbread... Christmas'taki 't' harfinin okunmadığını biliyor muydun? Reels'te dinle!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
   "n": 80,
   "date": "2026-12-24",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
   "title": "s_2026-12-24",
   "media": "2026-12-24/reels.mp4",
-  "caption": "Christmas'ta bir harf saklanıyor 🎄 Buldun mu?\n\nT okunmaz: krismıs. Aynı t listen, castle, whistle'da da sessiz 🤫\n\n#ingilizce #ingilizceöğren #lingoof #telaffuz #christmas",
+  "caption": "Christmas'ta bir harf saklanıyor 🎄 Buldun mu?\n\nT okunmaz: krismıs. Aynı t listen, castle, whistle'da da sessiz 🤫\n\n#christmas #ingilizcekelime #lingoof",
   "cover": "2026-12-24/kapak.jpg",
   "music_id": "322565551554019",
   "music_title": "Deck The Halls (Jazz) · Global Genius",
-  "media_fallback": "2026-12-24/reels_muzikli.mp4"
+  "media_fallback": "2026-12-24/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 23.9
+ },
+ {
+  "n": 82,
+  "date": "2026-12-25",
+  "time": "19:30",
+  "kind": "reels",
+  "title": "s_2026-12-25",
+  "media": "2026-12-25/reels.mp4",
+  "caption": "Merry Christmas mı, Happy Holidays mi? 🎄\n\nKarşındaki Noel'i kutluyorsa Merry Christmas; emin değilsen Happy Holidays herkese uyar.\nKaydet, mesaj atarken lazım olur 💌\n\nLINGOOF'ta günlük İngilizceyi Goof'la sesli konuşarak öğren; iPhone'da ücretsiz, link profilde.\n\n#christmas #ingilizcekelime #lingoof",
+  "cover": "2026-12-25/kapak.jpg",
+  "music_id": "1889629138042637",
+  "music_title": "Christmas · Deuxhyun",
+  "media_fallback": "2026-12-25/reels_muzikli.mp4",
+  "duration_s": 36.7
  },
  {
   "n": 81,
-  "date": "2026-12-25",
+  "date": "2026-12-26",
   "time": "12:30",
   "kind": "carousel",
   "title": "yeni-yil-mesaj",
@@ -1153,20 +1234,7 @@
    "2026-12-25/03.jpg",
    "2026-12-25/04.jpg"
   ],
-  "caption": "Yılsonu mesajı için 8 İngilizce cümle ✨ Samimi arkadaşlarına, iş yerine ya da herkese uyan seçenekler. Kime göndereceksin?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 82,
-  "date": "2026-12-25",
-  "time": "19:30",
-  "kind": "reels",
-  "title": "s_2026-12-25",
-  "media": "2026-12-25/reels.mp4",
-  "caption": "Merry Christmas mı, Happy Holidays mi? 🎄\n\nKarşındaki Noel'i kutluyorsa Merry Christmas; emin değilsen Happy Holidays herkese uyar.\nKaydet, mesaj atarken lazım olur 💌\n\n#ingilizce #ingilizceöğren #lingoof #christmas #yeniyıl",
-  "cover": "2026-12-25/kapak.jpg",
-  "music_id": "1889629138042637",
-  "music_title": "Christmas · Deuxhyun",
-  "media_fallback": "2026-12-25/reels_muzikli.mp4"
+  "caption": "Yılsonu mesajı için 8 İngilizce cümle ✨ Samimi arkadaşlarına, iş yerine ya da herkese uyan seçenekler. Kime göndereceksin?\n\n#yeniyıl #ingilizceöğren #lingoof"
  },
  {
   "n": 83,
@@ -1180,20 +1248,23 @@
    "2026-12-26/03.jpg",
    "2026-12-26/04.jpg"
   ],
-  "caption": "Kış aktiviteleri için 8 İngilizce kalıp ⛄ Kayak ve kartopu mu, yoksa battaniye ve dizi maratonu mu? Sen hangi takımdasın?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Kış aktiviteleri için 8 İngilizce kalıp ⛄ Kayak ve kartopu mu, yoksa battaniye ve dizi maratonu mu? Sen hangi takımdasın?\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
   "n": 84,
   "date": "2026-12-26",
-  "time": "19:30",
+  "time": "20:30",
   "kind": "reels",
   "title": "Goof Londra'da",
   "media": "2026-12-26/reels.mp4",
-  "caption": "Goof Londra'da · Bölüm 4 🎄 Noel pazarı!\n\nHow much is it? · Can I pay by card?\nMince pie'da kıyma yok 😄 Goof hangi şehre gitsin? Yorumlara yaz 👇\n\n#ingilizce #ingilizceöğren #lingoof #londra #christmas",
+  "caption": "Goof Londra'da · Bölüm 4 🎄 Noel pazarı!\n\nHow much is it? · Can I pay by card?\nMince pie'da kıyma yok 😄 Goof hangi şehre gitsin? Yorumlara yaz 👇\n\n#londra #yurtdışı #ingilizcekonuşma #lingoof",
   "cover": "2026-12-26/kapak.jpg",
   "music_id": "1077180373816205",
   "music_title": "Jingle Bass · Chela Rivas",
-  "media_fallback": "2026-12-26/reels_muzikli.mp4"
+  "media_fallback": "2026-12-26/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 46.7
  },
  {
   "n": 85,
@@ -1209,20 +1280,19 @@
    "2026-12-27/05.jpg",
    "2026-12-27/06.jpg"
   ],
-  "caption": "Yalancı kelime testi 🤥 sympathetic, magazine, chef: hepsi tuzak! Kaç doğru yaptın? Cevaplar son sayfada.\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Yalancı kelime testi 🤥 sympathetic, magazine, chef: hepsi tuzak! Kaç doğru yaptın? Cevaplar son sayfada.\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
-  "n": 86,
+  "n": 44,
   "date": "2026-12-27",
   "time": "19:30",
   "kind": "reels",
-  "title": "Yalancı kelimeler",
-  "media": "2026-12-27/reels.mp4",
-  "caption": "Bu kelimeler seni kandırıyor 🤥 #3\n\nAktüel ≠ actual ✕\nAktüel = current ✓\n\nBildiğin başka yalancı kelime var mı? Yorumlara yaz! 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #yalancıkelimeler",
-  "cover": "2026-12-27/kapak.jpg",
-  "music_id": "417003198161987",
-  "music_title": "Cook It · Giulio Cercato",
-  "media_fallback": "2026-12-27/reels_muzikli.mp4"
+  "title": "hazir_2026-12-06",
+  "media": "2026-12-06/reels.mp4",
+  "caption": "Telaffuz düellosu 🎤 Bu 4 kelimeyi doğru söyleyebilir misin?\n\nİlki: colonel 😳 Önce sesli söyle, sonra cevabı dinle.\nKaç tanesini bildin? Yorumlara yaz 👇\n\n#ingilizcetelaffuz #ingilizceöğren #lingoof",
+  "cover": "2026-12-06/kapak.jpg",
+  "duration_s": 21.0
  },
  {
   "n": 87,
@@ -1236,7 +1306,8 @@
    "2026-12-28/03.jpg",
    "2026-12-28/04.jpg"
   ],
-  "caption": "'Thank you' dışında teşekkür etmenin 8 yolu 🙏 'I owe you one', 'You're a lifesaver', 'You shouldn't have!' Bugün birine İngilizce teşekkür et!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "'Thank you' dışında teşekkür etmenin 8 yolu 🙏 'I owe you one', 'You're a lifesaver', 'You shouldn't have!' Bugün birine İngilizce teşekkür et!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
  },
  {
   "n": 88,
@@ -1245,11 +1316,12 @@
   "kind": "reels",
   "title": "POV",
   "media": "2026-12-28/reels.mp4",
-  "caption": "POV: Yılbaşı hediyeni açıyorsun 🎁\n\nOh, you shouldn't have! = Ah, hiç zahmet etmeseydin!\n(Aslında çok iyi yaptı 😄) Kaydet!\n\n#ingilizce #ingilizceöğren #lingoof #pov #yeniyıl",
+  "caption": "POV: Yılbaşı hediyeni açıyorsun 🎁\n\nOh, you shouldn't have! = Ah, hiç zahmet etmeseydin!\n(Aslında çok iyi yaptı 😄) Kaydet!\n\n#yeniyıl #ingilizceöğren #lingoof",
   "cover": "2026-12-28/kapak.jpg",
   "music_id": "1004244204206724",
   "music_title": "New Year · Otis McDonald",
-  "media_fallback": "2026-12-28/reels_muzikli.mp4"
+  "media_fallback": "2026-12-28/reels_muzikli.mp4",
+  "duration_s": 18.9
  },
  {
   "n": 89,
@@ -1263,7 +1335,23 @@
    "2026-12-29/03.jpg",
    "2026-12-29/04.jpg"
   ],
-  "caption": "2026'yı İngilizce özetle 📝 'I kept going', 'I stepped out of my comfort zone'... Senin yılın nasıldı? Bir cümleyle İngilizce yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "2026'yı İngilizce özetle 📝 'I kept going', 'I stepped out of my comfort zone'... Senin yılın nasıldı? Bir cümleyle İngilizce yorumlara yaz!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce",
+  "hold": true
+ },
+ {
+  "n": 91,
+  "date": "2026-12-29",
+  "time": "12:30",
+  "kind": "carousel",
+  "title": "resolution",
+  "media": [
+   "2026-12-30/01.jpg",
+   "2026-12-30/02.jpg",
+   "2026-12-30/03.jpg",
+   "2026-12-30/04.jpg",
+   "2026-12-30/05.jpg"
+  ],
+  "caption": "Yeni yıl hedefleri için 8 İngilizce cümle 🎯 Senin 2027 hedefin ne? Yorumlara İngilizce yaz; Goof'un hedefi belli: her gün İngilizce konuşmak!\n\nLINGOOF'ta günlük İngilizceyi Goof'la sesli konuşarak öğren; iPhone'da ücretsiz, link profilde.\n\n#yeniyıl #ingilizceöğren #lingoof"
  },
  {
   "n": 90,
@@ -1276,35 +1364,24 @@
   "cover": "2026-12-29/kapak.jpg",
   "music_id": "1744712439298788",
   "music_title": "Be Creative · Giulio Cercato",
-  "media_fallback": "2026-12-29/reels_muzikli.mp4"
+  "media_fallback": "2026-12-29/reels_muzikli.mp4",
+  "hold": true,
+  "duration_s": 31.3
  },
  {
-  "n": 91,
-  "date": "2026-12-30",
-  "time": "12:30",
-  "kind": "carousel",
-  "title": "resolution",
-  "media": [
-   "2026-12-30/01.jpg",
-   "2026-12-30/02.jpg",
-   "2026-12-30/03.jpg",
-   "2026-12-30/04.jpg",
-   "2026-12-30/05.jpg"
-  ],
-  "caption": "Yeni yıl hedefleri için 8 İngilizce cümle 🎯 Senin 2027 hedefin ne? Yorumlara İngilizce yaz; Goof'un hedefi belli: her gün İngilizce konuşmak!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
- },
- {
-  "n": 92,
-  "date": "2026-12-30",
-  "time": "19:30",
+  "n": 76,
+  "date": "2026-12-29",
+  "time": "20:30",
   "kind": "reels",
-  "title": "Birebir çeviri",
-  "media": "2026-12-30/reels.mp4",
-  "caption": "Türkçe deyimleri BİREBİR çevirince 💀 #5\n\nEski tas eski hamam. → Old bowl, old bath. ✕\nDoğrusu: Same old, same old. ✓\n\nYorumlara bir deyim yaz, ben çevireyim! 👇\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcedeyimler #komik",
-  "cover": "2026-12-30/kapak.jpg",
-  "music_id": "589255880851305",
-  "music_title": "Smile · Giulio Cercato",
-  "media_fallback": "2026-12-30/reels_muzikli.mp4"
+  "title": "Hatayı bul",
+  "media": "2026-12-22/reels.mp4",
+  "caption": "Hatayı bul 👀 Bu cümlede tek bir hata var:\n\n“Can you explain me the rule?”\n\nHata hangi kelimede? Doğrusunu yorumlara yaz, cevabı yorumlarda paylaşacağız 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
+  "cover": "2026-12-22/kapak.jpg",
+  "music_id": "1511880570018285",
+  "music_title": "You Got This · Ecklectic Music",
+  "media_fallback": "2026-12-22/reels_muzikli.mp4",
+  "trial": "SS_PERFORMANCE",
+  "duration_s": 29.5
  },
  {
   "n": 93,
@@ -1318,7 +1395,7 @@
    "2026-12-31/03.jpg",
    "2026-12-31/04.jpg"
   ],
-  "caption": "Mutlu yıllar 🎆 Yeni yıla girerken kullanabileceğin 5 İngilizce cümle. 2027'de de her gün biraz İngilizce, Goof'la birlikte!\n\n#ingilizce #ingilizceöğren #lingoof #ingilizcekelimeler #günlükingilizce"
+  "caption": "Mutlu yıllar 🎆 Yeni yıla girerken kullanabileceğin 5 İngilizce cümle. 2027'de de her gün biraz İngilizce, Goof'la birlikte!\n\n#yeniyıl #ingilizceöğren #lingoof"
  },
  {
   "n": 94,
@@ -1327,10 +1404,11 @@
   "kind": "reels",
   "title": "s_2026-12-31",
   "media": "2026-12-31/reels.mp4",
-  "caption": "Yeni yıla 5 cümle kala 🎆\n\nHappy New Year! · Here's to a great year! · Out with the old, in with the new.\nMutlu yıllar 💜 2027 hedefin ne? 👇\n\n#ingilizce #ingilizceöğren #lingoof #yeniyıl #mutluyıllar",
+  "caption": "Yeni yıla 5 cümle kala 🎆\n\nHappy New Year! · Here's to a great year! · Out with the old, in with the new.\nMutlu yıllar 💜 2027 hedefin ne? 👇\n\n#yeniyıl #ingilizceöğren #lingoof",
   "cover": "2026-12-31/kapak.jpg",
   "music_id": "895227573312654",
   "music_title": "New Year · stereogully",
-  "media_fallback": "2026-12-31/reels_muzikli.mp4"
+  "media_fallback": "2026-12-31/reels_muzikli.mp4",
+  "duration_s": 35.8
  }
 ]

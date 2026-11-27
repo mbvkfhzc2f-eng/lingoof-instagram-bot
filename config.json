@@ -34,11 +34,12 @@
  "music": {
   "enabled": true,
   "type": "music",
-  "audio_volume": 18,
+  "audio_volume": 24,
   "video_volume": 100,
   "no_repeat": 12,
   "probe_queries": "trend|viral|funny|happy|upbeat|pop|dance|lofi|study|christmas|new year|türkçe pop|komik|eğlenceli",
   "auto": false
  },
- "music_overrides": {}
+ "music_overrides": {},
+ "story_after_reel": true
 }

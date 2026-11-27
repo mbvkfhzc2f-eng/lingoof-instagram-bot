@@ -46,3 +46,22 @@ Meta yenilemede yeni bir token verirse botun onu kendisi kaydedebilmesi için Gi
 - `"audio_name": "Goof · Birebir çeviri"` videonun orijinal sesine ad verir; başkaları bu sesi kullanırsa adı görünür. Bir kez verilebilir.
 
 Reels: tek MP4 (H.264, AAC), 9:16, 3–90 saniye. Carousel: 2–10 JPEG, 1080×1350. Açıklama en fazla 2.200 karakter ve 30 hashtag.
+
+## Gönderi alanları (posts.json)
+
+- `hold: true`: gönderi beklemede; paylaşılmaz, atlanmış da sayılmaz (yeniden render ya da sonraki dönem için).
+- `trial`: `SS_PERFORMANCE` ya da `MANUAL`. Deneme reels önce takipçi olmayanlara gider; deneme reels'ten Story yapılmaz.
+- `collaborators`: en fazla 3 kullanıcı adı, ör. `["yurtdisibileti"]`. Davet edilen hesap uygulamadan kabul edince gönderi iki profilde de görünür.
+- `alt_texts` (carousel): her görsel için açıklama listesi; `alt_text` tek açıklama. `location_id`: Instagram konum kimliği.
+- `story: false`: bu reels'i Story'ye koyma. Varsayılan `config.json` içindeki `story_after_reel`.
+- `duration_s`: video süresi; istatistiklerde izlenme oranı için kullanılır.
+- Açıklamada en fazla 5 hashtag olabilir (Instagram kuralı); fazlası plan hatası verir.
+
+## Takvim
+
+Haftada 7 ana gönderi: Pzt, Çar, Cum, Paz 19:30 reels; Sal, Per, Cmt 12:30 carousel. Sal, Per, Cmt 20:30 deneme reels.
+
+## İstatistikler
+
+**Actions › Instagram istatistikleri** her 6 saatte bir çalışır ve hiçbir şey paylaşmaz. `insights.md` okunabilir tabloyu,
+`insights_latest.json` son değerleri, `insights.jsonl` her gönderinin 24 saat, 72 saat ve 7 gündeki kalıcı ölçümünü tutar.
