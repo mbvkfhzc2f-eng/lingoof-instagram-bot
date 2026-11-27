@@ -27,10 +27,23 @@ def main():
     by_n = {p['n']: p for p in posts}
     existing_ids = {p.get('src_id') for p in posts if p.get('src_id')}
     next_n = max([100] + [p['n'] for p in posts if isinstance(p['n'], int)]) + 1
-    # yedek müzik havuzu: beklemedeki eski gönderilerin seçilmiş parçaları
-    used_ids = {str(p.get('music_id')) for p in posts if p.get('music_id') and not p.get('hold')}
-    pool = [(str(p['music_id']), p.get('music_title', '')) for p in posts if p.get('hold') and p.get('music_id')]
-    pool = [m for m in pool if m[0] not in used_ids]
+    # müzik havuzu: posts.json'daki seçilmiş (lisanslı) parçalar
+    from datetime import date
+    curated = {}
+    for p in posts:
+        if p.get('music_id'):
+            curated.setdefault(str(p['music_id']), p.get('music_title', ''))
+    recent = set(state.get('audio_used', [])[-12:])
+
+    def pick_music(day):
+        """Son 12 paylaşımda çalmamış ve ±7 gün içinde başka bir etkin gönderide olmayan bir parça."""
+        d0 = date.fromisoformat(day)
+        busy = {str(p['music_id']) for p in posts if p.get('music_id') and not p.get('hold') and str(p['n']) not in posted
+                and abs((date.fromisoformat(p['date']) - d0).days) <= 7}
+        for mid, title in curated.items():
+            if mid not in recent and mid not in busy:
+                return mid, title
+        return None
     problems, added = [], []
     for item in sorted(plan, key=lambda x: (x['date'], x['time'])):
         rid = item['id']
@@ -55,9 +68,10 @@ def main():
                         duration_s=qc['duration_s'])
             if old is not None and old.get('music_id'):
                 post.update(music_id=str(old['music_id']), music_title=old.get('music_title', ''))
-            elif pool:
-                mid, mt = pool.pop(0)
-                post.update(music_id=mid, music_title=mt)
+            else:
+                m = pick_music(item['date'])
+                if m:
+                    post.update(music_id=m[0], music_title=m[1])
             post['music_volume'] = MUSIC_VOLUME
             if item.get('trial'):
                 post['trial'] = item['trial']
