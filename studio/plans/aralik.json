@@ -1,0 +1,1311 @@
+[
+ {
+  "id": "r01-pov-whatsup",
+  "template": "pov",
+  "hook": "POV: Erasmus'ta<br><em>ilk gün</em>",
+  "them_name": "EMMA · EV ARKADAŞIN",
+  "them": "What's up?",
+  "wrong": "I'm fine, thank you. And you?",
+  "right": "Not much! Just unpacking. You?",
+  "explain": "<b>What's up?</b> nasılsın değil, <b>ne var ne yok</b> demek.",
+  "cover": "“What's up?”<br><em>deyince</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r02-nasil-kolaygelsin",
+  "template": "nasil",
+  "hook": "‘Kolay gelsin’<br><em>nasıl denir?</em>",
+  "literal": "Let it come easy!",
+  "options": [
+   {
+    "en": "Don't work too hard!",
+    "tr": "Çalışan bir arkadaşa"
+   },
+   {
+    "en": "Good luck with it!",
+    "tr": "Yeni işe başlayana"
+   },
+   {
+    "en": "Hang in there!",
+    "tr": "Zorlanan birine"
+   }
+  ],
+  "cover": "‘Kolay gelsin’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r03-hata-agree",
+  "template": "hata",
+  "hook": "Bu cümlede<br><em>1 hata</em> var.",
+  "wrong": "I am agree with you.",
+  "fix": "I agree with you.",
+  "explain": "<b>agree</b> bir fiil: önüne <b>am/is/are</b> gelmez.",
+  "cover": "“I am agree”<br><em>deme</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r04-quiz-bored",
+  "template": "quiz",
+  "hook": "Sıkıldın.<br><em>Hangisini dersin?</em>",
+  "options": [
+   "I'm bored.",
+   "I'm boring."
+  ],
+  "answer": 0,
+  "explain": "<b>I'm boring</b> = ben sıkıcıyım. Sıkıldıysan: <b>I'm bored.</b>",
+  "cover": "Sıkıldın.<br><em>Hangisi?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r05-urun-evening",
+  "template": "urun",
+  "hook": "Yanlış yaz.<br><em>Goof açıklasın.</em>",
+  "sentence": "I relax <span class='blank'></span> the evening.",
+  "options": [
+   "in",
+   "at",
+   "on"
+  ],
+  "pick": 1,
+  "right": 0,
+  "fix": "I relax <b style='color:var(--ok-l)'>in</b> the evening.",
+  "explain": "Saatte <b>at</b>, günde <b>on</b>, günün bölümünde <b>in</b>.",
+  "cover": "Yanlış yaz,<br><em>Goof açıklasın</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r06-vs-veda",
+  "template": "vs",
+  "hook": "Türk usulü<br>vs <em>native</em>",
+  "rounds": [
+   {
+    "ctx": "‘Görüşürüz’ derken",
+    "tr": "We will see!",
+    "na": "See you!"
+   },
+   {
+    "ctx": "‘Kendine iyi bak’",
+    "tr": "Look at yourself!",
+    "na": "Take care!"
+   },
+   {
+    "ctx": "‘Sağ ol’ derken",
+    "tr": "Be alive!",
+    "na": "Thanks!"
+   }
+  ],
+  "cover": "Vedalaşırken<br><em>Türk usulü</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r07-pov-bill",
+  "template": "pov",
+  "hook": "POV: Londra'da<br><em>hesap isteyeceksin</em>",
+  "them_name": "GARSON",
+  "them": "Anything else?",
+  "wrong": "No. Give me the account.",
+  "right": "No, thanks. Could we get the bill?",
+  "wrong_tag": "KELİMESİ KELİMESİNE",
+  "explain": "Hesap <b>account</b> değil: <b>the bill</b> (İngiltere), <b>the check</b> (ABD).",
+  "cover": "Hesabı<br><em>nasıl istersin?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r08-hata-mistake",
+  "template": "hata",
+  "hook": "Hata yaparken<br><em>hata yapma.</em>",
+  "wrong": "I did a mistake.",
+  "fix": "I made a mistake.",
+  "explain": "Hata yapmak: <b>make a mistake</b>. <b>do</b> değil.",
+  "cover": "Hata yaparken<br><em>hata yapma</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r09-nasil-gecmisolsun",
+  "template": "nasil",
+  "hook": "‘Geçmiş olsun’<br><em>nasıl denir?</em>",
+  "literal": "Let it be past!",
+  "options": [
+   {
+    "en": "Get well soon!",
+    "tr": "Hasta birine"
+   },
+   {
+    "en": "Hope you feel better!",
+    "tr": "Mesajla yazarken"
+   },
+   {
+    "en": "Sorry to hear that!",
+    "tr": "Kötü bir habere"
+   }
+  ],
+  "cover": "‘Geçmiş olsun’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r10-pov-alright",
+  "template": "pov",
+  "hook": "POV: İngiliz<br><em>arkadaşın soruyor</em>",
+  "them_name": "JAMES · İNGİLİZ",
+  "them": "You alright?",
+  "wrong": "No, I'm not sick!",
+  "right": "Yeah, good thanks! You?",
+  "wrong_tag": "YANLIŞ ANLADI",
+  "explain": "İngiltere'de <b>You alright?</b> sadece selam, hasta mısın demek değil.",
+  "cover": "“You alright?”<br><em>deyince</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r11-quiz-salt",
+  "template": "quiz",
+  "hook": "Hangisi<br><em>daha kibar?</em>",
+  "options": [
+   "Give me the salt.",
+   "Could you pass the salt?"
+  ],
+  "answer": 1,
+  "explain": "Emir sert duyulur. <b>Could you…?</b> kibar bir ricadır.",
+  "cover": "Hangisi<br><em>kibar?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r12-hata-age",
+  "template": "hata",
+  "hook": "Yaşını<br><em>yanlış söyleme.</em>",
+  "wrong": "I have 25 years old.",
+  "fix": "I am 25 years old.",
+  "explain": "Yaş <b>be</b> ile söylenir: <b>I'm 25.</b>",
+  "cover": "“I have 25”<br><em>deme</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r13-vs-sasirma",
+  "template": "vs",
+  "hook": "Şaşırınca<br><em>ne dersin?</em>",
+  "rounds": [
+   {
+    "ctx": "‘Hadi ya!’ derken",
+    "tr": "Come on ya!",
+    "na": "No way!"
+   },
+   {
+    "ctx": "‘Yok artık!’ derken",
+    "tr": "No more!",
+    "na": "You're kidding!"
+   },
+   {
+    "ctx": "‘Aynen!’ derken",
+    "tr": "Same same!",
+    "na": "Totally!"
+   }
+  ],
+  "cover": "Şaşırınca<br><em>ne dersin?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r14-nasil-elinesaglik",
+  "template": "nasil",
+  "hook": "‘Eline sağlık’<br><em>nasıl denir?</em>",
+  "literal": "Health to your hands!",
+  "options": [
+   {
+    "en": "This is delicious!",
+    "tr": "Yemeği yapana"
+   },
+   {
+    "en": "You're a great cook!",
+    "tr": "İltifat ederken"
+   },
+   {
+    "en": "Thanks for dinner!",
+    "tr": "Davet edene"
+   }
+  ],
+  "cover": "‘Eline sağlık’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r15-pov-blessyou",
+  "template": "pov",
+  "hook": "POV: Derste<br><em>biri hapşırdı</em>",
+  "them_name": "SINIF ARKADAŞIN",
+  "them": "Achoo!",
+  "wrong": "Live long!",
+  "right": "Bless you!",
+  "wrong_tag": "KELİMESİ KELİMESİNE",
+  "explain": "‘Çok yaşa’nın karşılığı <b>Bless you!</b> Cevabı: <b>Thanks!</b>",
+  "cover": "‘Çok yaşa’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r16-urun-drinks",
+  "template": "urun",
+  "hook": "Hata yaptın mı?<br><em>Goof yakalar.</em>",
+  "sentence": "She <span class='blank'></span> coffee every morning.",
+  "options": [
+   "drink",
+   "drinks"
+  ],
+  "pick": 0,
+  "right": 1,
+  "fix": "She <b style='color:var(--ok-l)'>drinks</b> coffee every morning.",
+  "verdict": "Az kaldı!",
+  "explain": "<b>he/she/it</b> ile fiil <b>-s</b> alır.",
+  "screen": "screen_home.png",
+  "s2_title": "Günde 5 dakika<br><em>yeter.</em>",
+  "cover": "Hata yaptın mı?<br><em>Goof yakalar</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r17-hata-light",
+  "template": "hata",
+  "hook": "Işığı<br><em>açamıyorsun.</em>",
+  "wrong": "Can you open the light?",
+  "fix": "Can you turn on the light?",
+  "explain": "Işık ve cihazlarda <b>turn on / turn off</b> denir.",
+  "cover": "“Open the light”<br><em>deme</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r18-quiz-latte",
+  "template": "quiz",
+  "hook": "Kafede hangisi<br><em>daha doğal?</em>",
+  "options": [
+   "I want a latte.",
+   "Can I get a latte?"
+  ],
+  "answer": 1,
+  "explain": "<b>I want</b> talepkâr duyulur. Siparişte <b>Can I get…?</b> de.",
+  "cover": "Kafede<br><em>hangisi?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r19-nasil-afiyet",
+  "template": "nasil",
+  "hook": "‘Afiyet olsun’<br><em>nasıl denir?</em>",
+  "literal": "Be healthy!",
+  "options": [
+   {
+    "en": "Enjoy your meal!",
+    "tr": "Garson ya da ev sahibi"
+   },
+   {
+    "en": "Enjoy!",
+    "tr": "Kısa ve samimi"
+   },
+   {
+    "en": "Dig in!",
+    "tr": "Yemeğe başlarken"
+   }
+  ],
+  "cover": "‘Afiyet olsun’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r20-hata-explain",
+  "template": "hata",
+  "hook": "3 saniyede<br><em>hatayı bul.</em>",
+  "wrong": "Can you explain me this?",
+  "fix": "Can you explain this to me?",
+  "explain": "<b>explain</b> kişiyi <b>to</b> ile alır: <b>explain it to me</b>.",
+  "cover": "“Explain me”<br><em>deme</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r21-pov-meeting",
+  "template": "pov",
+  "hook": "POV: Toplantıda<br><em>anlamadın</em>",
+  "them_name": "MÜDÜRÜN",
+  "them": "Does that make sense?",
+  "wrong": "Repeat please!",
+  "right": "Sorry, could you go over that again?",
+  "wrong_tag": "KABA DUYULUR",
+  "explain": "<b>Repeat!</b> emir gibi duyulur. Kibar rica: <b>Could you…?</b>",
+  "cover": "Anlamayınca<br><em>ne dersin?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r22-vs-telefon",
+  "template": "vs",
+  "hook": "Telefonda<br><em>Türk usulü</em>",
+  "rounds": [
+   {
+    "ctx": "Telefonu açınca",
+    "tr": "Yes, please?",
+    "na": "Hello?"
+   },
+   {
+    "ctx": "Kim aradı?",
+    "tr": "Who are you?",
+    "na": "Who's calling, please?"
+   },
+   {
+    "ctx": "Kapatırken",
+    "tr": "Okay okay, bye bye bye!",
+    "na": "Talk soon. Bye!"
+   }
+  ],
+  "cover": "Telefonda<br><em>Türk usulü</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r23-nasil-kusura",
+  "template": "nasil",
+  "hook": "‘Kusura bakma’<br><em>nasıl denir?</em>",
+  "literal": "Don't look at the fault!",
+  "options": [
+   {
+    "en": "Sorry about that!",
+    "tr": "Küçük bir aksilikte"
+   },
+   {
+    "en": "My bad!",
+    "tr": "Arkadaşlar arasında"
+   },
+   {
+    "en": "I apologize.",
+    "tr": "Resmî ortamda"
+   }
+  ],
+  "cover": "‘Kusura bakma’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r24-hata-works",
+  "template": "hata",
+  "hook": "Bu hatayı<br><em>herkes yapar.</em>",
+  "wrong": "She work in a bank.",
+  "fix": "She works in a bank.",
+  "explain": "<b>he/she/it</b> ile geniş zamanda fiile <b>-s</b> gelir.",
+  "cover": "She work?<br><em>She works!</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r25-quiz-discuss",
+  "template": "quiz",
+  "hook": "Hangisi<br><em>doğru?</em>",
+  "options": [
+   "We discussed it.",
+   "We discussed about it."
+  ],
+  "answer": 0,
+  "explain": "<b>discuss</b> ile <b>about</b> kullanılmaz: <b>discuss the plan</b>.",
+  "cover": "Discuss<br><em>about?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r26-pov-exam",
+  "template": "pov",
+  "hook": "POV: Arkadaşın<br><em>sınavı geçti</em>",
+  "them_name": "ELENA · ERASMUS",
+  "them": "I passed my exam!!",
+  "wrong": "Congratulations. You are very successful.",
+  "right": "No way! Well done, you!",
+  "wrong_tag": "ÇOK RESMİ",
+  "explain": "<b>You are very successful</b> çok resmî. Sohbette: <b>Well done!</b>",
+  "cover": "Tebrik<br><em>böyle edilir</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r27-hata-people",
+  "template": "hata",
+  "hook": "Bu hatayı<br><em>fark et.</em>",
+  "wrong": "People is very friendly here.",
+  "fix": "People are very friendly here.",
+  "explain": "<b>people</b> çoğuldur: <b>people are</b>, <b>is</b> değil.",
+  "cover": "“People is”<br><em>deme</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r28-nasil-hayirli",
+  "template": "nasil",
+  "hook": "‘Hayırlı olsun’<br><em>nasıl denir?</em>",
+  "literal": "Let it be charity!",
+  "options": [
+   {
+    "en": "Congrats!",
+    "tr": "Yeni ev, iş, araba"
+   },
+   {
+    "en": "Enjoy your new place!",
+    "tr": "Yeni eve taşınana"
+   },
+   {
+    "en": "All the best!",
+    "tr": "Yeni bir başlangıca"
+   }
+  ],
+  "cover": "‘Hayırlı olsun’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r29-vs-nezaket",
+  "template": "vs",
+  "hook": "Nezaket<br><em>Türk usulü</em>",
+  "rounds": [
+   {
+    "ctx": "‘Rica ederim’ derken",
+    "tr": "I request!",
+    "na": "You're welcome!"
+   },
+   {
+    "ctx": "‘Bol şans’ derken",
+    "tr": "Plenty luck!",
+    "na": "Good luck!"
+   },
+   {
+    "ctx": "‘Boş ver’ derken",
+    "tr": "Give empty!",
+    "na": "Never mind!"
+   }
+  ],
+  "cover": "‘Rica ederim’<br><em>≠ I request</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r30-urun-waiting",
+  "template": "urun",
+  "hook": "5 dakikada<br><em>1 hata düzelt.</em>",
+  "sentence": "I'm waiting <span class='blank'></span> the bus.",
+  "options": [
+   "to",
+   "for",
+   "at"
+  ],
+  "pick": 0,
+  "right": 1,
+  "fix": "I'm waiting <b style='color:var(--ok-l)'>for</b> the bus.",
+  "explain": "Birini ya da bir şeyi beklerken <b>wait for</b> denir.",
+  "screen": "screen_progress.png",
+  "s2_title": "Gerçek ilerlemeni<br><em>gör.</em>",
+  "cover": "5 dakikada<br><em>1 hata düzelt</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r31-hata-depends",
+  "template": "hata",
+  "hook": "Sen de böyle<br><em>diyor musun?</em>",
+  "wrong": "It depends of the weather.",
+  "fix": "It depends on the weather.",
+  "explain": "<b>depend</b> ile <b>on</b> kullanılır: <b>It depends on…</b>",
+  "cover": "“Depends of”<br><em>deme</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r32-pov-bakarim",
+  "template": "pov",
+  "hook": "POV: Partiye<br><em>çağrıldın</em>",
+  "them_name": "MAX · EV ARKADAŞIN",
+  "them": "Are you coming tonight?",
+  "wrong": "Maybe. I will look.",
+  "right": "Maybe! I'll see how I feel.",
+  "wrong_tag": "KELİMESİ KELİMESİNE",
+  "explain": "‘Bakarım’ <b>I will look</b> değil: <b>I'll see</b> ya da <b>maybe</b>.",
+  "cover": "‘Bakarım’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "r33-nasil-iyiseneler",
+  "template": "nasil",
+  "hook": "‘İyi seneler’<br><em>nasıl denir?</em>",
+  "literal": "Good years!",
+  "options": [
+   {
+    "en": "Happy New Year!",
+    "tr": "Gece yarısı"
+   },
+   {
+    "en": "All the best in 2027!",
+    "tr": "Mesajla yazarken"
+   },
+   {
+    "en": "Here's to a great year!",
+    "tr": "Kadeh kaldırırken"
+   }
+  ],
+  "cta": "Kaydet, bu gece lazım",
+  "cover": "‘İyi seneler’<br><em>nasıl denir?</em>",
+  "kind": "reels"
+ },
+ {
+  "id": "c01-inonat",
+  "kicker": "ZAMAN EDATLARI",
+  "hook": "in, on, at:<br><em>bir kere öğren,</em> bitsin",
+  "promise": "Saat, gün, ay… Hangisi nerede? 5 örnekte.",
+  "items": [
+   {
+    "when": "SAATTE: AT",
+    "en": "The class starts at 9.",
+    "tr": "Ders 9'da başlıyor.",
+    "tip": "Saatler ve <b>night</b>: <b>at 9</b>, <b>at night</b>."
+   },
+   {
+    "when": "GÜNDE: ON",
+    "en": "See you on Monday!",
+    "tr": "Pazartesi görüşürüz!",
+    "tip": "Günler ve tarihler: <b>on Monday</b>, <b>on 5 May</b>."
+   },
+   {
+    "when": "AYDA, YILDA: IN",
+    "en": "I was born in 1999.",
+    "tr": "1999'da doğdum.",
+    "tip": "Ay, yıl, mevsim: <b>in May</b>, <b>in 2027</b>, <b>in winter</b>."
+   },
+   {
+    "when": "GÜNÜN BÖLÜMÜ: IN",
+    "en": "I study in the evening.",
+    "tr": "Akşamları ders çalışırım.",
+    "tip": "<b>in the morning</b>, <b>in the evening</b>; ama <b>at night</b>!"
+   },
+   {
+    "when": "ÖZEL GÜN: ON",
+    "en": "What do you do on New Year's Eve?",
+    "tr": "Yılbaşı gecesi ne yapıyorsun?",
+    "tip": "Belirli bir gün: <b>on my birthday</b>."
+   }
+  ],
+  "quiz": {
+   "q": "Doğru olanı seç:",
+   "options": [
+    "at the evening",
+    "in the evening",
+    "on the evening"
+   ],
+   "answer": 1,
+   "why": "Günün bölümlerinde <b>in</b>: <b>in the evening</b>. İstisna: <b>at night</b>."
+  },
+  "recap_title": "in · on · at özeti",
+  "save": "Kaydet:<br><em>bir daha karıştırma.</em>",
+  "send": "Hep ‘at the morning’ diyen arkadaşına gönder.",
+  "ask": "En çok hangisini karıştırıyorsun?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c02-erasmus",
+  "kicker": "ERASMUS · İLK HAFTA",
+  "hook": "Erasmus'ta ilk hafta:<br><em>bu 5 cümle</em> seni kurtarır",
+  "promise": "Kampüste, yurtta ve kafede ilk günden lazım olacak.",
+  "items": [
+   {
+    "when": "KAMPÜSTE",
+    "en": "Where do I get my student card?",
+    "tr": "Öğrenci kartımı nereden alırım?",
+    "reply": "At the international office!"
+   },
+   {
+    "when": "DERSTE, KAFEDE",
+    "en": "Is this seat taken?",
+    "tr": "Bu koltuk boş mu?",
+    "reply": "No, go ahead!"
+   },
+   {
+    "when": "ANLAMADIĞINDA",
+    "en": "Sorry, could you say that again?",
+    "tr": "Pardon, tekrar söyler misin?",
+    "tip": "<b>What?</b> kaba kaçabilir. <b>Sorry?</b> de olur."
+   },
+   {
+    "when": "YURTTA",
+    "en": "How does the laundry work here?",
+    "tr": "Çamaşırhane nasıl çalışıyor?",
+    "reply": "You need tokens from reception."
+   },
+   {
+    "when": "ARKADAŞ EDİNİRKEN",
+    "en": "Wanna grab a coffee later?",
+    "tr": "Sonra kahve içelim mi?",
+    "reply": "Sounds good! Around five?"
+   }
+  ],
+  "quiz": {
+   "q": "Hocayı anlamadın.<br>Hangisini dersin?",
+   "options": [
+    "What?",
+    "Sorry, could you say that again?",
+    "Repeat!"
+   ],
+   "answer": 1,
+   "why": "<b>What?</b> ve <b>Repeat!</b> kaba duyulur. Kibar ve doğal olan bu."
+  },
+  "save": "Kaydet:<br><em>ilk hafta lazım.</em>",
+  "send": "Erasmus'a gidecek arkadaşına gönder.",
+  "ask": "İlk hafta seni en çok ne zorladı?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c03-havalimani",
+  "kicker": "HAVALİMANINDA",
+  "hook": "Havalimanında<br><em>bu 5 cümle</em> yeter",
+  "promise": "Check-in'den bagaja kadar, gerçek cümleler.",
+  "items": [
+   {
+    "when": "CHECK-IN",
+    "en": "Is this the line for check-in?",
+    "tr": "Check-in sırası bu mu?",
+    "reply": "Yes, it is. Next, please!"
+   },
+   {
+    "when": "KOLTUK",
+    "en": "Could I have a window seat?",
+    "tr": "Cam kenarı alabilir miyim?",
+    "reply": "Sure, 14A is free."
+   },
+   {
+    "when": "BAGAJ",
+    "en": "How many bags can I check in?",
+    "tr": "Kaç bavul verebilirim?",
+    "reply": "One bag, up to 23 kilos."
+   },
+   {
+    "when": "KAPI",
+    "en": "Which gate is my flight?",
+    "tr": "Uçağım hangi kapıdan?",
+    "tip": "Biniş kapısı <b>gate</b>; <b>door</b> değil."
+   },
+   {
+    "when": "BAGAJ GELMEDİ",
+    "en": "My bag didn't arrive.",
+    "tr": "Bavulum gelmedi.",
+    "reply": "Let's fill in a form."
+   }
+  ],
+  "quiz": {
+   "q": "Uçağa biniş kapısı:",
+   "options": [
+    "door",
+    "gate",
+    "port"
+   ],
+   "answer": 1,
+   "why": "Havalimanında biniş kapısına <b>gate</b> denir."
+  },
+  "save": "Kaydet:<br><em>tatilde lazım.</em>",
+  "send": "Yurt dışına uçacak arkadaşına gönder.",
+  "ask": "Havalimanında en son neyi sordun?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c04-yalanci",
+  "kicker": "YALANCI KELİMELER",
+  "hook": "Bu 5 kelime<br><em>sandığın</em> anlamda değil",
+  "promise": "Türkçeye benziyor ama anlamı başka.",
+  "items": [
+   {
+    "when": "SYMPATHETIC",
+    "en": "She was very sympathetic.",
+    "tr": "Çok anlayışlıydı. (Sempatik değil!)",
+    "tip": "Sempatik için: <b>likeable</b>, <b>nice</b>."
+   },
+   {
+    "when": "AGENDA",
+    "en": "What's on the agenda?",
+    "tr": "Gündemde ne var? (Ajanda değil!)",
+    "tip": "Ajanda için: <b>planner</b>."
+   },
+   {
+    "when": "ACTUALLY",
+    "en": "Actually, I'm from Izmir.",
+    "tr": "Aslında İzmirliyim. (Aktüel değil!)",
+    "tip": "Şu anda için: <b>currently</b>."
+   },
+   {
+    "when": "SENSIBLE",
+    "en": "That's a sensible plan.",
+    "tr": "Mantıklı bir plan. (Hassas değil!)",
+    "tip": "Hassas için: <b>sensitive</b>."
+   },
+   {
+    "when": "CONDITION",
+    "en": "The car is in good condition.",
+    "tr": "Araba iyi durumda. (Kondisyon değil!)",
+    "tip": "Kondisyon için: <b>fitness</b>."
+   }
+  ],
+  "quiz": {
+   "q": "Sempatik birini anlatıyorsun:",
+   "options": [
+    "He's sympathetic.",
+    "He's likeable.",
+    "He's sensible."
+   ],
+   "answer": 1,
+   "why": "<b>sympathetic</b> anlayışlı demek. Sempatik için <b>likeable</b>."
+  },
+  "save": "Kaydet:<br><em>tuzağa düşme.</em>",
+  "send": "‘Sympathetic’ diyen arkadaşına gönder.",
+  "ask": "Başka hangi yalancı kelimeyi biliyorsun?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c05-smalltalk",
+  "kicker": "SMALL TALK",
+  "hook": "Sohbeti<br><em>tıkanmadan</em> sürdür",
+  "promise": "5 soru ve doğal cevapları.",
+  "items": [
+   {
+    "when": "SELAMLAŞIRKEN",
+    "en": "How's it going?",
+    "tr": "Nasıl gidiyor?",
+    "reply": "Not bad! You?"
+   },
+   {
+    "when": "HAFTA SONU",
+    "en": "Any plans for the weekend?",
+    "tr": "Hafta sonu için plan var mı?",
+    "reply": "Nothing much, just relaxing."
+   },
+   {
+    "when": "İŞ, OKUL",
+    "en": "What do you do?",
+    "tr": "Ne iş yapıyorsun?",
+    "reply": "I'm a student. I study law."
+   },
+   {
+    "when": "MEMLEKET",
+    "en": "Where are you from?",
+    "tr": "Nerelisin?",
+    "reply": "I'm from Türkiye, from Bursa."
+   },
+   {
+    "when": "KAPATIRKEN",
+    "en": "It was nice chatting with you!",
+    "tr": "Seninle sohbet etmek güzeldi!",
+    "reply": "You too! See you around."
+   }
+  ],
+  "quiz": {
+   "q": "‘What do you do?’ ne sorar?",
+   "options": [
+    "Şu an ne yapıyorsun?",
+    "Ne iş yapıyorsun?",
+    "Ne yapmak istersin?"
+   ],
+   "answer": 1,
+   "why": "<b>What do you do?</b> mesleği sorar. Şu an için: <b>What are you doing?</b>"
+  },
+  "save": "Kaydet:<br><em>sohbette lazım.</em>",
+  "send": "Yabancı arkadaşı olan birine gönder.",
+  "ask": "Small talk'ta en çok nerede tıkanıyorsun?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c06-otel",
+  "kicker": "OTELDE",
+  "hook": "Otelde<br><em>bu 5 cümle</em> yeter",
+  "promise": "Girişten çıkışa, kibar ve doğal.",
+  "items": [
+   {
+    "when": "GİRİŞ",
+    "en": "I have a reservation under Yılmaz.",
+    "tr": "Yılmaz adına rezervasyonum var.",
+    "reply": "Welcome! Can I see your ID?"
+   },
+   {
+    "when": "KAHVALTI",
+    "en": "What time is breakfast?",
+    "tr": "Kahvaltı saat kaçta?",
+    "reply": "From 7 to 10, on the ground floor."
+   },
+   {
+    "when": "WI-FI",
+    "en": "What's the Wi-Fi password?",
+    "tr": "Wi-Fi şifresi ne?",
+    "reply": "It's on your key card."
+   },
+   {
+    "when": "SORUN",
+    "en": "The air conditioning isn't working.",
+    "tr": "Klima çalışmıyor.",
+    "reply": "Sorry! We'll send someone up."
+   },
+   {
+    "when": "ÇIKIŞ",
+    "en": "Could I leave my bags here?",
+    "tr": "Çantalarımı burada bırakabilir miyim?",
+    "reply": "Of course, until 6 pm."
+   }
+  ],
+  "quiz": {
+   "q": "Otelden ayrılırken:",
+   "options": [
+    "I want to go out.",
+    "I'd like to check out.",
+    "I am leaving the hotel now."
+   ],
+   "answer": 1,
+   "why": "Otelden çıkış yapmak <b>check out</b>. Giriş: <b>check in</b>."
+  },
+  "save": "Kaydet:<br><em>tatilde lazım.</em>",
+  "send": "Tatile çıkacak arkadaşına gönder.",
+  "ask": "Otelde en son ne istedin?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c07-phrasal",
+  "kicker": "PHRASAL VERBS",
+  "hook": "Her gün duyacağın<br><em>5 phrasal verb</em>",
+  "promise": "Dizilerde, işte, sohbette.",
+  "items": [
+   {
+    "when": "FIGURE OUT",
+    "en": "I can't figure it out.",
+    "tr": "Bir türlü çözemiyorum.",
+    "tip": "<b>figure out</b> = anlamak, çözmek."
+   },
+   {
+    "when": "RUN OUT OF",
+    "en": "We ran out of milk.",
+    "tr": "Sütümüz bitti.",
+    "tip": "<b>run out of</b> = bir şey bitmek."
+   },
+   {
+    "when": "LOOK FORWARD TO",
+    "en": "I'm looking forward to it!",
+    "tr": "Dört gözle bekliyorum!",
+    "tip": "Ardından <b>-ing</b>: <b>looking forward to seeing you</b>."
+   },
+   {
+    "when": "PUT OFF",
+    "en": "Don't put it off!",
+    "tr": "Erteleme!",
+    "tip": "<b>put off</b> = ertelemek."
+   },
+   {
+    "when": "CATCH UP",
+    "en": "Let's catch up soon!",
+    "tr": "Yakında görüşüp hasret giderelim!",
+    "tip": "<b>catch up</b> = hasret gidermek."
+   }
+  ],
+  "quiz": {
+   "q": "‘Benzinimiz bitti’:",
+   "options": [
+    "We ran out of gas.",
+    "We finished of gas.",
+    "We put off gas."
+   ],
+   "answer": 0,
+   "why": "Bir şey bitince <b>run out of</b>: <b>We ran out of gas.</b>"
+  },
+  "save": "Kaydet:<br><em>dizide yakala.</em>",
+  "send": "Dizi izleyen arkadaşına gönder.",
+  "ask": "En çok hangisini duyuyorsun?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c08-hatalar",
+  "kicker": "EN SIK 5 HATA",
+  "hook": "Türklerin<br><em>en sık</em> yaptığı<br>5 hata",
+  "promise": "Doğrusu ve kısa nedeni, tek yerde.",
+  "items": [
+   {
+    "when": "AGREE",
+    "en": "I agree with you.",
+    "tr": "“I am agree” değil.",
+    "tip": "<b>agree</b> fiil; önüne <b>am</b> gelmez."
+   },
+   {
+    "when": "YAŞ",
+    "en": "I'm 25 years old.",
+    "tr": "“I have 25 years” değil.",
+    "tip": "Yaş <b>be</b> ile söylenir."
+   },
+   {
+    "when": "HATA YAPMAK",
+    "en": "I made a mistake.",
+    "tr": "“I did a mistake” değil.",
+    "tip": "Hata: <b>make a mistake</b>."
+   },
+   {
+    "when": "IŞIK",
+    "en": "Can you turn on the light?",
+    "tr": "“Open the light” değil.",
+    "tip": "Cihazlar: <b>turn on / off</b>."
+   },
+   {
+    "when": "BEKLEMEK",
+    "en": "I'm waiting for you.",
+    "tr": "“I'm waiting you” değil.",
+    "tip": "Beklerken <b>wait for</b>."
+   }
+  ],
+  "quiz": {
+   "q": "Hangisi doğru?",
+   "options": [
+    "I am agree.",
+    "I agree.",
+    "I am agreeing."
+   ],
+   "answer": 1,
+   "why": "<b>agree</b> zaten fiil: <b>I agree.</b>"
+  },
+  "save": "Kaydet:<br><em>bir daha yapma.</em>",
+  "send": "Bu hataları yapan arkadaşına gönder.",
+  "ask": "Sen hangisini yapıyordun?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c09-telefon",
+  "kicker": "TELEFONDA",
+  "hook": "Telefonda<br><em>panik yapma:</em><br>5 kalıp",
+  "promise": "Arayan da sen ol, aranan da.",
+  "items": [
+   {
+    "when": "TANITIRKEN",
+    "en": "Hi, this is Ece.",
+    "tr": "Merhaba, ben Ece.",
+    "tip": "Telefonda <b>I am Ece</b> değil, <b>this is Ece</b>."
+   },
+   {
+    "when": "BİRİNİ İSTERKEN",
+    "en": "Could I speak to Mark, please?",
+    "tr": "Mark'la görüşebilir miyim?",
+    "reply": "Speaking!"
+   },
+   {
+    "when": "SES KESİLİNCE",
+    "en": "Sorry, you're breaking up.",
+    "tr": "Pardon, sesin kesiliyor.",
+    "reply": "Let me call you back."
+   },
+   {
+    "when": "MEŞGULKEN",
+    "en": "Can I call you back?",
+    "tr": "Seni sonra arayabilir miyim?",
+    "reply": "Sure, no problem."
+   },
+   {
+    "when": "ADRES",
+    "en": "Could you text me the address?",
+    "tr": "Adresi mesaj atar mısın?",
+    "reply": "Sending it now!"
+   }
+  ],
+  "quiz": {
+   "q": "Telefonda ‘Is this Ece?’ diye sordular:",
+   "options": [
+    "Yes, I am Ece.",
+    "Speaking!",
+    "Ece is me."
+   ],
+   "answer": 1,
+   "why": "Telefonda ‘benim’ demenin doğal yolu: <b>Speaking!</b>"
+  },
+  "save": "Kaydet:<br><em>telefonda lazım.</em>",
+  "send": "Telefonda konuşmaktan çekinen arkadaşına gönder.",
+  "ask": "Telefonda İngilizce konuşmak seni geriyor mu?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c10-doktor",
+  "kicker": "DOKTORDA",
+  "hook": "Yurt dışında<br><em>hastalanırsan</em><br>5 cümle",
+  "promise": "Belirtini anlat, ilacını sor.",
+  "items": [
+   {
+    "when": "ATEŞ",
+    "en": "I've had a fever since yesterday.",
+    "tr": "Dünden beri ateşim var.",
+    "tip": "Süreden bahsederken <b>since yesterday</b>."
+   },
+   {
+    "when": "BOĞAZ",
+    "en": "My throat hurts.",
+    "tr": "Boğazım ağrıyor.",
+    "reply": "Let me take a look."
+   },
+   {
+    "when": "ALERJİ",
+    "en": "I'm allergic to penicillin.",
+    "tr": "Penisiline alerjim var.",
+    "tip": "<b>allergic to</b> + madde."
+   },
+   {
+    "when": "REÇETE",
+    "en": "Do I need a prescription?",
+    "tr": "Reçete gerekiyor mu?",
+    "reply": "Yes, I'll write you one."
+   },
+   {
+    "when": "İLAÇ",
+    "en": "How often should I take it?",
+    "tr": "Ne sıklıkla almalıyım?",
+    "reply": "Twice a day, after meals."
+   }
+  ],
+  "quiz": {
+   "q": "‘Başım ağrıyor’:",
+   "options": [
+    "I have a headache.",
+    "My head is aching me.",
+    "I have head pain."
+   ],
+   "answer": 0,
+   "why": "Doğal olan: <b>I have a headache.</b>"
+  },
+  "save": "Kaydet:<br><em>umarım lazım olmaz.</em>",
+  "send": "Yurt dışında yaşayan arkadaşına gönder.",
+  "ask": "Yurt dışında hiç doktora gittin mi?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c11-ulasim",
+  "kicker": "ULAŞIM",
+  "hook": "Otobüste, trende:<br><em>5 kurtarıcı cümle</em>",
+  "promise": "Bilet al, yolunu sor, aktarma yap.",
+  "items": [
+   {
+    "when": "OTOBÜS",
+    "en": "Does this bus go to the city centre?",
+    "tr": "Bu otobüs şehir merkezine gidiyor mu?",
+    "reply": "Yes, it's the fourth stop."
+   },
+   {
+    "when": "BİLET",
+    "en": "A return ticket to Oxford, please.",
+    "tr": "Oxford'a gidiş-dönüş bilet lütfen.",
+    "tip": "Gidiş-dönüş: <b>return</b> (İng.), <b>round trip</b> (ABD)."
+   },
+   {
+    "when": "PERON",
+    "en": "Which platform is it?",
+    "tr": "Hangi peron?",
+    "reply": "Platform 2, in five minutes."
+   },
+   {
+    "when": "AKTARMA",
+    "en": "Where do I change for Camden?",
+    "tr": "Camden için nerede aktarma yaparım?",
+    "tip": "Aktarma yapmak: <b>change</b>."
+   },
+   {
+    "when": "İNERKEN",
+    "en": "Could you tell me when to get off?",
+    "tr": "Ne zaman ineceğimi söyler misiniz?",
+    "reply": "Sure, I'll let you know."
+   }
+  ],
+  "quiz": {
+   "q": "Gidiş-dönüş bilet (İngiltere):",
+   "options": [
+    "two-way ticket",
+    "return ticket",
+    "back ticket"
+   ],
+   "answer": 1,
+   "why": "İngiltere'de <b>return ticket</b>, ABD'de <b>round-trip ticket</b>."
+  },
+  "save": "Kaydet:<br><em>yolda lazım.</em>",
+  "send": "Yurt dışına gidecek arkadaşına gönder.",
+  "ask": "En çok hangi şehirde kayboldun?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c12-restoran",
+  "kicker": "RESTORANDA",
+  "hook": "Restoranda<br><em>bu 5 cümle</em> yeter",
+  "promise": "Masa iste, sipariş ver, hesabı öde.",
+  "items": [
+   {
+    "when": "GİRİŞ",
+    "en": "A table for two, please.",
+    "tr": "İki kişilik masa lütfen.",
+    "reply": "Right this way!"
+   },
+   {
+    "when": "ÖNERİ",
+    "en": "What do you recommend?",
+    "tr": "Ne önerirsiniz?",
+    "reply": "The fish is great today."
+   },
+   {
+    "when": "SİPARİŞ",
+    "en": "Can I get the pasta, please?",
+    "tr": "Makarnayı alabilir miyim?",
+    "tip": "<b>I want…</b> sert duyulur; <b>Can I get…?</b> doğal."
+   },
+   {
+    "when": "ALERJİ",
+    "en": "Does this have nuts in it?",
+    "tr": "Bunda fındık-fıstık var mı?",
+    "reply": "No, it's nut-free."
+   },
+   {
+    "when": "HESAP",
+    "en": "Could we get the bill, please?",
+    "tr": "Hesabı alabilir miyiz?",
+    "tip": "Hesap: <b>the bill</b> (İng.), <b>the check</b> (ABD)."
+   }
+  ],
+  "quiz": {
+   "q": "Hesabı isterken:",
+   "options": [
+    "Give me the account.",
+    "Could we get the bill?",
+    "We want to pay money."
+   ],
+   "answer": 1,
+   "why": "Hesap <b>account</b> değil. Kibarı: <b>Could we get the bill?</b>"
+  },
+  "save": "Kaydet:<br><em>yemekte lazım.</em>",
+  "send": "Yemek arkadaşına gönder.",
+  "ask": "Yurt dışında en sevdiğin yemek neydi?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c13-yeniyilmesaj",
+  "kicker": "YENİ YIL",
+  "hook": "Yeni yıl mesajını<br><em>İngilizce</em> yaz",
+  "promise": "Arkadaşa, hocaya, iş yerine: hazır kalıplar.",
+  "items": [
+   {
+    "when": "ARKADAŞA",
+    "en": "Happy New Year! Love you guys!",
+    "tr": "Mutlu yıllar! Sizi seviyorum!",
+    "tip": "Gruba seslenirken <b>you guys</b>."
+   },
+   {
+    "when": "HERKESE",
+    "en": "Wishing you all the best in 2027!",
+    "tr": "2027'de her şeyin en iyisini dilerim!",
+    "tip": "<b>Wishing you…</b> hem samimi hem resmî."
+   },
+   {
+    "when": "HOCANA",
+    "en": "Thank you for everything this year.",
+    "tr": "Bu yıl her şey için teşekkürler.",
+    "reply": "Happy New Year to you too!"
+   },
+   {
+    "when": "İŞ YERİNE",
+    "en": "Wishing you a successful new year.",
+    "tr": "Başarılı bir yeni yıl dilerim.",
+    "tip": "Resmî ortam için ideal."
+   },
+   {
+    "when": "KADEH KALDIRIRKEN",
+    "en": "Here's to a great year!",
+    "tr": "Harika bir yıla!",
+    "tip": "<b>Here's to…</b> = …a (kadeh kaldırırken)."
+   }
+  ],
+  "quiz": {
+   "q": "Hocana yazıyorsun:",
+   "options": [
+    "Happy New Year, bro!",
+    "Wishing you a wonderful new year!",
+    "New year, new me!"
+   ],
+   "answer": 1,
+   "why": "Resmî ve sıcak: <b>Wishing you a wonderful new year!</b>"
+  },
+  "save": "Kaydet:<br><em>31 Aralık'ta lazım.</em>",
+  "send": "Mesajını İngilizce yazacak arkadaşına gönder.",
+  "ask": "Bu yıl kime İngilizce mesaj atacaksın?",
+  "kind": "carousel"
+ },
+ {
+  "id": "c14-hedef",
+  "kicker": "YENİ YIL HEDEFLERİ",
+  "hook": "2027 hedefini<br><em>İngilizce</em> söyle",
+  "promise": "5 kalıp, kendi hedefinle doldur.",
+  "items": [
+   {
+    "when": "PLAN",
+    "en": "This year, I'm going to learn English.",
+    "tr": "Bu yıl İngilizce öğreneceğim.",
+    "tip": "Kararlı plan: <b>I'm going to…</b>"
+   },
+   {
+    "when": "BAŞLAMAK",
+    "en": "I want to start working out.",
+    "tr": "Spora başlamak istiyorum.",
+    "tip": "<b>start</b> + <b>-ing</b> ya da <b>to</b>: ikisi de olur."
+   },
+   {
+    "when": "BIRAKMAK",
+    "en": "I'm going to quit sugar.",
+    "tr": "Şekeri bırakacağım.",
+    "tip": "Bırakmak: <b>quit</b>, <b>give up</b>."
+   },
+   {
+    "when": "HEDEF",
+    "en": "My goal is to read 12 books.",
+    "tr": "Hedefim 12 kitap okumak.",
+    "reply": "That's a great goal!"
+   },
+   {
+    "when": "DENEMEK",
+    "en": "I'll try to be more patient.",
+    "tr": "Daha sabırlı olmaya çalışacağım.",
+    "tip": "<b>try to</b> + fiil."
+   }
+  ],
+  "quiz": {
+   "q": "‘Sigarayı bırakacağım’:",
+   "options": [
+    "I'm going to quit smoking.",
+    "I'm going to leave smoke.",
+    "I will stop to smoke."
+   ],
+   "answer": 0,
+   "why": "<b>quit smoking</b> doğru. <b>stop to smoke</b> = sigara içmek için durmak!"
+  },
+  "save": "Kaydet:<br><em>yıl boyu bak.</em>",
+  "send": "Hedefini birlikte takip edeceğin arkadaşına gönder.",
+  "ask": "2027 hedefini İngilizce yaz!",
+  "kind": "carousel"
+ },
+ {
+  "id": "c15-yilozeti",
+  "kicker": "2026 ÖZETİ",
+  "hook": "Bu yıl öğrendiğin<br><em>5 altın kalıp</em>",
+  "promise": "Aralık'ın en kullanışlı cümleleri tek yerde.",
+  "items": [
+   {
+    "when": "SELAM",
+    "en": "What's up?",
+    "tr": "Ne var ne yok?",
+    "reply": "Not much! You?"
+   },
+   {
+    "when": "SİPARİŞ",
+    "en": "Can I get a latte, please?",
+    "tr": "Bir latte alabilir miyim?",
+    "tip": "<b>I want</b> yerine <b>Can I get…?</b>"
+   },
+   {
+    "when": "HESAP",
+    "en": "Could we get the bill?",
+    "tr": "Hesabı alabilir miyiz?",
+    "tip": "<b>account</b> değil, <b>bill</b>."
+   },
+   {
+    "when": "BAKARIM",
+    "en": "I'll see how I feel.",
+    "tr": "Bakarım, duruma göre.",
+    "tip": "<b>I will look</b> değil!"
+   },
+   {
+    "when": "VEDA",
+    "en": "Take care! See you!",
+    "tr": "Kendine iyi bak! Görüşürüz!",
+    "reply": "You too!"
+   }
+  ],
+  "quiz": {
+   "q": "‘What's up?’ sorusuna cevap:",
+   "options": [
+    "I'm fine, thank you.",
+    "Not much! You?",
+    "Yes, what's up."
+   ],
+   "answer": 1,
+   "why": "<b>What's up?</b> hâl sormaz; cevabı: <b>Not much!</b>"
+  },
+  "save": "Kaydet:<br><em>2027'ye hazır ol.</em>",
+  "send": "Birlikte İngilizce çalıştığın arkadaşına gönder.",
+  "ask": "2027'de İngilizceyle ne yapmak istiyorsun?",
+  "kind": "carousel"
+ }
+]

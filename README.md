@@ -56,6 +56,15 @@ Reels: tek MP4 (H.264, AAC), 9:16, 3–90 saniye. Carousel: 2–10 JPEG, 1080×1
 - `story: false`: bu reels'i Story'ye koyma. Varsayılan `config.json` içindeki `story_after_reel`.
 - `duration_s`: video süresi; istatistiklerde izlenme oranı için kullanılır.
 - Açıklamada en fazla 5 hashtag olabilir (Instagram kuralı); fazlası plan hatası verir.
+- `music_id`, `music_title`, `music_volume`: Instagram'ın lisanslı parçası ve sesi (0–100). Konuşmasız yeni Reels için 70.
+  Parça eklenemezse ya da hiç parça yoksa `media_fallback` (kendi fon müziğimizle olan sürüm) paylaşılır.
+- `src_id`, `replaces`: gönderinin stüdyodaki içerik kimliği ve yerini aldığı eski gönderi.
+
+## İçerik üretimi (stüdyo)
+
+28 Kasım'dan itibaren gönderiler `studio/` ile üretiliyor (`media/v2/<id>/`). Altı Reels şablonu (Hata Avı, 3 Saniye Testi,
+POV, Nasıl denir, Türk usulü vs native, Uygulamada böyle) ve carousel; üretim kılavuzunun güvenli alan, yazı boyu, renk, ses
+ve kodlama kurallarını bir kalite kapısı denetler. Ayrıntı: `studio/README.md`.
 
 ## Takvim
 

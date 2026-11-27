@@ -1,3 +1,11 @@
 __pycache__/
 *.pyc
 .DS_Store
+# stüdyo: varlıklar özel depodan gelir (setup_assets.py), üretim çıktıları depoya girmez
+studio/goof/
+studio/shots/
+studio/fonts/*.ttf
+studio/out/
+studio/tmp/
+studio/node_modules/
+__pycache__/
