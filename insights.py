@@ -24,9 +24,9 @@ from bot import Api, load, save, TZ
 
 ROOT = Path(__file__).resolve().parent
 REEL_METRICS = ['views', 'reach', 'likes', 'comments', 'shares', 'saved', 'total_interactions',
-                'ig_reels_avg_watch_time', 'ig_reels_video_view_total_time', 'reels_skip_rate', 'reposts']
+                'ig_reels_avg_watch_time', 'ig_reels_video_view_total_time', 'reels_skip_rate']
 FEED_METRICS = ['views', 'reach', 'likes', 'comments', 'shares', 'saved', 'total_interactions',
-                'follows', 'profile_visits', 'profile_activity', 'reposts']
+                'follows', 'profile_visits', 'profile_activity']
 ACCOUNT_METRICS = ['reach', 'views', 'accounts_engaged', 'total_interactions', 'likes', 'comments', 'shares',
                    'saves', 'follows_and_unfollows', 'profile_links_taps']
 MILESTONES = [('24s', 24), ('72s', 72), ('7g', 168)]
@@ -103,7 +103,7 @@ def media_insights(api, mid, metrics):
             out.update(metric_values(api.call('GET', f'{mid}/insights', {'metric': m})))
         except RuntimeError as e:
             errors.append(f'{m}: {str(e)[:300]}')
-            if 'not supported' in str(e).lower() or '(#100)' in str(e):
+            if 'support' in str(e).lower() or '(#100)' in str(e):
                 unsupported.add(m)
     return out
 
@@ -196,7 +196,7 @@ def main():
         }
         media_out[m['id']] = rec
         for name, hours in MILESTONES:
-            if age_h >= hours and (m['id'], name) not in taken and age_h < hours + 24 * 3:
+            if vals and age_h >= hours and (m['id'], name) not in taken and age_h < hours + 24 * 3:
                 new_snaps.append({'at': now.isoformat(timespec='seconds'), 'milestone': name, **rec})
 
     account = account_summary(api, ig_id)
