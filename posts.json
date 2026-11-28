@@ -1509,7 +1509,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“What's up?” diye sorulunca “I'm fine, thank you” deme 🙈\nWhat's up? hâl hatır sormaz, ne var ne yok der. Doğal cevap: Not much! You?\n\nErasmus'a gidecek arkadaşına gönder, ilk gün rezil olmasın 😅\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 28
+  "replaces": 28,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 103,
@@ -1526,7 +1528,9 @@
   "caption": "“Kolay gelsin” İngilizcede nasıl denir? “Let it come easy” değil 😅\nDuruma göre: Don't work too hard! · Good luck with it! · Hang in there!\n\nKaydet, lazım olacak 📌 Hangi Türkçe ifadenin İngilizcesini merak ediyorsun? Yorumlara yaz, Goof cevaplasın.\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
   "replaces": 30,
   "music_id": "423124700418880",
-  "music_title": "Good Vibes · Giulio Cercato"
+  "music_title": "Good Vibes · Giulio Cercato",
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 104,
@@ -1543,7 +1547,9 @@
   "music_title": "Good Time · Alex Blue",
   "music_volume": 70,
   "caption": "“I am agree” yanlış! İngilizcede doğrusu: I agree with you ✅\nagree zaten bir fiil; önüne am/is/are gelmez.\n\nHatayı 3 saniyede buldun mu? Yorumlara yaz 👇 Hep “I am agree” diyen arkadaşına da gönder.\n\nYanlış yazınca Goof nedenini Türkçe açıklıyor: LINGOOF, iPhone'da ücretsiz. Link profilde.\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 52
+  "replaces": 52,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 105,
@@ -1577,7 +1583,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Erasmus'a ya da yurt dışına gidiyorsan kaydet 📌 İlk hafta bu 5 cümle seni kurtarır.\nKampüs, ders, yurt ve yeni arkadaşlar için hazır kalıplar; sonda mini test var.\n\nErasmus'a gidecek arkadaşına gönder 💜\n\nBu kalıpları LINGOOF'ta günde 5 dakikada tekrar et: iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 29
+  "replaces": 29,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 106,
@@ -1595,7 +1603,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "Sıkıldığında “I'm boring” deme, “ben sıkıcıyım” demiş olursun 😅\nSıkıldıysan: I'm bored. Sıkıcı bir şey için: It's boring.\n\n3 saniyede bildin mi? A mı B mi, yorumlara yaz 👇\n\n#ingilizcegramer #ingilizcetest #ingilizceöğren #lingoof",
-  "replaces": 32
+  "replaces": 32,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 107,
@@ -1612,7 +1622,9 @@
   "music_title": "Happy Days · Giulio Cercato",
   "music_volume": 70,
   "caption": "LINGOOF'ta yanlış yapmak serbest: Goof nedenini hemen Türkçe açıklıyor 💜\n“at the evening” mı “in the evening” mı? Saatte at, günde on, günün bölümünde in.\n\nGünde 5 dakika, A1'den C1'e. iPhone'da ücretsiz, link profilde 📲\n\n#ingilizceöğren #ingilizceuygulama #günlükingilizce #lingoof",
-  "replaces": 58
+  "replaces": 58,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 108,
@@ -1646,7 +1658,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Havalimanında İngilizce: check-in'den kayıp bavula 5 cümle ✈️\nWindow seat, gate, check in… Hepsi cevaplarıyla.\n\nKaydet 📌 Yurt dışına uçacak arkadaşına gönder.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 35
+  "replaces": 35,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 109,
@@ -1664,7 +1678,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“Görüşürüz” → We will see? 😅 Türk usulü vs native vedalaşma\nSee you! · Take care! · Thanks!\n\nHangisini sen de söylüyordun? Yorumlara yaz, arkadaşına gönder 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 36
+  "replaces": 36,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 110,
@@ -1681,7 +1697,9 @@
   "music_title": "Run It Up · SugarBeats",
   "music_volume": 70,
   "caption": "Restoranda hesabı isterken “account” deme 🙈 Doğrusu: Could we get the bill?\nİngiltere'de the bill, Amerika'da the check.\n\nYurt dışına gidecek arkadaşına gönder 📌\n\nBu kalıpları LINGOOF'ta günde 5 dakikada tekrar et: iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 72
+  "replaces": 72,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 111,
@@ -1715,7 +1733,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Yalancı kelimeler: sympathetic sempatik değil, agenda ajanda değil 🤥\nTürkçeye benzeyen ama bambaşka anlama gelen 5 kelime.\n\nKaydet 📌 Başka hangi yalancı kelimeyi biliyorsun? Yorumlara yaz.\n\n#ingilizcekelime #yalancıkelimeler #ingilizceöğren #lingoof",
-  "replaces": 31
+  "replaces": 31,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 112,
@@ -1733,7 +1753,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“I did a mistake” değil, “I made a mistake” 😅\nHata, karar ve plan make ile kurulur: make a mistake, make a decision, make a plan.\n\nBunu bilmeyen kaldıysa gönder 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 40
+  "replaces": 40,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 113,
@@ -1750,7 +1772,9 @@
   "music_title": "LALALA · Giulio Cercato",
   "music_volume": 70,
   "caption": "“Geçmiş olsun” İngilizcede “Let it be past” değil 🤒\nHasta birine: Get well soon! · Mesajda: Hope you feel better! · Kötü bir habere: Sorry to hear that!\n\nKaydet 📌 Sıradaki ifadeyi yorumlarda sen seç.\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 46
+  "replaces": 46,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 114,
@@ -1767,7 +1791,9 @@
   "music_title": "Wildflowers · Nick Gallant",
   "music_volume": 70,
   "caption": "İngiltere'de biri “You alright?” derse hasta olup olmadığını sormuyor 😄\nBu sadece bir selam. Cevap: Yeah, good thanks! You?\n\nİngiltere'ye gidecek arkadaşına gönder 👇\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 60
+  "replaces": 60,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 115,
@@ -1801,7 +1827,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Small talk'ta tıkanma: 5 soru ve doğal cevapları 💬\nHow's it going? · Any plans for the weekend? · What do you do?\n\nKaydet 📌 Sonda mini test var: What do you do? ne sorar?\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#ingilizcekonuşma #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 39
+  "replaces": 39,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 116,
@@ -1819,7 +1847,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "Sofrada “Give me the salt” dersen kaba duyulursun 🧂\nKibar rica: Could you pass the salt?\n\n3 saniyede bildin mi? Cevabını yorumlara yaz 👇\n\nYanlış yazınca Goof nedenini Türkçe açıklıyor: LINGOOF, iPhone'da ücretsiz. Link profilde.\n\n#ingilizcegramer #ingilizcetest #ingilizceöğren #lingoof",
-  "replaces": 38
+  "replaces": 38,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 117,
@@ -1836,7 +1866,9 @@
   "music_title": "Good Vibes · Giulio Cercato",
   "music_volume": 70,
   "caption": "Yaşını söylerken “I have 25 years” deme 🙅\nİngilizcede yaş be ile söylenir: I'm 25 ya da I'm 25 years old.\n\nArkadaşını etiketle, o da öğrensin 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 74
+  "replaces": 74,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 118,
@@ -1870,7 +1902,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Otelde İngilizce: girişten çıkışa 5 cümle 🏨\nRezervasyon, kahvaltı, Wi-Fi, arıza ve çıkış; hepsi cevaplarıyla.\n\nKaydet 📌 Tatile çıkacak arkadaşına gönder.\n\nBu kalıpları LINGOOF'ta günde 5 dakikada tekrar et: iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 41
+  "replaces": 41,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 119,
@@ -1888,7 +1922,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“Hadi ya!” → Come on ya? 😂 Şaşırınca native nasıl der?\nNo way! · You're kidding! · Totally!\n\nSen en çok hangisini kullanıyorsun? Yorumlara yaz 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 42
+  "replaces": 42,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 120,
@@ -1905,7 +1941,9 @@
   "music_title": "Superhero Origin Story · Global Genius",
   "music_volume": 70,
   "caption": "“Eline sağlık” → Health to your hands? 😅 İngilizcede böyle bir kalıp yok.\nYerine: This is delicious! · You're a great cook! · Thanks for dinner!\n\nKaydet 📌 Yemeğe davet eden arkadaşına gönder.\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 54
+  "replaces": 54,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 121,
@@ -1939,7 +1977,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Her gün duyacağın 5 phrasal verb: figure out, run out of, look forward to, put off, catch up 🎬\nHepsi örnek cümleyle, sonda mini test.\n\nKaydet 📌 Dizi izleyen arkadaşına gönder.\n\n#ingilizcegramer #ingilizcetest #ingilizceöğren #lingoof",
-  "replaces": 43
+  "replaces": 43,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 122,
@@ -1957,7 +1997,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "Biri hapşırınca “Live long!” deme 🤧 Doğrusu: Bless you!\nSana söylenirse cevabı: Thanks!\n\nBunu bilmeyen arkadaşına gönder 😅\n\n#ingilizcekonuşma #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 66
+  "replaces": 66,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 123,
@@ -1974,7 +2016,9 @@
   "music_title": "Fail Fiesta · Giulio Cercato",
   "music_volume": 70,
   "caption": "“She drink” mi “she drinks” mi? LINGOOF'ta yanlış yapınca Goof hemen yakalıyor ☕\nhe/she/it ile geniş zamanda fiile -s eklenir: She drinks coffee every morning.\n\nGünde 5 dakika yeter. iPhone'da ücretsiz, link profilde 📲\n\n#ingilizceöğren #ingilizceuygulama #günlükingilizce #lingoof",
-  "replaces": 64
+  "replaces": 64,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 124,
@@ -1991,7 +2035,9 @@
   "music_title": "Fizzle Dizzle · Global Genius",
   "music_volume": 70,
   "caption": "“Open the light” deme 💡 Doğrusu: Can you turn on the light?\nIşık, televizyon, telefon: turn on / turn off.\n\nSen de “open the light” diyor muydun? Dürüst ol 👇\n\nYanlış yazınca Goof nedenini Türkçe açıklıyor: LINGOOF, iPhone'da ücretsiz. Link profilde.\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 68
+  "replaces": 68,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 125,
@@ -2025,7 +2071,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Türklerin en sık yaptığı 5 İngilizce hata ve doğruları ✅\nI am agree · I have 25 years · I did a mistake · open the light · waiting you\n\nKaydet 📌 Sen hangisini yapıyordun? Yorumlara yaz.\n\nYanlış yazınca Goof nedenini Türkçe açıklıyor: LINGOOF, iPhone'da ücretsiz. Link profilde.\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 53
+  "replaces": 53,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 126,
@@ -2043,7 +2091,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "Kafede “I want a latte” mı “Can I get a latte?” mı? ☕\nI want… talepkâr duyulur. Doğal sipariş: Can I get…?\n\nCevabını yorumlara yaz, sonra izle 👇\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 70
+  "replaces": 70,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 127,
@@ -2060,7 +2110,9 @@
   "music_title": "Funny Us · Charlie Peacock",
   "music_volume": 70,
   "caption": "“Afiyet olsun” → Be healthy? 🍝 İngilizcede böyle denir:\nEnjoy your meal! · Enjoy! · Dig in!\n\nKaydet 📌 Bir sonraki ifadeyi yorumlarda sen iste.\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 56
+  "replaces": 56,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 128,
@@ -2094,7 +2146,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Telefonda İngilizce: panik yapma, bu 5 kalıp yeter 📞\nthis is Ece · Speaking! · you're breaking up · call you back\n\nKaydet 📌 Telefonda konuşmaktan çekinen arkadaşına gönder.\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 57
+  "replaces": 57,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 129,
@@ -2112,7 +2166,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“Can you explain me this?” yanlış 🙅 Doğrusu: Can you explain this to me?\nexplain kişiyi to ile alır: explain it to me.\n\n3 saniyede buldun mu? Yorumlara yaz 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 34
+  "replaces": 34,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 130,
@@ -2129,7 +2185,9 @@
   "music_title": "Party In The Jungle · Chela Rivas",
   "music_volume": 70,
   "caption": "Toplantıda anlamadın: “Repeat please!” deme 😬\nKibar ve doğal: Sorry, could you go over that again?\n\nİş yerinde İngilizce konuşan arkadaşına gönder 📌\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#ingilizcekonuşma #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 50
+  "replaces": 50,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 131,
@@ -2163,7 +2221,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Yurt dışında hastalanırsan doktorda İngilizce: 5 cümle 🩺\nAteş, boğaz ağrısı, alerji, reçete ve ilaç; cevaplarıyla.\n\nKaydet 📌 Yurt dışında yaşayan arkadaşına gönder.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 59
+  "replaces": 59,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 132,
@@ -2181,7 +2241,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "Telefonda Türk usulü vs native 📞 Kapatırken 5 kere bye demek bizden 😂\nHello? · Who's calling, please? · Talk soon. Bye!\n\nHangisi sensin? Yorumlara yaz 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 48
+  "replaces": 48,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 133,
@@ -2198,7 +2260,9 @@
   "music_title": "Clown Car Confusion · Global Genius",
   "music_volume": 70,
   "caption": "“Kusura bakma” → Don't look at the fault? 😅\nDuruma göre: Sorry about that! · My bad! · I apologize.\n\nKaydet 📌 Hangi ifadeyi merak ediyorsun? Yorumlara yaz.\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 78
+  "replaces": 78,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 134,
@@ -2215,7 +2279,9 @@
   "music_title": "Cook It · Giulio Cercato",
   "music_volume": 70,
   "caption": "“She work in a bank” mı “She works in a bank” mı? 🏦\nhe/she/it ile geniş zamanda fiile -s eklenir: she works, he lives, it rains.\n\nBu hatayı hâlâ yapan arkadaşına gönder 😅\n\nYanlış yazınca Goof nedenini Türkçe açıklıyor: LINGOOF, iPhone'da ücretsiz. Link profilde.\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 86
+  "replaces": 86,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 135,
@@ -2249,7 +2315,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Otobüste, trende İngilizce: bilet, peron, aktarma 🚆\nreturn ticket · Which platform? · Where do I change?\n\nKaydet 📌 Yurt dışına gidecek arkadaşına gönder.\n\nBu kalıpları LINGOOF'ta günde 5 dakikada tekrar et: iPhone'da ücretsiz, link profilde.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 69
+  "replaces": 69,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 136,
@@ -2267,7 +2335,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“We discussed about it” yanlış 🙅 Doğrusu: We discussed it.\ndiscuss zaten “hakkında konuşmak” demek; about almaz. (talk about ise doğru!)\n\nA mı B mi? Yorumlara yaz 👇\n\n#ingilizcegramer #ingilizcetest #ingilizceöğren #lingoof",
-  "replaces": 62
+  "replaces": 62,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 137,
@@ -2284,7 +2354,9 @@
   "music_title": "Smile · Giulio Cercato",
   "music_volume": 70,
   "caption": "Arkadaşın sınavı geçti: “You are very successful” deme, çok resmî duyulur 🎉\nSohbette: No way! Well done, you! · Congrats!\n\nSınavdan çıkan arkadaşına gönder 👇\n\n#ingilizcekonuşma #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 92
+  "replaces": 92,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 138,
@@ -2318,7 +2390,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Restoranda İngilizce: masa, sipariş, alerji ve hesap 🍽️\nA table for two · Can I get…? · Could we get the bill?\n\nKaydet 📌 Yemek arkadaşına gönder.\n\n#erasmus #yurtdışı #ingilizcekonuşma #günlükingilizce #lingoof",
-  "replaces": 71
+  "replaces": 71,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 139,
@@ -2336,7 +2410,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“People is” değil, “people are” 🙌\npeople zaten çoğul: People are very friendly here.\n\nFark ettin mi? Yorumlara yaz 👇\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 80
+  "replaces": 80,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 140,
@@ -2353,7 +2429,9 @@
   "music_title": "Christmas · Deuxhyun",
   "music_volume": 70,
   "caption": "“Hayırlı olsun” → Let it be charity? 😂\nYerine: Congrats! · Enjoy your new place! · All the best!\n\nKaydet 📌 Yeni eve taşınan arkadaşına gönder.\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#ingilizcenasıldenir #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 82
+  "replaces": 82,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 141,
@@ -2387,7 +2465,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Yeni yıl mesajını İngilizce yaz: arkadaşa, hocaya, iş yerine 🎆\nWishing you all the best in 2027! · Here's to a great year!\n\nKaydet 📌 31 Aralık'ta lazım olacak.\n\n#yeniyıl #ingilizceöğren #günlükingilizce #lingoof",
-  "replaces": 81
+  "replaces": 81,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 142,
@@ -2405,7 +2485,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“Rica ederim” → I request? 😂 Türk usulü vs native nezaket\nYou're welcome! · Good luck! · Never mind!\n\nEn çok hangisi güldürdü? Yorumlara yaz 👇\n\n#ingilizcekomik #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 84
+  "replaces": 84,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 143,
@@ -2422,7 +2504,9 @@
   "caption": "“I'm waiting the bus” mı “waiting for the bus” mı? 🚌 LINGOOF'ta Goof farkı hemen açıklıyor.\nBeklerken wait for: I'm waiting for you.\n\nHangi hatayı düzelttiğini, kaç ifadeyi gerçekten kullandığını gör. iPhone'da ücretsiz, link profilde 📲\n\n#ingilizceöğren #ingilizceuygulama #günlükingilizce #lingoof",
   "replaces": 44,
   "music_id": "1418611098781784",
-  "music_title": "Too Cool · Giulio Cercato"
+  "music_title": "Too Cool · Giulio Cercato",
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 144,
@@ -2439,7 +2523,9 @@
   "music_title": "New Year · Otis McDonald",
   "music_volume": 70,
   "caption": "“It depends of” değil, “It depends on” ⛅\ndepend her zaman on ile kullanılır: It depends on you.\n\nSen de böyle diyor muydun? Yorumlara yaz 👇\n\nYanlış yazınca Goof nedenini Türkçe açıklıyor: LINGOOF, iPhone'da ücretsiz. Link profilde.\n\n#ingilizcehataları #ingilizcegramer #ingilizceöğren #lingoof",
-  "replaces": 88
+  "replaces": 88,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 145,
@@ -2473,7 +2559,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "2027 hedefini İngilizce söyle: 5 kalıp 🎯\nI'm going to… · I want to start… · My goal is to…\n\nYorumlara 2027 hedefini İngilizce yaz, Goof düzeltsin 👇\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#yeniyıl #ingilizceöğren #günlükingilizce #lingoof",
-  "replaces": 91
+  "replaces": 91,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 146,
@@ -2491,7 +2579,9 @@
   "music_volume": 70,
   "trial": "SS_PERFORMANCE",
   "caption": "“Bakarım” → I will look? 👀 Doğrusu: I'll see!\nPartiye gelecek misin? Maybe! I'll see how I feel.\n\nHep “bakarım” deyip gelmeyen arkadaşına gönder 😂\n\n#ingilizcekonuşma #günlükingilizce #ingilizceöğren #lingoof",
-  "replaces": 76
+  "replaces": 76,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 147,
@@ -2525,7 +2615,9 @@
    "Kaydet, gönder, yorum yap"
   ],
   "caption": "Bu yıl öğrendiğin 5 altın kalıp 🏆 Mutlu yıllar!\nWhat's up? · Can I get…? · Could we get the bill? · I'll see · Take care!\n\nKaydet 📌 2027'de İngilizceyle ne yapmak istiyorsun? Yorumlara yaz.\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#yeniyıl #ingilizceöğren #günlükingilizce #lingoof",
-  "replaces": 93
+  "replaces": 93,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  },
  {
   "n": 148,
@@ -2542,6 +2634,8 @@
   "music_title": "New Year · stereogully",
   "music_volume": 70,
   "caption": "“İyi seneler” → Good years? 🎆 Yılbaşı gecesi İngilizce böyle denir:\nHappy New Year! · All the best in 2027! · Here's to a great year!\n\nMutlu yıllar 💜 2027'de İngilizceyle ne yapmak istiyorsun? Yorumlara yaz.\n\nGünde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde.\n\n#yeniyıl #ingilizceöğren #günlükingilizce #lingoof",
-  "replaces": 94
+  "replaces": 94,
+  "hold": true,
+  "hold_reason": "yeni Goof (1.2.2/140) ile yeniden üretilecek"
  }
 ]
