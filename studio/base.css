@@ -1,35 +1,36 @@
-/* LINGOOF studio v4: üretim kılavuzunun (uretim_kalitesi.md §5) renkleri, yazı ölçüleri ve bileşenleri.
-   İki tema: night (lacivert zemin, varsayılan) ve day (krem zemin, uygulamanın App Store görselleri gibi).
-   Goof mor olduğu için mor zemine konmaz (kontrast 1,37:1); lacivertte ve kremde öne çıkar. */
+/* LINGOOF studio v5: uygulamanın "Visual Direction V3" tasarım dili (LoopTheme.swift, build 1.2.2/140).
+   Açık ve sakin arayüz: krem zemin #FAF8F3, beyaz kartlar, mor vurgu #7B4DFF, düz dolgular.
+   Kişiliği Goof 2.0 ve sahne çizimleri taşır. Başlıklar Bricolage Grotesque, gövde yazısı DM Sans
+   (uygulamada sistem yazı tipi; videoda en yakın açık lisanslı karşılığı).
+   Ölçüler: telefon 390 pt = 1080 px, yani 1 pt ≈ 2,77 px. Köşe yarıçapları 24/20/14/10 pt → 66/55/39/28 px. */
 @font-face { font-family: 'Bricolage'; src: url('/fonts/BricolageGrotesque-ExtraBold.ttf'); font-weight: 800; }
 @font-face { font-family: 'Bricolage'; src: url('/fonts/BricolageGrotesque-Bold.ttf'); font-weight: 700; }
 :root {
   --k: 1;
-  --navy: #12172D; --base: #1B1433; --deep: #150F29; --panel: #241B47; --raised: #2E2458;
-  --t1: #FFF8EE; --t2: #CFC6EA; --t3: #A29AC8;
-  --lilac: #B596FF; --lilac-2: #CDBEFF; --violet: #5B3FD1; --purple: #7B4DFF;
-  --ok: #6EE7B7; --err: #FF8FA3; --ok-l: #047857; --err-l: #BE123C; --ok-bg: #D1FAE5; --err-bg: #FFE4E8;
-  --sun: #FFD166; --cream: #FFF8EE; --cream-2: #FAF8F3; --cream-3: #FFF4E7; --line: #ECE6DA; --ink-2: #4A4F6A;
+  /* marka */
+  --purple: #7B4DFF; --purple-deep: #6238E8; --purple-shadow: #4B2CA3; --coral: #FF704D; --cream-warm: #FFF4E7;
+  /* yüzeyler */
+  --canvas: #FAF8F3; --surface: #FFFFFF; --s-soft: #F6F4FA; --s-purple: #F3EEFF; --s-orange: #FFF0E9; --s-mint: #EAF8F0;
+  --s-blue: #ECF4FF; --s-yellow: #FFF6E0; --s-pink: #FFEEF3;
+  /* durum */
+  --success: #22AA62; --success-ink: #1B7F4B; --coral-ink: #B83F22; --warning: #FFB020; --amber-ink: #8B5A00;
+  /* yazı ve çizgi */
+  --text: #12172D; --text-2: #606680; --text-3: #9297AC; --border: rgba(18, 23, 45, .08); --track: #EAE7F3;
+  /* köşe ve gölge */
+  --r-xl: 66px; --r-l: 55px; --r-m: 39px; --r-s: 28px;
+  --shadow-card: 0 8px 28px rgba(30, 24, 70, .06), 0 0 0 2px rgba(18, 23, 45, .06);
+  --shadow-raised: 0 16px 44px rgba(91, 57, 220, .14), 0 0 0 2px rgba(18, 23, 45, .05);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { width: var(--W); height: var(--H); overflow: hidden; }
-body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
-body.night { background: var(--base); color: var(--t1); }
-body.day { background: var(--cream-2); color: var(--navy); }
+body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision;
+  background: var(--canvas); color: var(--text); }
 
-/* zemin: hiçbir zaman tamamen durağan değil (yavaş kayma), ince nokta dokusu */
-.bg { position: absolute; inset: -60px; }
-.night .bg { background:
-  radial-gradient(900px 700px at 22% 78%, rgba(181,150,255,.20) 0%, rgba(181,150,255,0) 70%),
-  radial-gradient(1000px 800px at 95% 5%, rgba(123,77,255,.22) 0%, rgba(123,77,255,0) 65%),
-  linear-gradient(180deg, var(--base) 0%, var(--deep) 100%); }
-.day .bg { background:
-  radial-gradient(800px 600px at 90% 8%, rgba(181,150,255,.30) 0%, rgba(181,150,255,0) 70%),
-  radial-gradient(900px 700px at 0% 100%, rgba(255,209,102,.20) 0%, rgba(255,209,102,0) 70%),
-  linear-gradient(180deg, var(--cream-2) 0%, var(--cream-3) 100%); }
-.bg::after { content: ''; position: absolute; inset: 0; background-size: 46px 46px; }
-.night .bg::after { background-image: radial-gradient(rgba(255,248,238,.07) 1.8px, transparent 1.8px); }
-.day .bg::after { background-image: radial-gradient(rgba(18,23,45,.06) 1.8px, transparent 1.8px); }
+/* zemin: düz krem; Goof'un arkasında uygulamadaki gibi hafif mor ışıma (goofGlow) */
+.bg { position: absolute; inset: -60px; background:
+  radial-gradient(760px 640px at 26% 74%, rgba(123, 77, 255, .10) 0%, rgba(123, 77, 255, 0) 70%),
+  radial-gradient(900px 700px at 96% 4%, rgba(123, 77, 255, .08) 0%, rgba(123, 77, 255, 0) 65%),
+  var(--canvas); }
 
 /* düzen */
 .stack { position: absolute; left: 72px; top: 292px; width: 936px; display: flex; flex-direction: column; align-items: stretch; row-gap: 24px; }
@@ -41,137 +42,109 @@ body.day { background: var(--cream-2); color: var(--navy); }
 
 /* üst satır: seri rozeti + marka */
 .top { display: flex; justify-content: space-between; align-items: center; height: 64px; }
-.badge { display: inline-flex; align-items: center; height: 60px; padding: 0 26px; border-radius: 999px;
-  font: 700 36px/1 'DM Sans'; letter-spacing: .06em; white-space: nowrap; }
-.night .badge { background: var(--lilac); color: var(--base); }
-.day .badge { background: var(--violet); color: #fff; }
-.brand { display: flex; align-items: center; gap: 12px; font: 800 36px/1 'Bricolage'; letter-spacing: .02em; }
-.night .brand { color: var(--t1); }
-.day .brand { color: var(--navy); }
+.badge { display: inline-flex; align-items: center; height: 60px; padding: 0 26px; border-radius: var(--r-s);
+  font: 700 36px/1 'DM Sans'; letter-spacing: .05em; white-space: nowrap; background: var(--s-purple); color: var(--purple-deep); }
+.brand { display: flex; align-items: center; gap: 12px; font: 800 36px/1 'Bricolage'; letter-spacing: .02em; color: var(--text); }
 .brand img { width: 56px; height: 56px; border-radius: 16px; }
 
-/* kanca (H0) */
-.hook { font-family: 'Bricolage'; font-weight: 800; font-size: calc(var(--k) * var(--hs, 124px)); line-height: 1.04; letter-spacing: -0.015em; }
-.night .hook { color: var(--t1); }
-.night .hook em { font-style: normal; color: var(--lilac); }
-.day .hook { color: var(--navy); }
-.day .hook em { font-style: normal; color: var(--violet); }
-.h1 { font-family: 'Bricolage'; font-weight: 800; font-size: calc(var(--k) * 80px); line-height: 1.08; letter-spacing: -0.01em; }
-.night .h1 em { font-style: normal; color: var(--lilac); }
-.day .h1 em { font-style: normal; color: var(--violet); }
+/* kanca (H0) ve başlık */
+.hook { font-family: 'Bricolage'; font-weight: 800; font-size: calc(var(--k) * var(--hs, 124px)); line-height: 1.04; letter-spacing: -0.015em; color: var(--text); }
+.hook em, .h1 em { font-style: normal; color: var(--purple); }
+.h1 { font-family: 'Bricolage'; font-weight: 800; font-size: calc(var(--k) * 80px); line-height: 1.08; letter-spacing: -0.01em; color: var(--text); }
 
 /* kartlar */
-.card { border-radius: 40px; padding: calc(var(--k) * 40px) calc(var(--k) * 48px); }
-.night .card { background: var(--cream); color: var(--navy); box-shadow: 0 16px 0 rgba(8,5,20,.45); }
-.day .card { background: #fff; color: var(--navy); box-shadow: 0 14px 0 var(--line), 0 0 0 3px var(--line); }
-.sent { position: relative; z-index: 0; display: flex; flex-wrap: wrap; align-items: baseline; font: 700 calc(var(--k) * 72px)/1.2 'DM Sans'; letter-spacing: -0.01em; color: var(--navy); }
+.card { border-radius: var(--r-l); padding: calc(var(--k) * 40px) calc(var(--k) * 48px); background: var(--surface); color: var(--text); box-shadow: var(--shadow-card); }
+.sent { position: relative; z-index: 0; display: flex; flex-wrap: wrap; align-items: baseline; font: 700 calc(var(--k) * 72px)/1.2 'DM Sans'; letter-spacing: -0.01em; color: var(--text); }
 .tok { display: inline-block; position: relative; margin-right: 0.26em; white-space: pre; }
 .tok.end { margin-right: 0; }
 .grow { overflow: clip; overflow-clip-margin: 0.32em; }
 .tok .wave { position: absolute; left: 0; bottom: -0.2em; height: 0.28em; width: calc(var(--draw, 0) * 100%);
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><path d='M0 5 Q5 0 10 5 T20 5' fill='none' stroke='%23BE123C' stroke-width='2.6'/></svg>") repeat-x left center / 0.5em 100%; }
-.tok .strike { position: absolute; left: -2px; top: 54%; height: 7px; width: var(--strike, 0%); background: var(--err-l); opacity: .35; border-radius: 4px; }
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'><path d='M0 5 Q5 0 10 5 T20 5' fill='none' stroke='%23FF704D' stroke-width='2.6'/></svg>") repeat-x left center / 0.5em 100%; }
+.tok .strike { position: absolute; left: -2px; top: 54%; height: 7px; width: var(--strike, 0%); background: var(--coral-ink); opacity: .35; border-radius: 4px; }
 .tok .mk { position: absolute; inset: 0.04em -0.12em 0.02em; border-radius: 0.2em; z-index: -1; opacity: var(--mk, 0); }
-.tok.bad .mk { background: var(--err-bg); }
-.tok.good .mk { background: var(--ok-bg); }
-.tok.bad { color: color-mix(in srgb, var(--err-l) calc(var(--on, 0) * 100%), var(--navy)); }
-.tok.good { color: var(--ok-l); }
-.blank { display: inline-block; min-width: 2.4em; border-bottom: 7px solid var(--violet); }
+.tok.bad .mk { background: var(--s-orange); }
+.tok.good .mk { background: var(--s-mint); }
+.tok.bad { color: color-mix(in srgb, var(--coral-ink) calc(var(--on, 0) * 100%), var(--text)); }
+.tok.good { color: var(--success-ink); }
+.blank { display: inline-block; min-width: 2.4em; border-bottom: 7px solid var(--purple); }
 
-/* etiket (rozet altı küçük başlıklar): kılavuz: 36–40 px, büyük harf elle yazılır (Türkçe İ için) */
-.label { font: 700 calc(var(--k) * 36px)/1.1 'DM Sans'; letter-spacing: .06em; }
-.night .label { color: var(--t3); }
-.day .label { color: var(--ink-2); }
-.label.ok { color: var(--ok); }
-.day .label.ok { color: var(--ok-l); }
-.label.err { color: var(--err); }
-.day .label.err { color: var(--err-l); }
-.pill { display: inline-flex; align-items: center; gap: 12px; height: calc(var(--k) * 64px); padding: 0 28px; border-radius: 999px;
-  font: 700 calc(var(--k) * 38px)/1 'DM Sans'; letter-spacing: .04em; white-space: nowrap; align-self: flex-start; }
-.pill.ok { background: var(--ok); color: var(--navy); }
-.pill.err { background: var(--err); color: var(--navy); }
+/* etiket ve hap: büyük harf elle yazılır (Türkçe İ için) */
+.label { font: 700 calc(var(--k) * 36px)/1.1 'DM Sans'; letter-spacing: .05em; color: var(--text-2); }
+.label.ok { color: var(--success-ink); }
+.label.err { color: var(--coral-ink); }
+.pill { display: inline-flex; align-items: center; gap: 12px; height: calc(var(--k) * 64px); padding: 0 28px; border-radius: var(--r-s);
+  font: 700 calc(var(--k) * 38px)/1 'DM Sans'; letter-spacing: .03em; white-space: nowrap; align-self: flex-start; }
+.pill.ok { background: var(--s-mint); color: var(--success-ink); box-shadow: inset 0 0 0 3px rgba(34, 170, 98, .35); }
+.pill.err { background: var(--s-orange); color: var(--coral-ink); box-shadow: inset 0 0 0 3px rgba(255, 112, 77, .35); }
 .pill svg { width: 1em; height: 1em; }
 
-/* Goof konuşma balonu: sol başta küçük Goof yüzü, kimin konuştuğu belli olsun */
-.say { display: flex; align-items: flex-start; gap: 18px; border-radius: 40px; padding: calc(var(--k) * 30px) calc(var(--k) * 36px);
-  font: 600 calc(var(--k) * 56px)/1.25 'DM Sans'; }
+/* Goof konuşma balonu: mor kahraman kartı (surfacePurple) */
+.say { display: flex; align-items: flex-start; gap: 18px; border-radius: var(--r-l); padding: calc(var(--k) * 30px) calc(var(--k) * 36px);
+  font: 600 calc(var(--k) * 56px)/1.25 'DM Sans'; background: var(--s-purple); color: var(--text); box-shadow: inset 0 0 0 3px rgba(123, 77, 255, .16); }
 .say img.av { flex: none; width: calc(var(--k) * 64px); height: calc(var(--k) * 64px); border-radius: 50%; margin-top: 2px; }
-.night .say { background: var(--lilac); color: var(--base); }
-.day .say { background: var(--violet); color: #fff; }
-.say b { font-weight: 800; }
+.say b { font-weight: 800; color: var(--purple-deep); }
+.say.tail { position: relative; }
+.say.tail::before { content: ''; position: absolute; left: -22px; top: 54px; border: 24px solid transparent; border-left: 0; border-right-color: var(--s-purple); }
 
 /* zamanlayıcı */
-.timer { height: 18px; border-radius: 9px; overflow: hidden; align-self: stretch; margin: 23px 0; }
-.night .timer { background: rgba(255,248,238,.14); }
-.day .timer { background: rgba(18,23,45,.10); }
-.timer .bar { height: 100%; width: 100%; background: var(--sun); border-radius: 9px; }
-.day .timer .bar { background: var(--violet); }
+.timer { height: 18px; border-radius: 9px; overflow: hidden; align-self: stretch; margin: 23px 0; background: var(--track); }
+.timer .bar { height: 100%; width: 100%; background: var(--purple); border-radius: 9px; }
 
 /* sohbet */
-.who { font: 700 calc(var(--k) * 38px)/1 'DM Sans'; letter-spacing: .04em; }
-.night .who { color: var(--t2); }
-.bubble { border-radius: 44px; padding: calc(var(--k) * 28px) calc(var(--k) * 38px); font: 700 calc(var(--k) * 64px)/1.2 'DM Sans'; }
-.bubble.them { background: var(--cream); color: var(--navy); border-bottom-left-radius: 12px; align-self: flex-start; }
-.bubble.me { background: var(--raised); color: var(--t1); border-bottom-right-radius: 12px; }
-.bubble.good { background: var(--ok); color: var(--navy); border-bottom-right-radius: 12px; }
+.who { display: flex; align-items: center; gap: 16px; font: 700 calc(var(--k) * 38px)/1 'DM Sans'; letter-spacing: .03em; color: var(--text-2); }
+.who img { width: calc(var(--k) * 76px); height: calc(var(--k) * 76px); border-radius: 50%; box-shadow: 0 0 0 3px var(--surface); }
+.bubble { border-radius: var(--r-l); padding: calc(var(--k) * 28px) calc(var(--k) * 38px); font: 700 calc(var(--k) * 64px)/1.2 'DM Sans'; color: var(--text); }
+.bubble.them { background: var(--surface); border-bottom-left-radius: 14px; align-self: flex-start; box-shadow: var(--shadow-card); }
+.bubble.me { background: var(--s-orange); border-bottom-right-radius: 14px; box-shadow: inset 0 0 0 3px rgba(255, 112, 77, .30); }
+.bubble.good { background: var(--s-mint); border-bottom-right-radius: 14px; box-shadow: inset 0 0 0 3px rgba(34, 170, 98, .35); }
 .bubble .label { display: block; margin-bottom: 14px; font-size: calc(var(--k) * 36px); }
-.bubble.me .label { color: var(--err); }
-.bubble.good .label { color: var(--ok-l); }
+.bubble.me .label { color: var(--coral-ink); }
+.bubble.good .label { color: var(--success-ink); }
 
-/* seçenekler */
-.opt { display: flex; align-items: center; gap: 26px; border-radius: 36px; padding: calc(var(--k) * 24px) calc(var(--k) * 34px);
-  font: 700 calc(var(--k) * 64px)/1.15 'DM Sans'; }
-.night .opt { background: var(--cream); color: var(--navy); }
-.day .opt { background: #fff; color: var(--navy); box-shadow: 0 0 0 3px var(--line); }
+/* seçenekler (uygulamadaki cevap kutuları gibi) */
+.opt { display: flex; align-items: center; gap: 26px; border-radius: var(--r-m); padding: calc(var(--k) * 24px) calc(var(--k) * 34px);
+  font: 700 calc(var(--k) * 64px)/1.15 'DM Sans'; background: var(--surface); color: var(--text); box-shadow: var(--shadow-card); }
 .opt .key { flex: none; width: calc(var(--k) * 72px); height: calc(var(--k) * 72px); border-radius: 50%; display: grid; place-items: center;
-  font: 800 calc(var(--k) * 40px)/1 'DM Sans'; background: var(--raised); color: var(--t1); }
-.day .opt .key { background: var(--violet); color: #fff; }
+  font: 800 calc(var(--k) * 40px)/1 'DM Sans'; background: var(--s-purple); color: var(--purple-deep); }
+.opt.ok { background: var(--s-mint) !important; box-shadow: inset 0 0 0 4px var(--success); }
+.opt.ok .key { background: var(--success); color: #fff; }
 
 /* ifade kartı (nasıl denir) */
-.phrase { display: flex; align-items: flex-start; gap: 26px; border-radius: 36px; padding: calc(var(--k) * 26px) calc(var(--k) * 34px); }
-.night .phrase { background: var(--cream); color: var(--navy); }
-.day .phrase { background: #fff; color: var(--navy); box-shadow: 0 12px 0 var(--line), 0 0 0 3px var(--line); }
+.phrase { display: flex; align-items: flex-start; gap: 26px; border-radius: var(--r-l); padding: calc(var(--k) * 26px) calc(var(--k) * 34px);
+  background: var(--surface); color: var(--text); box-shadow: var(--shadow-card); }
 .phrase .key { flex: none; width: calc(var(--k) * 64px); height: calc(var(--k) * 64px); border-radius: 50%; display: grid; place-items: center;
-  font: 800 calc(var(--k) * 36px)/1 'DM Sans'; background: var(--violet); color: #fff; margin-top: 6px; }
+  font: 800 calc(var(--k) * 36px)/1 'DM Sans'; background: var(--purple); color: #fff; margin-top: 6px; }
 .phrase .en { font: 700 calc(var(--k) * 70px)/1.15 'DM Sans'; letter-spacing: -0.01em; }
-.phrase .tr { font: 500 calc(var(--k) * 50px)/1.25 'DM Sans'; color: var(--ink-2); margin-top: 6px; }
-.literal { max-width: 600px; border-radius: 32px; padding: calc(var(--k) * 24px) calc(var(--k) * 34px); border: 5px dashed; align-self: flex-start; }
-.night .literal { border-color: rgba(255,143,163,.7); background: rgba(255,143,163,.08); }
-.day .literal { border-color: rgba(190,18,60,.45); background: rgba(190,18,60,.05); }
+.phrase .tr { font: 500 calc(var(--k) * 50px)/1.25 'DM Sans'; color: var(--text-2); margin-top: 6px; }
+.literal { max-width: 600px; border-radius: var(--r-m); padding: calc(var(--k) * 24px) calc(var(--k) * 34px); border: 5px dashed rgba(255, 112, 77, .55);
+  background: var(--s-orange); align-self: flex-start; }
 .literal .label { margin-bottom: 12px; }
-.literal .lt { font: 700 calc(var(--k) * 64px)/1.2 'DM Sans'; background: linear-gradient(var(--err), var(--err)) no-repeat 0 58% / var(--strike, 0%) 8px;
+.literal .lt { font: 700 calc(var(--k) * 64px)/1.2 'DM Sans'; color: var(--text); background: linear-gradient(var(--coral-ink), var(--coral-ink)) no-repeat 0 58% / var(--strike, 0%) 8px;
   -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-.day .literal .lt { background-image: linear-gradient(var(--err-l), var(--err-l)); }
-.night .literal .lt { color: var(--t1); }
 
 /* Türk usulü vs native */
-.vs { border-radius: 36px; padding: calc(var(--k) * 24px) calc(var(--k) * 34px); }
+.vs { border-radius: var(--r-m); padding: calc(var(--k) * 24px) calc(var(--k) * 34px); color: var(--text); }
 .vs .label { margin-bottom: 10px; }
 .vs .ph { font: 700 calc(var(--k) * 72px)/1.15 'DM Sans'; }
-.vs.tr { background: var(--raised); color: var(--t1); box-shadow: inset 0 0 0 4px rgba(255,143,163,.55); }
-.vs.na { background: var(--ok); color: var(--navy); }
-.vs.na .label { color: var(--ok-l); }
+.vs.tr { background: var(--s-orange); box-shadow: inset 0 0 0 3px rgba(255, 112, 77, .30); }
+.vs.na { background: var(--s-mint); box-shadow: inset 0 0 0 3px rgba(34, 170, 98, .35); }
+.vs.na .label { color: var(--success-ink); }
 
 /* Goof */
 .goofbox { position: relative; flex: none; transform-origin: 50% 92%; }
 .goofbox img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
-.shadow { position: absolute; left: 22%; right: 22%; bottom: 3%; height: 7%; border-radius: 50%; background: rgba(8,5,20,.38); filter: blur(14px); }
-.day .shadow { background: rgba(18,23,45,.16); }
+.shadow { position: absolute; left: 24%; right: 24%; bottom: 4%; height: 6%; border-radius: 50%; background: rgba(18, 23, 45, .12); filter: blur(12px); }
 
-/* telefon çerçevesi (ürün sahnesi) */
-.phone { position: relative; flex: none; border-radius: 64px; background: #0E0F1A; padding: 16px; box-shadow: 0 30px 60px rgba(8,5,20,.35); }
-.phone .screen { width: 100%; height: 100%; border-radius: 50px; overflow: hidden; background-size: cover; background-position: center top; }
+/* ürün sahnesi */
+.feat { display: flex; align-items: center; gap: 18px; border-radius: var(--r-m); padding: calc(var(--k) * 22px) calc(var(--k) * 30px);
+  background: var(--surface); box-shadow: var(--shadow-card); font: 700 calc(var(--k) * 48px)/1.2 'DM Sans'; color: var(--text); }
+.feat .ic { flex: none; width: calc(var(--k) * 64px); height: calc(var(--k) * 64px); border-radius: 18px; display: grid; place-items: center;
+  font: 800 calc(var(--k) * 34px)/1 'DM Sans'; background: var(--s-purple); color: var(--purple-deep); }
+.scene { flex: none; border-radius: var(--r-xl); background: var(--s-purple); overflow: hidden; display: grid; place-items: center; }
+.scene img { width: 100%; height: 100%; object-fit: contain; }
+.cta { font: 700 calc(var(--k) * 44px)/1.25 'DM Sans'; color: var(--text); }
 
 /* carousel */
 .slide { position: absolute; inset: 0; }
-.kicker { font: 700 34px/1 'DM Sans'; letter-spacing: .06em; }
-.pager { position: absolute; font: 700 32px/1 'DM Sans'; letter-spacing: .04em; }
-
-/* Goof'un konuştuğu balonun kuyruğu (Goof solda) */
-.say.tail { position: relative; }
-.say.tail::before { content: ''; position: absolute; left: -24px; top: 54px; border: 26px solid transparent; border-left: 0; }
-.night .say.tail::before { border-right-color: var(--lilac); }
-.day .say.tail::before { border-right-color: var(--violet); }
-.opt.ok { background: var(--ok) !important; color: var(--navy); }
-.opt.ok .key { background: var(--navy); color: var(--ok); }
-.cta { font: 700 calc(var(--k) * 44px)/1.25 'DM Sans'; }
+.kicker { font: 700 34px/1 'DM Sans'; letter-spacing: .05em; }
+.pager { position: absolute; font: 700 32px/1 'DM Sans'; letter-spacing: .04em; color: var(--text-3); }

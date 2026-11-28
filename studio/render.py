@@ -274,7 +274,7 @@ class Reel:
 
 def t_hata(s):
     """Hata Avı: 3 sn sayaç → yanlış kelime kırmızı, dalgalı çizgi → kelime yerinde düzelir → Goof Türkçe açıklar."""
-    theme = s.get('theme', 'night')
+    theme = s.get('theme', 'day')
     toks = diff_tokens(s['wrong'], s['fix'])
     bad = [i for i, (k, _) in enumerate(toks) if k == 'bad']
     good = [i for i, (k, _) in enumerate(toks) if k == 'good']
@@ -284,13 +284,13 @@ def t_hata(s):
     T_BACK = r3(t_end)
     dur = r3(T_BACK + 0.7)
     xb = beats(r3(T_SAY + 1.9), T_BACK)
-    names, pk = poses(with_beats([(0, 'goof_focus'), (1.5, 'goof_pose_look_up'), (T_FLIP, 'goof_alert'), (T_FIX + 0.2, 'goof_hype'),
-                                  (T_SAY, 'goof_pose_point_right'), (T_BACK, 'goof_focus')], xb, ['goof_proud', 'goof_calm']))
+    names, pk = poses(with_beats([(0, 'goof_think'), (1.5, 'goof_pose_look_up'), (T_FLIP, 'goof_alert'), (T_FIX + 0.2, 'goof_thumbs_up'),
+                                  (T_SAY, 'goof_pose_point_right'), (T_BACK, 'goof_think')], xb, ['goof_wink', 'goof_calm']))
     inner = (f'<div class="hook" id="hook" data-min="96" style="--hs:{s.get("hook_size", 124)}px">{s.get("hook", "Bu cümlede<br><em>1 hata</em> var.")}</div>'
              f'<div class="slot" id="mid"><div class="timer" id="timer"><div class="bar" id="bar"></div></div>'
              f'<div class="pill ok" id="okp">{CHECK} DOĞRUSU</div></div>'
              f'<div class="card ess" id="card" style="margin:0 14px">{sentence_html(toks, s.get("sent_size"))}</div>'
-             f'<div class="row" id="row">{goof(names, 380, style="margin-left:-34px")}'
+             f'<div class="row" id="row">{goof(names, s.get("goof_size", 440), style="margin-left:-60px")}'
              f'{say(expl, style="flex:1;margin-top:26px")}</div>')
     body = '<div class="bg" id="bg"></div>' + f'<div class="stack" id="stack">{top(s.get("badge", "HATA AVI"))}{inner}</div>'
     tr = [
@@ -333,7 +333,7 @@ def t_hata(s):
 
 def t_quiz(s):
     """3 Saniye Testi: iki seçenek, sayaç; doğru seçenek nane yeşili, yanlış kapanır, Goof açıklar."""
-    theme = s.get('theme', 'night')
+    theme = s.get('theme', 'day')
     opts, ans = s['options'], s['answer']
     T_REV, T_COL, T_SAY = 3.0, 3.6, 4.3
     expl = s['explain']
@@ -341,8 +341,8 @@ def t_quiz(s):
     T_BACK = r3(t_end)
     dur = r3(T_BACK + 0.7)
     xb = beats(r3(T_SAY + 1.9), T_BACK)
-    names, pk = poses(with_beats([(0, 'goof_focus'), (1.5, 'goof_pose_look_down'), (T_REV, 'goof_celebrate'), (T_SAY, 'goof_proud'),
-                                  (T_BACK, 'goof_focus')], xb, ['goof_calm', 'goof_proud']))
+    names, pk = poses(with_beats([(0, 'goof_think'), (1.5, 'goof_pose_look_down'), (T_REV, 'goof_celebrate'), (T_SAY, 'goof_wink'),
+                                  (T_BACK, 'goof_think')], xb, ['goof_calm', 'goof_thumbs_up']))
     keys = 'ABC'
     opt_html = ''.join(
         f'<div class="opt ess" id="o{i}" data-min="52" style="margin:0 106px 0 28px"><span class="key" data-min="32">{keys[i]}</span><span>{esc(o)}</span></div>'
@@ -351,7 +351,7 @@ def t_quiz(s):
              f'<div class="row" id="trow" style="align-items:center"><div class="slot" style="flex:1">'
              f'<div class="timer" id="timer"><div class="bar" id="bar"></div></div>'
              f'<div class="pill ok" id="okp">{CHECK} DOĞRU CEVAP: {keys[ans]}</div></div>'
-             f'{goof(names, 290, style="margin-right:40px")}</div>'
+             f'{goof(names, s.get("goof_size", 330), style="margin-right:30px")}</div>'
              f'<div id="opts" style="display:flex;flex-direction:column;row-gap:18px">{opt_html}</div>'
              f'{say(expl, tail=False, avatar=True, style="margin-right:78px")}')
     body = '<div class="bg" id="bg"></div>' + f'<div class="stack" id="stack">{top(s.get("badge", "3 SANİYE TESTİ"))}{inner}</div>'
@@ -382,26 +382,26 @@ E.hook(t => {{ const o = document.getElementById('o{ans}'); const v = parseFloat
             (r3(T_BACK - 0.05), sfx.whoosh2(0.35, 0.18, up=False))]
     cues += [(x, sfx.tick2(0.18, i)) for i, x in enumerate(xb)]
     teaser = ''.join(f'<div class="opt" style="margin-top:18px"><span class="key" data-min="32">{keys[i]}</span><span>{esc(o)}</span></div>' for i, o in enumerate(opts))
-    cover = cover_html(theme, s.get('badge', '3 SANİYE TESTİ'), s.get('cover', plain(s['hook'])), f'<div>{teaser}</div>', 'goof_focus')
+    cover = cover_html(theme, s.get('badge', '3 SANİYE TESTİ'), s.get('cover', plain(s['hook'])), f'<div>{teaser}</div>', 'goof_think')
     return Reel(body, script, dur, cues, theme, T_REV, cover, dips=[T_REV, T_SAY])
 
 
 def t_pov(s):
     """POV sohbet: karşı taraf yazar → ders kitabı cevabı → Goof utanır → native cevap gelir → Goof açıklar."""
-    theme = s.get('theme', 'night')
+    theme = s.get('theme', 'day')
     T_DOTS, T_WRONG, T_BUZZ, T_SWAP, T_SAY = 0.6, 1.2, 2.3, 3.1, 4.1
     expl = s['explain']
     t_end = max(T_SAY + 0.3 + hold_tr(expl) + 0.4, T_SWAP + 0.3 + hold_en(s['right']) + hold_tr(expl) * 0.8)
     T_BACK = r3(t_end)
     dur = r3(T_BACK + 0.7)
     xb = beats(r3(T_SAY + 1.9), T_BACK)
-    names, pk = poses(with_beats([(0, 'goof_pose_look_up'), (T_WRONG, 'goof_sleepy'), (T_BUZZ, 'goof_pose_facepalm'), (T_SWAP, 'goof_celebrate'),
-                                  (T_SAY, 'goof_proud'), (T_BACK, 'goof_pose_look_up')], xb, ['goof_calm', 'goof_proud']))
+    names, pk = poses(with_beats([(0, 'goof_pose_look_up'), (T_WRONG, 'goof_oops'), (T_BUZZ, 'goof_pose_facepalm'), (T_SWAP, 'goof_thumbs_up'),
+                                  (T_SAY, 'goof_wink'), (T_BACK, 'goof_pose_look_up')], xb, ['goof_calm', 'goof_laugh']))
     inner = (f'<div class="hook" id="hook" data-min="96" style="--hs:{s.get("hook_size", 108)}px">{s["hook"]}</div>'
              f'<div class="row" id="r1" style="justify-content:space-between">'
              f'<div style="display:flex;flex-direction:column;row-gap:14px;padding-top:24px;max-width:600px">'
-             f'<div class="who">{esc(s["them_name"])}</div><div class="bubble them ess" id="them" data-min="52">{esc(s["them"])}</div></div>'
-             f'{goof(names, 310, style="margin-right:-10px")}</div>'
+             f'<div class="who"><img src="/goof/{s.get("them_avatar", "char_role_b")}.png">{esc(s["them_name"])}</div><div class="bubble them ess" id="them" data-min="52">{esc(s["them"])}</div></div>'
+             f'{goof(names, 350, style="margin-right:-40px")}</div>'
              f'<div class="slot" id="reply" style="justify-items:end;margin-right:78px">'
              f'<div class="bubble me" id="dots" style="letter-spacing:12px">• • •</div>'
              f'<div class="bubble me ess" id="wrong" data-min="52" style="max-width:760px"><span class="label" data-min="32">{s.get("wrong_tag", "DERS KİTABI CEVABI")}</span>{esc(s["wrong"])}</div>'
@@ -423,7 +423,7 @@ def t_pov(s):
             (r3(T_SWAP - 0.08), sfx.whoosh2(0.3, 0.18)), (r3(T_SWAP + 0.2), sfx.chime(0.42)), (T_SAY, sfx.pop2(1.1, 0.35)),
             (r3(T_BACK - 0.05), sfx.whoosh2(0.35, 0.18, up=False))]
     cues += [(x, sfx.tick2(0.18, i)) for i, x in enumerate(xb)]
-    teaser = (f'<div class="who" style="margin-bottom:14px">{esc(s["them_name"])}</div>'
+    teaser = (f'<div class="who" style="margin-bottom:14px"><img src="/goof/{s.get("them_avatar", "char_role_b")}.png">{esc(s["them_name"])}</div>'
               f'<div class="bubble them" style="display:inline-block">{esc(s["them"])}</div>')
     cover = cover_html(theme, s.get('badge', 'POV'), s.get('cover', plain(s['hook'])), teaser, 'goof_pose_facepalm')
     return Reel(body, script, dur, cues, theme, T_SWAP + 0.2, cover, dips=[T_BUZZ, T_SAY])
@@ -441,7 +441,7 @@ def t_nasil(s):
     T_BACK = r3(max(t_end, T_CTA + 1.6))
     dur = r3(T_BACK + 0.7)
     na, pa = poses([(0, 'goof_oops'), (T_X, 'goof_pose_facepalm'), (T_BACK, 'goof_oops')])
-    nb, pb = poses([(0, 'goof_pose_point_right'), (r3(t_in[-1]), 'goof_hype'), (T_CTA, 'goof_celebrate'), (T_BACK, 'goof_pose_point_right')])
+    nb, pb = poses([(0, 'goof_pose_point_right'), (r3(t_in[-1]), 'goof_hype'), (T_CTA, 'goof_love'), (T_BACK, 'goof_pose_point_right')])
     cards = ''.join(
         f'<div class="phrase ess" id="op{i}" data-min="40"><div class="key" data-min="32">{i + 1}</div><div><div class="en">{esc(o["en"])}</div>'
         + (f'<div class="tr">{esc(o["tr"])}</div>' if o.get('tr') else '') + '</div></div>'
@@ -449,9 +449,9 @@ def t_nasil(s):
     inner = (f'<div class="hook" id="hook" data-min="96" style="--hs:{s.get("hook_size", 112)}px">{s["hook"]}</div>'
              f'<div class="row" id="lrow" style="justify-content:space-between;align-items:center">'
              f'<div class="literal ess" id="lit" data-min="52" style="margin-left:14px"><div class="label err" data-min="32">KELİMESİ KELİMESİNE</div><div><span class="lt">{esc(s["literal"])}</span></div></div>'
-             f'{goof(na, 310, "goofa", "margin-right:-10px")}</div>'
+             f'{goof(na, 370, "goofa", "margin-right:-50px")}</div>'
              f'<div id="list" style="display:flex;flex-direction:column;row-gap:18px;margin-right:78px">{cards}</div>'
-             f'<div class="row" id="brow" style="align-items:center">{goof(nb, 270, "goofb", "margin-left:-24px")}'
+             f'<div class="row" id="brow" style="align-items:center">{goof(nb, 330, "goofb", "margin-left:-60px")}'
              f'<div class="pill ok ess" id="cta" data-min="36">{esc(s.get("cta", "Kaydet, lazım olacak"))}</div></div>')
     body = '<div class="bg" id="bg"></div>' + f'<div class="stack" id="stack">{top(s.get("badge", "TÜRKÇE → İNGİLİZCE"))}{inner}</div>'
     tr = [
@@ -479,7 +479,7 @@ def t_nasil(s):
 
 def t_vs(s):
     """Türk usulü vs native: üç tur; her turda bağlam + Türk usulü cümle, sonra native karşılığı."""
-    theme = s.get('theme', 'night')
+    theme = s.get('theme', 'day')
     rounds = s['rounds']
     STEP = 3.4
     t0 = [r3(STEP * i) for i in range(len(rounds))]
@@ -489,8 +489,9 @@ def t_vs(s):
     dur = r3(T_BACK + 0.7)
     seq = []
     for i in range(len(rounds)):
-        seq += [(t0[i] if i else 0, 'goof_sleepy' if i % 2 == 0 else 'goof_oops'), (t_na[i], 'goof_celebrate' if i % 2 == 0 else 'goof_hype')]
-    seq.append((T_BACK, 'goof_sleepy'))
+        seq += [(t0[i] if i else 0, ['goof_pose_facepalm', 'goof_oops', 'goof_sleepy'][i % 3]),
+                (t_na[i], ['goof_laugh', 'goof_thumbs_up', 'goof_celebrate'][i % 3])]
+    seq.append((T_BACK, 'goof_pose_facepalm'))
     names, pk = poses(seq)
     rhtml = ''
     for i, r in enumerate(rounds):
@@ -500,7 +501,7 @@ def t_vs(s):
                   f'<div class="vs na ess" id="na{i}" data-min="52"><div class="label" data-min="32">NATIVE</div><div class="ph">{esc(r["na"])}</div></div></div>')
     inner = (f'<div class="row" id="hrow" style="justify-content:space-between;align-items:center">'
              f'<div class="hook" id="hook" data-min="96" style="--hs:{s.get("hook_size", 112)}px">{s.get("hook", "Türk usulü<br>vs <em>native</em>")}</div>'
-             f'{goof(names, 320, style="margin-right:-14px")}</div>'
+             f'{goof(names, 380, style="margin-right:-50px")}</div>'
              f'<div class="slot" id="rounds">{rhtml}</div>')
     body = '<div class="bg" id="bg"></div>' + f'<div class="stack" id="stack">{top(s.get("badge", "TÜRK USULÜ vs NATIVE"))}{inner}</div>'
     tr = [bg_track(dur), ('#hook', {'scale': [[0, 1.04], [r3(6 * F), 1, 'enter']]})]
@@ -521,7 +522,7 @@ def t_vs(s):
     r0 = rounds[0]
     teaser = (f'<div class="vs tr" style="margin-bottom:18px"><div class="label err">TÜRK USULÜ</div><div class="ph">{esc(r0["tr"])}</div></div>'
               f'<div class="vs na"><div class="label">NATIVE</div><div class="ph">?</div></div>')
-    cover = cover_html(theme, s.get('badge', 'TÜRK USULÜ vs NATIVE'), s.get('cover', plain(s.get('hook', 'Türk usulü vs native'))), teaser, 'goof_sleepy')
+    cover = cover_html(theme, s.get('badge', 'TÜRK USULÜ vs NATIVE'), s.get('cover', plain(s.get('hook', 'Türk usulü vs native'))), teaser, 'goof_laugh')
     return Reel(body, script, dur, cues, theme, t_na[0] + 0.2, cover, dips=t_na[:1], f0=('#hook', '#goof', '#rd0'))
 
 
@@ -536,29 +537,30 @@ def t_urun(s):
     T_BACK = r3(T_S2 + 3.6)
     dur = r3(T_BACK + 0.7)
     xb = beats(r3(T_FB + 2.0), T_S2)
-    names, pk = poses(with_beats([(0, 'goof_pose_look_down'), (T_BUZZ, 'goof_alert'), (T_FB, 'goof_pose_point_left'), (T_S2, 'goof_celebrate'),
-                                  (T_BACK, 'goof_pose_look_down')], xb, ['goof_proud', 'goof_pose_point_left']))
+    names, pk = poses(with_beats([(0, 'goof_pose_look_down'), (T_BUZZ, 'goof_alert'), (T_FB, 'goof_pose_point_left'), (T_S2, 'goof_wave'),
+                                  (T_BACK, 'goof_pose_look_down')], xb, ['goof_wink', 'goof_pose_point_left']))
     chips = ''.join(f'<span class="opt" id="c{i}" style="display:inline-flex;padding:14px 40px;margin-right:16px">{esc(o)}</span>' for i, o in enumerate(opts))
     scene1 = (f'<div id="s1" style="display:flex;flex-direction:column;row-gap:24px">'
               f'<div class="card ess" id="ex" data-min="36" style="margin-right:250px">'
-              f'<div class="label" data-min="32" style="color:var(--violet)">{s.get("task", "BOŞLUĞU DOLDUR")}</div>'
-              f'<div style="margin-top:14px;font:700 calc(var(--k) * 64px)/1.2 DM Sans;color:var(--navy)">{s["sentence"]}</div>'
+              f'<div class="label" data-min="32" style="color:var(--purple)">{s.get("task", "BOŞLUĞU DOLDUR")}</div>'
+              f'<div style="margin-top:14px;font:700 calc(var(--k) * 64px)/1.2 DM Sans;color:var(--text)">{s["sentence"]}</div>'
               f'<div style="margin-top:22px;display:flex;flex-wrap:wrap;row-gap:16px">{chips}</div></div>'
-              f'<div class="card ess" id="fb" data-min="46" style="background:#FFF1EC;box-shadow:0 14px 0 #F6D9CF;margin-right:78px">'
-              f'<div style="font:800 calc(var(--k) * 60px)/1 Bricolage;color:#B42318">{esc(s.get("verdict", "Neredeyse!"))}</div>'
+              f'<div class="card ess" id="fb" data-min="46" style="background:var(--s-orange);box-shadow:inset 0 0 0 3px rgba(255,112,77,.30);margin-right:78px">'
+              f'<div style="font:800 calc(var(--k) * 60px)/1 Bricolage;color:var(--coral-ink)">{esc(s.get("verdict", "Neredeyse!"))}</div>'
               f'<div style="margin-top:16px;font:700 calc(var(--k) * 56px)/1.2 DM Sans">{s["fix"]}</div>'
-              f'<div style="margin-top:14px;font:500 calc(var(--k) * 48px)/1.3 DM Sans;color:var(--ink-2)">{expl}</div></div></div>')
+              f'<div style="margin-top:14px;font:500 calc(var(--k) * 48px)/1.3 DM Sans;color:var(--text-2)">{expl}</div></div></div>')
+    feats = s.get('features', ['Her hata Türkçe açıklanır', "Goof'la sesli prova", "A1'den C1'e, Erasmus+ yolları"])
+    feat_html = ''.join(f'<div class="feat ess" data-min="40"><span class="ic" data-min="32">{i + 1}</span><span>{esc(f)}</span></div>' for i, f in enumerate(feats))
     scene2 = (f'<div id="s2" style="display:flex;flex-direction:column;row-gap:26px">'
-              f'<div class="h1 ess" data-min="60">{s.get("s2_title", "Hatanı <em>Türkçe</em><br>açıklayan koç")}</div>'
-              f'<div class="row" style="column-gap:34px;align-items:flex-start">'
-              f'<div class="phone" style="width:330px;height:640px"><div class="screen" style="background-image:url(/shots/{s.get("screen", "screen_hata.png")})"></div></div>'
-              f'<div style="display:flex;flex-direction:column;row-gap:24px;padding-top:20px">'
-              f'<div class="pill ok ess" data-min="36">{CHECK} iPhone\'da ücretsiz</div>'
-              f'<div class="cta ess" data-min="44" style="max-width:470px">{esc(s.get("s2_line", "Link profilde: @lingoof.app"))}</div></div></div></div>')
+              f'<div class="h1 ess" data-min="60">{s.get("s2_title", "Hata yap.<br><em>Düzelt. Devam et.</em>")}</div>'
+              f'<div class="row" style="column-gap:24px;align-items:center">'
+              f'<div class="scene" style="width:360px;height:338px"><img src="/goof/{s.get("scene", "scene_university")}.png"></div>'
+              f'<div style="display:flex;flex-direction:column;row-gap:16px;flex:1">{feat_html}</div></div>'
+              f'<div class="pill ok ess" data-min="36">{CHECK} Ücretsiz indir · link profilde</div></div>')
     inner = (f'<div class="hook" id="hook" data-min="96" style="--hs:{s.get("hook_size", 120)}px">{s.get("hook", "Yanlış yaz.<br><em>Goof açıklasın.</em>")}</div>'
              f'<div class="slot" id="scenes">{scene1}{scene2}</div>')
     body = ('<div class="bg" id="bg"></div>' + f'<div class="stack" id="stack">{top(s.get("badge", "LINGOOF\'TA BÖYLE"))}{inner}</div>'
-            + goof(names, 300, style='position:absolute;left:740px;top:600px'))
+            + goof(names, 360, style='position:absolute;left:720px;top:600px'))
     tr = [
         bg_track(dur),
         ('#hook', {**collapse(T_FB, T_BACK), 'scale': [[0, 1.04], [r3(6 * F), 1, 'enter']]}),
@@ -568,35 +570,33 @@ def t_urun(s):
         (f'#c{pick}', {'scale': [[0, 1], [T_TAP, 1], [r3(T_TAP + 3 * F), 0.92, 'inOutSine'], [r3(T_TAP + 9 * F), 1.04, 'pop'], [r3(T_TAP + 14 * F), 1, 'enter']],
                        'x': shake(T_BUZZ, 10)}),
         ('#goof', {**squash([T_BUZZ, T_FB] + xb + [r3(T_S2 + 14 * F), r3(T_BACK + 14 * F)]), 'y': hop(r3(T_S2 + 14 * F), 40),
-                   'opacity': [[0, 1], [T_S2, 1], [r3(T_S2 + 4 * F), 0, 'exit'], [r3(T_S2 + 8 * F), 0], [r3(T_S2 + 14 * F), 1, 'enter'],
-                               [T_BACK, 1], [r3(T_BACK + 4 * F), 0, 'exit'], [r3(T_BACK + 8 * F), 0], [r3(T_BACK + 14 * F), 1, 'enter']]}),
+                   'opacity': [[0, 1], [T_S2, 1], [r3(T_S2 + 4 * F), 0, 'exit'], [r3(T_BACK + 8 * F), 0], [r3(T_BACK + 14 * F), 1, 'enter']]}),
     ]
     tr += [(f'#goof_{n}', {'opacity': k}) for n, k in pk.items()]
     script = tracks_js(tr) + idle_js('#goof', dur) + f"""
 E.hook(t => {{
   const c = document.getElementById('c{pick}'), on = t >= {T_TAP + 0.1} && t < {T_BACK};
-  c.style.background = on ? '#FFE4E8' : ''; c.style.boxShadow = on ? '0 0 0 5px #BE123C' : ''; c.style.color = on ? '#BE123C' : '';
+  c.style.background = on ? 'var(--s-orange)' : ''; c.style.boxShadow = on ? 'inset 0 0 0 5px var(--coral)' : ''; c.style.color = on ? 'var(--coral-ink)' : '';
   const g = document.getElementById('goof');
   // Goof sahne 1'de alıştırma kartının sağ üstünde, sahne 2'de çağrı yazısının altında (yerleşimden hesaplanır)
   const s2 = t >= {r3(T_S2 + 6 * F)} && t < {r3(T_BACK + 6 * F)};
-  if (s2) {{ const c = document.querySelector('#s2 .cta').getBoundingClientRect(); g.style.left = c.left + 'px'; g.style.top = (c.bottom + 10) + 'px'; }}
-  else {{ const e = document.getElementById('ex').getBoundingClientRect(); g.style.left = '720px'; g.style.top = (e.top - 30) + 'px'; }}
+  if (!s2) {{ const e = document.getElementById('ex').getBoundingClientRect(); g.style.left = '700px'; g.style.top = (e.top - 70) + 'px'; }}
 }});"""
     cues = [(0.02, sfx.pop2(0.9, 0.42)), (T_TAP, sfx.tick2(0.4, 1)), (T_BUZZ, sfx.buzz2()), (r3(T_FB - 0.05), sfx.whoosh2(0.3, 0.18)),
             (r3(T_FB + 6 * F), sfx.pop2(1.05, 0.35)),
             (r3(T_S2 - 0.05), sfx.whoosh2(0.35, 0.2)), (r3(T_S2 + 0.4), sfx.chime(0.36)), (r3(T_S2 + 2.2), sfx.boing(0.14)),
             (r3(T_BACK - 0.05), sfx.whoosh2(0.35, 0.18, up=False))]
     cues += [(x, sfx.tick2(0.18, i)) for i, x in enumerate(xb)]
-    teaser = (f'<div style="display:flex;column-gap:30px;align-items:flex-start"><div class="phone" style="width:300px;height:580px">'
-              f'<div class="screen" style="background-image:url(/shots/{s.get("screen", "screen_hata.png")})"></div></div></div>')
-    cover = cover_html(theme, s.get('badge', "LINGOOF'TA BÖYLE"), s.get('cover', plain(s.get('hook', 'Yanlış yaz, Goof açıklasın'))), teaser, 'goof_celebrate', goof_size=480)
+    teaser = (f'<div class="card" style="padding:34px 40px"><div class="label" style="color:var(--purple)">{s.get("task", "BOŞLUĞU DOLDUR")}</div>'
+              f'<div style="margin-top:12px;font:700 60px/1.2 DM Sans">{s["sentence"]}</div></div>')
+    cover = cover_html(theme, s.get('badge', "LINGOOF'TA BÖYLE"), s.get('cover', plain(s.get('hook', 'Yanlış yaz, Goof açıklasın'))), teaser, 'goof_wave')
     return Reel(body, script, dur, cues, theme, T_FB + 0.2, cover, dips=[T_FB, T_S2], f0=('#hook', '#goof', '#ex'))
 
 
 TEMPLATES = {'hata': t_hata, 'quiz': t_quiz, 'pov': t_pov, 'nasil': t_nasil, 'vs': t_vs, 'urun': t_urun}
 
 
-def cover_html(theme, badge, title, teaser, pose, goof_size=560):
+def cover_html(theme, badge, title, teaser, pose, goof_size=720):
     """Kapak: büyük başlık (≤5 kelime), içerikten bir parça, ifadeli büyük Goof; ana öğeler y 300–1500 içinde."""
     return (f'<div class="bg"></div><div class="stack" style="top:300px;row-gap:34px">{top(badge)}'
             f'<div class="hook" style="--hs:132px">{title}</div><div style="margin-right:420px">{teaser}</div></div>'
@@ -612,67 +612,67 @@ def carousel_slides(s):
     quiz = s.get('quiz')
     n_total = 1 + len(items) + (2 if quiz else 0) + 1 + 1
     slides = []
-    pg = lambda i, dark=False: f'<div class="pager" style="right:72px;top:100px;color:{"var(--t3)" if dark else "#8A8FA8"}">{i}/{n_total}</div>'
+    pg = lambda i, dark=False: f'<div class="pager" style="right:72px;top:100px;color:{"var(--text-3)" if dark else "#8A8FA8"}">{i}/{n_total}</div>'
     brand = '<div class="brand" style="position:absolute;left:72px;bottom:72px"><img src="/goof/goof_avatar.png">LINGOOF</div>'
     # 1 kapak
-    slides.append(('night', f'''<div class="bg"></div>
-<div class="badge" style="position:absolute;left:72px;top:96px">{s.get('kicker', '')}</div>{pg(1, True)}
+    slides.append(('day', f'''<div class="bg" style="background:var(--s-purple)"></div>
+<div class="badge" style="position:absolute;left:72px;top:96px;background:var(--surface)">{s.get('kicker', '')}</div>{pg(1, True)}
 <div class="hook" style="position:absolute;left:72px;top:200px;width:936px;--hs:{s.get('hook_size', 118)}px">{s['hook']}</div>
-<div style="position:absolute;left:72px;top:{s.get('promise_y', 700)}px;width:640px;font:500 46px/1.3 'DM Sans';color:var(--t2)">{s.get('promise', '')}</div>
-<div class="goofbox" style="position:absolute;width:520px;height:520px;right:-150px;bottom:150px"><div class="shadow"></div><img src="/goof/{s.get('hook_goof', 'goof_pose_point_left')}.png"></div>
-<div style="position:absolute;left:72px;bottom:170px;font:700 40px/1 'DM Sans';color:var(--lilac)">Kaydır →</div>{brand}'''))
-    poses_ = ['goof_pose_point_left', 'goof_calm', 'goof_pose_look_up', 'goof_proud', 'goof_hype', 'goof_focus', 'goof_pose_neutral']
+<div style="position:absolute;left:72px;top:{s.get('promise_y', 700)}px;width:640px;font:500 46px/1.3 'DM Sans';color:var(--text-2)">{s.get('promise', '')}</div>
+<div class="goofbox" style="position:absolute;width:660px;height:660px;right:-170px;bottom:90px"><div class="shadow"></div><img src="/goof/{s.get('hook_goof', 'goof_wave')}.png"></div>
+<div style="position:absolute;left:72px;bottom:170px;font:700 40px/1 'DM Sans';color:var(--purple)">Kaydır →</div>{brand}'''))
+    poses_ = ['goof_pose_point_left', 'goof_calm', 'goof_pose_look_up', 'goof_wink', 'goof_hype', 'goof_think', 'goof_thumbs_up']
     for i, it in enumerate(items):
         extra = ''
         if it.get('reply'):
             extra += (f'<div class="label ok" style="margin-top:34px">KARŞILIK</div>'
-                      f'<div style="margin-top:12px;align-self:flex-start;max-width:760px;background:var(--ok-bg);border:4px solid #34D08A;border-radius:30px;'
-                      f'padding:22px 30px;font:700 48px/1.2 \'DM Sans\';color:var(--ok-l)">{esc(it["reply"])}</div>')
+                      f'<div style="margin-top:12px;align-self:flex-start;max-width:760px;background:var(--s-mint);border:4px solid #34D08A;border-radius:30px;'
+                      f'padding:22px 30px;font:700 48px/1.2 \'DM Sans\';color:var(--success-ink)">{esc(it["reply"])}</div>')
         if it.get('tip'):
             extra += (f'<div style="margin-top:30px;max-width:700px;background:#fff;border-radius:30px;padding:24px 30px;font:500 42px/1.3 \'DM Sans\';'
-                      f'color:var(--navy);box-shadow:0 0 0 3px var(--line)"><b style="color:var(--err-l)">İpucu: </b>{it["tip"]}</div>')
+                      f'color:var(--text);box-shadow:var(--shadow-card)"><b style="color:var(--coral-ink)">İpucu: </b>{it["tip"]}</div>')
         slides.append(('day', f'''<div class="bg"></div>
 <div class="badge" style="position:absolute;left:72px;top:96px">{esc(it.get('when', ''))}</div>{pg(i + 2)}
 <div style="position:absolute;left:72px;top:196px;width:936px;display:flex;flex-direction:column">
- <div style="background:#fff;border-radius:44px;border-bottom-left-radius:12px;padding:40px 46px;box-shadow:0 12px 0 var(--line),0 0 0 3px var(--line)">
-  <div style="font:700 {it.get('size', 64)}px/1.12 'DM Sans';letter-spacing:-1px;color:var(--navy)">{esc(it['en'])}</div>
-  <div style="margin-top:18px;font:500 46px/1.28 'DM Sans';color:var(--ink-2)">{esc(it['tr'])}</div>
+ <div style="background:#fff;border-radius:44px;border-bottom-left-radius:12px;padding:40px 46px;box-shadow:var(--shadow-card)">
+  <div style="font:700 {it.get('size', 64)}px/1.12 'DM Sans';letter-spacing:-1px;color:var(--text)">{esc(it['en'])}</div>
+  <div style="margin-top:18px;font:500 46px/1.28 'DM Sans';color:var(--text-2)">{esc(it['tr'])}</div>
  </div>{extra}
 </div>
-<div class="goofbox" style="position:absolute;width:300px;height:300px;right:56px;bottom:60px"><div class="shadow"></div><img src="/goof/{poses_[i % len(poses_)]}.png"></div>'''))
+<div class="goofbox" style="position:absolute;width:400px;height:400px;right:20px;bottom:20px"><div class="shadow"></div><img src="/goof/{poses_[i % len(poses_)]}.png"></div>'''))
     if quiz:
         keys = 'ABC'
         opts = ''.join(f'<div class="opt" style="margin-top:20px;font-size:52px"><span class="key">{keys[j]}</span><span>{esc(o)}</span></div>' for j, o in enumerate(quiz['options']))
         k = len(items) + 2
         slides.append(('day', f'''<div class="bg"></div>
-<div class="badge" style="position:absolute;left:72px;top:96px;background:var(--err-l)">MİNİ TEST</div>{pg(k)}
+<div class="badge" style="position:absolute;left:72px;top:96px;background:var(--s-orange);color:var(--coral-ink)">MİNİ TEST</div>{pg(k)}
 <div class="h1" style="position:absolute;left:72px;top:196px;width:936px;font-size:72px">{quiz['q']}</div>
 <div style="position:absolute;left:72px;top:{quiz.get('opts_y', 470)}px;width:800px">{opts}</div>
-<div style="position:absolute;left:72px;bottom:96px;width:620px;font:700 42px/1.25 'DM Sans';color:var(--violet)">Cevabını yorumlara yaz, sonra kaydır →</div>
-<div class="goofbox" style="position:absolute;width:280px;height:280px;right:56px;bottom:50px"><div class="shadow"></div><img src="/goof/goof_focus.png"></div>'''))
-        slides.append(('night', f'''<div class="bg"></div>
-<div class="badge" style="position:absolute;left:72px;top:96px">CEVAP: {keys[quiz['answer']]}</div>{pg(k + 1, True)}
+<div style="position:absolute;left:72px;bottom:96px;width:620px;font:700 42px/1.25 'DM Sans';color:var(--purple)">Cevabını yorumlara yaz, sonra kaydır →</div>
+<div class="goofbox" style="position:absolute;width:380px;height:380px;right:20px;bottom:10px"><div class="shadow"></div><img src="/goof/goof_think.png"></div>'''))
+        slides.append(('day', f'''<div class="bg" style="background:var(--s-mint)"></div>
+<div class="badge" style="position:absolute;left:72px;top:96px;background:var(--surface);color:var(--success-ink)">CEVAP: {keys[quiz['answer']]}</div>{pg(k + 1, True)}
 <div class="hook" style="position:absolute;left:72px;top:200px;width:936px;--hs:96px">{esc(quiz['options'][quiz['answer']])}</div>
-<div style="position:absolute;left:72px;top:{quiz.get('why_y', 560)}px;width:700px;font:500 48px/1.3 'DM Sans';color:var(--t2)">{quiz['why']}</div>
-<div class="goofbox" style="position:absolute;width:400px;height:400px;right:40px;bottom:90px"><div class="shadow"></div><img src="/goof/goof_celebrate.png"></div>{brand}'''))
+<div style="position:absolute;left:72px;top:{quiz.get('why_y', 560)}px;width:700px;font:500 48px/1.3 'DM Sans';color:var(--text-2)">{quiz['why']}</div>
+<div class="goofbox" style="position:absolute;width:520px;height:520px;right:10px;bottom:40px"><div class="shadow"></div><img src="/goof/goof_celebrate.png"></div>{brand}'''))
     # özet
-    rows = ''.join(f'<div style="display:flex;gap:22px;align-items:baseline;padding:16px 0;border-bottom:3px solid var(--line)">'
-                   f'<div style="font:700 44px/1.2 \'DM Sans\';color:var(--navy)">{esc(it["en"])}</div></div>' for it in items)
+    rows = ''.join(f'<div style="display:flex;gap:22px;align-items:baseline;padding:16px 0;border-bottom:3px solid var(--track)">'
+                   f'<div style="font:700 44px/1.2 \'DM Sans\';color:var(--text)">{esc(it["en"])}</div></div>' for it in items)
     slides.append(('day', f'''<div class="bg"></div>
 <div class="badge" style="position:absolute;left:72px;top:96px">ÖZET · KAYDET</div>{pg(n_total - 1)}
 <div class="h1" style="position:absolute;left:72px;top:190px;width:936px;font-size:76px">{s.get('recap_title', 'Hepsi bir arada')}</div>
-<div style="position:absolute;left:72px;top:330px;width:936px;background:#fff;border-radius:40px;padding:20px 44px;box-shadow:0 12px 0 var(--line),0 0 0 3px var(--line)">{rows}</div>'''))
+<div style="position:absolute;left:72px;top:330px;width:936px;background:#fff;border-radius:40px;padding:20px 44px;box-shadow:var(--shadow-card)">{rows}</div>'''))
     # son
-    slides.append(('night', f'''<div class="bg"></div>
-<div class="badge" style="position:absolute;left:72px;top:96px">{s.get('last_badge', 'SONRAKİ ADIM')}</div>{pg(n_total, True)}
+    slides.append(('day', f'''<div class="bg" style="background:var(--s-purple)"></div>
+<div class="badge" style="position:absolute;left:72px;top:96px;background:var(--surface)">{s.get('last_badge', 'SONRAKİ ADIM')}</div>{pg(n_total, True)}
 <div class="hook" style="position:absolute;left:72px;top:200px;width:936px;--hs:92px">{s.get('save', 'Kaydet,<br><em>lazım olacak.</em>')}</div>
-<div style="position:absolute;left:72px;top:{s.get('last_y', 520)}px;width:640px;display:flex;flex-direction:column;row-gap:30px;font:500 46px/1.3 'DM Sans';color:var(--t2)">
- <div><b style="color:var(--t1)">Gönder:</b> {s.get('send', 'Bunu bilmesi gereken arkadaşına gönder.')}</div>
- <div><b style="color:var(--t1)">Yorum:</b> {s.get('ask', 'Sen hangisini kullanıyorsun?')}</div>
- <div style="color:var(--t3);font-size:40px">Her gün bir kalıp: @lingoof.app</div>
- <div style="color:var(--t3);font-size:36px">{s.get('app_line', "Goof'la günde 5 dakika tekrar et: LINGOOF, iPhone'da ücretsiz.")}</div>
+<div style="position:absolute;left:72px;top:{s.get('last_y', 520)}px;width:640px;display:flex;flex-direction:column;row-gap:30px;font:500 46px/1.3 'DM Sans';color:var(--text-2)">
+ <div><b style="color:var(--text)">Gönder:</b> {s.get('send', 'Bunu bilmesi gereken arkadaşına gönder.')}</div>
+ <div><b style="color:var(--text)">Yorum:</b> {s.get('ask', 'Sen hangisini kullanıyorsun?')}</div>
+ <div style="color:var(--text-3);font-size:40px">Her gün bir kalıp: @lingoof.app</div>
+ <div style="color:var(--text-3);font-size:36px">{s.get('app_line', "Goof'la sesli prova yap: LINGOOF'u ücretsiz indir.")}</div>
 </div>
-<div class="goofbox" style="position:absolute;width:420px;height:420px;right:30px;bottom:110px"><div class="shadow"></div><img src="/goof/goof_celebrate.png"></div>{brand}'''))
+<div class="goofbox" style="position:absolute;width:540px;height:540px;right:0px;bottom:40px"><div class="shadow"></div><img src="/goof/goof_love.png"></div>{brand}'''))
     return slides
 
 

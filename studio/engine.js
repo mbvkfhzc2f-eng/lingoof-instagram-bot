@@ -152,9 +152,10 @@ window.QC = (() => {
       document.querySelectorAll('.goofbox').forEach(el => {
         if (opacityOf(el) < 0.6) return;
         const r = el.getBoundingClientRect(), w = r.width, h = r.height;
-        const face = { l: r.left + 0.2 * w, r: r.right - 0.2 * w, t: r.top + 0.2 * h, b: r.top + 0.62 * h };
+        // Goof 2.0: gözler ve yanaklar kutunun yatayda %25–75, dikeyde %34–66 bölgesinde
+        const face = { l: r.left + 0.25 * w, r: r.right - 0.25 * w, t: r.top + 0.34 * h, b: r.top + 0.66 * h };
         inZone(face, `Goof yüzü #${el.id}`, out, t);
-        const body = { l: r.left + 0.12 * w, r: r.right - 0.12 * w, b: r.top + 0.95 * h };
+        const body = { l: r.left + 0.18 * w, r: r.right - 0.18 * w, b: r.top + 0.92 * h };
         if (body.b > Z.bodyY) out.push({ t, kind: 'zone', msg: `Goof gövdesi çok aşağıda #${el.id}` });
         if (body.b > Z.y1 && body.r > Z.bodyX + 60) out.push({ t, kind: 'zone', msg: `Goof gövdesi sağ alt köşede #${el.id}` });
         if (opacityOf(el) > 0.97) boxes.push({ el, b: face, goof: true });

@@ -1,14 +1,15 @@
 # LINGOOF stüdyo
 
-Instagram Reels, kapak ve carousel üretim hattı. Kod buradadır; Goof pozları, uygulama yazı tipi ve ekran görüntüleri uygulamanın
-özel deposundan `setup_assets.py` ile alınır ve bu (herkese açık) depoya konmaz. Yapay zekâ görsel, video ya da ses modeli kullanılmaz:
-sahneler Chrome'da HTML ile çizilir, sesler kodla sentezlenir.
+Instagram Reels, kapak ve carousel üretim hattı. Görünüm uygulamanın kendi tasarım dilidir (Visual Direction V3, build 1.2.2/140):
+krem zemin, beyaz kartlar, mor vurgu, Goof 2.0. Kod buradadır; Goof pozları, karakterler, sahne çizimleri ve yazı tipi uygulamanın
+en güncel kaynağından `setup_assets.py` ile alınır ve bu (herkese açık) depoya konmaz. Yapay zekâ görsel, video ya da ses modeli
+kullanılmaz: sahneler Chrome'da HTML ile çizilir, sesler kodla sentezlenir.
 
 ## Kurulum
 
 ```bash
 pip install --break-system-packages playwright numpy pillow   # tarayıcı indirme yok: /usr/bin/google-chrome kullanılır
-python3 setup_assets.py /yol/lingoof-ios                      # goof/, fonts/*.ttf, shots/
+python3 setup_assets.py /yol/Kaynak                           # en güncel build'in Kaynak klasörü: goof/, fonts/*.ttf
 ```
 
 ffmpeg'de `zscale` süzgeci olmalı (`ffmpeg -filters | grep zscale`).
@@ -22,17 +23,19 @@ ffmpeg'de `zscale` süzgeci olmalı (`ffmpeg -filters | grep zscale`).
    (kırmızı çizgiler Instagram arayüzünün kapladığı alanlar).
 4. **Yerleştir**: `python3 integrate.py plans/<ad>_posts.json ..` dosyaları `media/v2/<id>/` altına kopyalar, `posts.json`'a ekler,
    yerini aldığı eski gönderiyi `hold` yapar. Kalite kapısından geçmeyen içerik eklenmez.
+5. **Yenile**: kuyruktaki içerik yeniden üretildiyse `python3 refresh.py plans/<ad>_posts.json ..` dosyaları ve açıklamaları günceller,
+   beklemeyi kaldırır; paylaşılmış gönderilere dokunmaz.
 
 ## Şablonlar
 
-| Şablon | Ne | Zemin |
-|---|---|---|
-| `hata` | Hata Avı: 3 sn sayaç, yanlış kelime kırmızı dalgalı çizgiyle işaretlenir, cümle yerinde düzelir, Goof Türkçe açıklar | lacivert |
-| `quiz` | 3 Saniye Testi: iki seçenek, doğru olan yeşerir, yanlış kapanır, Goof açıklar | lacivert |
-| `pov` | POV sohbet: karşı taraf yazar, ders kitabı cevabı gelir, Goof utanır, native cevap gelir | lacivert |
-| `nasil` | Türkçe ifade: kelimesi kelimesine çeviri çizilir, 3 doğal karşılık gelir | krem |
-| `vs` | Türk usulü vs native: üç tur | lacivert |
-| `urun` | Uygulamada böyle: alıştırmada yanlış seçim, Goof'un açıklaması, uygulamanın gerçek ekranı | krem |
+| Şablon | Ne |
+|---|---|
+| `hata` | Hata Avı: 3 sn sayaç, yanlış kelime turuncu dalgalı çizgiyle işaretlenir, cümle yerinde düzelir, Goof Türkçe açıklar |
+| `quiz` | 3 Saniye Testi: iki seçenek, doğru olan yeşerir, yanlış kapanır, Goof açıklar |
+| `pov` | POV sohbet: uygulamanın karakterleri (Emma, Leo, Alex, Sofia, Nina…) yazar, ders kitabı cevabı gelir, native cevap gelir |
+| `nasil` | Türkçe ifade: kelimesi kelimesine çeviri çizilir, 3 doğal karşılık gelir |
+| `vs` | Türk usulü vs native: üç tur |
+| `urun` | Uygulamada böyle: alıştırmada yanlış seçim, Goof'un açıklaması, uygulamanın sloganı ve sahne çizimiyle özellikler |
 
 Alanlar için `plans/aralik.py` örnek: her şablon için en az bir tam örnek var.
 
@@ -42,7 +45,8 @@ Alanlar için `plans/aralik.py` örnek: her şablon için en az bir tam örnek v
 - **Güvenli alan**: okunacak her şey ve Goof'un yüzü x 72–1008, y 270–1250 içinde; y 1150'nin altında sağ kenar ≤930 (beğen/yorum düğmeleri).
 - **Yazı**: kanca 124, İngilizce cümle 64–72, Türkçe açıklama 56 px; açıklama ≤12 kelime; hiçbir yazı 32 px'ten küçük değil.
   Sığmazsa ölçek en çok %12 küçülür; yine sığmıyorsa metin kısaltılır.
-- **Renk**: lacivert #1B1433 ya da krem #FAF8F3 zemin; Goof mor zemine konmaz. Doğru #6EE7B7/#047857, yanlış #FF8FA3/#BE123C.
+- **Renk** (LoopTheme): zemin #FAF8F3, kart beyaz, mor #7B4DFF, doğru #22AA62 (yazı #1B7F4B), yanlış #FF704D (yazı #B83F22),
+  yazı #12172D. Goof mor zemine konmaz.
 - **Hareket**: Material eğrileri (giriş 9 kare, çıkış 6 kare, %6 taşma). Goof hep canlı: nefes, salınım, süzülme, tepki pozları;
   uzun okuma beklemelerinde ~2 sn'de bir ara vuruş (3 sn'den uzun olaysız aralık yok).
 - **Okuma süresi**: Türkçe `0,4 + karakter/15` sn, İngilizce `0,5 + karakter/12` sn (şablonlar süreyi buna göre uzatır).
@@ -58,6 +62,8 @@ Alanlar için `plans/aralik.py` örnek: her şablon için en az bir tam örnek v
 ## İçerik kuralları
 
 - İngilizce cümleler doğal ve doğru olmalı; emin olunmayan kalıp kullanılmaz. Türkçe açıklama kısa ve sohbet dilinde.
-- Uygulama hakkında yalnızca App Store'daki iddialar: günde 5 dakika, A1'den C1'e, hatayı Goof Türkçe açıklar, iPhone'da ücretsiz.
+- Uygulama hakkında yalnızca uygulamanın kendi metinlerindeki iddialar: "Hata yap. Düzelt. Devam et.", her şık için Türkçe açıklama,
+  Goof'la sesli prova, A1'den C1'e, Erasmus+ / Work & Travel / iş görüşmesi yolları, ücretsiz indirme ve ilk dersler ücretsiz
+  (gerisi LINGOOF+). "Günde 5 dakika" artık uygulamada geçmiyor, kullanılmaz.
 - Açıklamada en çok 5 hashtag; ilk satır aranabilir anahtar kelimeyle başlar; yorum, kaydetme ya da gönderme çağrısıyla biter.
 - Ürün cümlesi yaklaşık 3 gönderide 1; `urun` şablonu ayda 3–4 kez.

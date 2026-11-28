@@ -19,9 +19,9 @@ TAGS = {
     'yeniyil': '#yeniyıl #ingilizceöğren #günlükingilizce #lingoof',
     'urun': '#ingilizceöğren #ingilizceuygulama #günlükingilizce #lingoof',
 }
-P_HATA = "Yanlış yazınca Goof nedenini Türkçe açıklıyor: LINGOOF, iPhone'da ücretsiz. Link profilde."
-P_GENEL = "Günde 5 dakikalık İngilizce için LINGOOF: iPhone'da ücretsiz, link profilde."
-P_YURT = "Bu kalıpları LINGOOF'ta günde 5 dakikada tekrar et: iPhone'da ücretsiz, link profilde."
+P_HATA = "LINGOOF'ta hata yap, Goof nedenini Türkçe açıklasın. Ücretsiz indir, link profilde."
+P_GENEL = "LINGOOF: A1'den C1'e İngilizce, Goof'la sesli prova. Ücretsiz indir, link profilde."
+P_YURT = "Erasmus+, Work & Travel ve iş görüşmesi yolları LINGOOF'ta: önce hazırlan, sonra Goof'la prova yap. Link profilde."
 
 
 def plain(s):
@@ -46,7 +46,7 @@ def reel(slot, item, caption, title):
 
 reel((28, '2026-11-28', '19:30', 'SS_PERFORMANCE'), {
     'id': 'r01-pov-whatsup', 'template': 'pov',
-    'hook': "POV: Erasmus'ta<br><em>ilk gün</em>", 'them_name': 'EMMA · EV ARKADAŞIN', 'them': "What's up?",
+    'hook': "POV: Erasmus'ta<br><em>ilk gün</em>", 'them_name': 'EMMA · EV ARKADAŞIN', 'them_avatar': 'char_emma', 'them': "What's up?",
     'wrong': "I'm fine, thank you. And you?", 'right': 'Not much! Just unpacking. You?',
     'explain': "<b>What's up?</b> nasılsın değil, <b>ne var ne yok</b> demek.", 'cover': "“What's up?”<br><em>deyince</em>"},
     cap(["“What's up?” diye sorulunca “I'm fine, thank you” deme 🙈",
@@ -85,10 +85,10 @@ reel((58, '2026-12-02', '19:30', None), {
     'id': 'r05-urun-evening', 'template': 'urun', 'hook': 'Yanlış yaz.<br><em>Goof açıklasın.</em>',
     'sentence': "I relax <span class='blank'></span> the evening.", 'options': ['in', 'at', 'on'], 'pick': 1, 'right': 0,
     'fix': "I relax <b style='color:var(--ok-l)'>in</b> the evening.",
-    'explain': 'Saatte <b>at</b>, günde <b>on</b>, günün bölümünde <b>in</b>.', 'cover': 'Yanlış yaz,<br><em>Goof açıklasın</em>'},
+    'explain': 'Saatte <b>at</b>, günde <b>on</b>, günün bölümünde <b>in</b>.', 'scene': 'scene_daily', 'cover': 'Yanlış yaz,<br><em>Goof açıklasın</em>'},
     cap(["LINGOOF'ta yanlış yapmak serbest: Goof nedenini hemen Türkçe açıklıyor 💜",
          "“at the evening” mı “in the evening” mı? Saatte at, günde on, günün bölümünde in.",
-         "", "Günde 5 dakika, A1'den C1'e. iPhone'da ücretsiz, link profilde 📲"], 'urun'), 'Uygulamada: in the evening')
+         "", "Hata yap. Düzelt. Devam et. A1'den C1'e, ilk dersler ücretsiz: link profilde 📲"], 'urun'), 'Uygulamada: in the evening')
 
 reel((36, '2026-12-03', '20:30', 'SS_PERFORMANCE'), {
     'id': 'r06-vs-veda', 'template': 'vs', 'hook': 'Türk usulü<br>vs <em>native</em>',
@@ -102,7 +102,7 @@ reel((36, '2026-12-03', '20:30', 'SS_PERFORMANCE'), {
 
 reel((72, '2026-12-04', '19:30', None), {
     'id': 'r07-pov-bill', 'template': 'pov', 'hook': "POV: Londra'da<br><em>hesap isteyeceksin</em>",
-    'them_name': 'GARSON', 'them': 'Anything else?', 'wrong': 'No. Give me the account.', 'right': 'No, thanks. Could we get the bill?',
+    'them_name': 'GARSON', 'them_avatar': 'char_role_c', 'them': 'Anything else?', 'wrong': 'No. Give me the account.', 'right': 'No, thanks. Could we get the bill?',
     'wrong_tag': 'KELİMESİ KELİMESİNE',
     'explain': 'Hesap <b>account</b> değil: <b>the bill</b> (İngiltere), <b>the check</b> (ABD).', 'cover': 'Hesabı<br><em>nasıl istersin?</em>'},
     cap(["Restoranda hesabı isterken “account” deme 🙈 Doğrusu: Could we get the bill?",
@@ -130,7 +130,7 @@ reel((46, '2026-12-06', '19:30', None), {
 
 reel((60, '2026-12-07', '19:30', None), {
     'id': 'r10-pov-alright', 'template': 'pov', 'hook': "POV: İngiliz<br><em>arkadaşın soruyor</em>",
-    'them_name': 'JAMES · İNGİLİZ', 'them': 'You alright?', 'wrong': "No, I'm not sick!", 'right': 'Yeah, good thanks! You?',
+    'them_name': 'ALEX · İNGİLİZ', 'them_avatar': 'char_alex', 'them': 'You alright?', 'wrong': "No, I'm not sick!", 'right': 'Yeah, good thanks! You?',
     'wrong_tag': 'YANLIŞ ANLADI',
     'explain': "İngiltere'de <b>You alright?</b> sadece selam, hasta mısın demek değil.", 'cover': '“You alright?”<br><em>deyince</em>'},
     cap(["İngiltere'de biri “You alright?” derse hasta olup olmadığını sormuyor 😄",
@@ -138,7 +138,7 @@ reel((60, '2026-12-07', '19:30', None), {
          "", "İngiltere'ye gidecek arkadaşına gönder 👇"], 'yurtdisi'), 'You alright')
 
 reel((38, '2026-12-08', '20:30', 'SS_PERFORMANCE'), {
-    'id': 'r11-quiz-salt', 'template': 'quiz', 'hook': 'Hangisi<br><em>daha kibar?</em>',
+    'id': 'r11-quiz-salt', 'template': 'quiz', 'hook': 'Hangisi<br><em>daha kibar?</em>', 'goof_size': 250,
     'options': ['Give me the salt.', 'Could you pass the salt?'], 'answer': 1,
     'explain': 'Emir sert duyulur. <b>Could you…?</b> kibar bir ricadır.', 'cover': 'Hangisi<br><em>kibar?</em>'},
     cap(["Sofrada “Give me the salt” dersen kaba duyulursun 🧂",
@@ -176,7 +176,7 @@ reel((54, '2026-12-11', '19:30', None), {
 
 reel((66, '2026-12-12', '20:30', 'SS_PERFORMANCE'), {
     'id': 'r15-pov-blessyou', 'template': 'pov', 'hook': 'POV: Derste<br><em>biri hapşırdı</em>',
-    'them_name': 'SINIF ARKADAŞIN', 'them': 'Achoo!', 'wrong': 'Live long!', 'right': 'Bless you!',
+    'them_name': 'NINA · SINIF ARKADAŞIN', 'them_avatar': 'char_nina', 'them': 'Achoo!', 'wrong': 'Live long!', 'right': 'Bless you!',
     'wrong_tag': 'KELİMESİ KELİMESİNE',
     'explain': '‘Çok yaşa’nın karşılığı <b>Bless you!</b> Cevabı: <b>Thanks!</b>', 'cover': '‘Çok yaşa’<br><em>nasıl denir?</em>'},
     cap(["Biri hapşırınca “Live long!” deme 🤧 Doğrusu: Bless you!",
@@ -187,11 +187,11 @@ reel((64, '2026-12-13', '19:30', None), {
     'id': 'r16-urun-drinks', 'template': 'urun', 'hook': 'Hata yaptın mı?<br><em>Goof yakalar.</em>',
     'sentence': "She <span class='blank'></span> coffee every morning.", 'options': ['drink', 'drinks'], 'pick': 0, 'right': 1,
     'fix': "She <b style='color:var(--ok-l)'>drinks</b> coffee every morning.", 'verdict': 'Az kaldı!',
-    'explain': '<b>he/she/it</b> ile fiil <b>-s</b> alır.', 'screen': 'screen_home.png',
-    's2_title': 'Günde 5 dakika<br><em>yeter.</em>', 'cover': 'Hata yaptın mı?<br><em>Goof yakalar</em>'},
+    'explain': '<b>he/she/it</b> ile fiil <b>-s</b> alır.', 'scene': 'scene_university',
+    'cover': 'Hata yaptın mı?<br><em>Goof yakalar</em>'},
     cap(["“She drink” mi “she drinks” mi? LINGOOF'ta yanlış yapınca Goof hemen yakalıyor ☕",
          "he/she/it ile geniş zamanda fiile -s eklenir: She drinks coffee every morning.",
-         "", "Günde 5 dakika yeter. iPhone'da ücretsiz, link profilde 📲"], 'urun'), 'Uygulamada: drinks')
+         "", "Her şık için Türkçe açıklama, Goof'la sesli prova. Ücretsiz indir, link profilde 📲"], 'urun'), 'Uygulamada: drinks')
 
 reel((68, '2026-12-14', '19:30', None), {
     'id': 'r17-hata-light', 'template': 'hata', 'hook': 'Işığı<br><em>açamıyorsun.</em>',
@@ -230,7 +230,7 @@ reel((34, '2026-12-17', '20:30', 'SS_PERFORMANCE'), {
 
 reel((50, '2026-12-18', '19:30', None), {
     'id': 'r21-pov-meeting', 'template': 'pov', 'hook': 'POV: Toplantıda<br><em>anlamadın</em>',
-    'them_name': 'MÜDÜRÜN', 'them': 'Does that make sense?', 'wrong': 'Repeat please!', 'right': 'Sorry, could you go over that again?',
+    'them_name': 'MÜDÜRÜN', 'them_avatar': 'char_role_a', 'them': 'Does that make sense?', 'wrong': 'Repeat please!', 'right': 'Sorry, could you go over that again?',
     'wrong_tag': 'KABA DUYULUR',
     'explain': '<b>Repeat!</b> emir gibi duyulur. Kibar rica: <b>Could you…?</b>', 'cover': 'Anlamayınca<br><em>ne dersin?</em>'},
     cap(["Toplantıda anlamadın: “Repeat please!” deme 😬",
@@ -276,7 +276,7 @@ reel((62, '2026-12-22', '20:30', 'SS_PERFORMANCE'), {
 
 reel((92, '2026-12-23', '19:30', None), {
     'id': 'r26-pov-exam', 'template': 'pov', 'hook': 'POV: Arkadaşın<br><em>sınavı geçti</em>',
-    'them_name': 'ELENA · ERASMUS', 'them': 'I passed my exam!!', 'wrong': 'Congratulations. You are very successful.',
+    'them_name': 'SOFIA · ERASMUS', 'them_avatar': 'char_sofia', 'them': 'I passed my exam!!', 'wrong': 'Congratulations. You are very successful.',
     'right': 'No way! Well done, you!', 'wrong_tag': 'ÇOK RESMİ',
     'explain': '<b>You are very successful</b> çok resmî. Sohbette: <b>Well done!</b>', 'cover': 'Tebrik<br><em>böyle edilir</em>'},
     cap(["Arkadaşın sınavı geçti: “You are very successful” deme, çok resmî duyulur 🎉",
@@ -284,7 +284,7 @@ reel((92, '2026-12-23', '19:30', None), {
          "", "Sınavdan çıkan arkadaşına gönder 👇"], 'pov'), 'Tebrik')
 
 reel((80, '2026-12-24', '20:30', 'SS_PERFORMANCE'), {
-    'id': 'r27-hata-people', 'template': 'hata', 'hook': 'Bu hatayı<br><em>fark et.</em>',
+    'id': 'r27-hata-people', 'template': 'hata', 'hook': 'Bu hatayı<br><em>fark et.</em>', 'goof_size': 360,
     'wrong': 'People is very friendly here.', 'fix': 'People are very friendly here.',
     'explain': '<b>people</b> çoğuldur: <b>people are</b>, <b>is</b> değil.', 'cover': '“People is”<br><em>deme</em>'},
     cap(["“People is” değil, “people are” 🙌",
@@ -313,14 +313,15 @@ reel((84, '2026-12-26', '20:30', 'SS_PERFORMANCE'), {
          "", "En çok hangisi güldürdü? Yorumlara yaz 👇"], 'komik'), 'Nezaket vs')
 
 reel((44, '2026-12-27', '19:30', None), {
-    'id': 'r30-urun-waiting', 'template': 'urun', 'hook': '5 dakikada<br><em>1 hata düzelt.</em>',
+    'id': 'r30-urun-waiting', 'template': 'urun', 'hook': 'Hata yap.<br><em>Goof düzeltsin.</em>',
     'sentence': "I'm waiting <span class='blank'></span> the bus.", 'options': ['to', 'for', 'at'], 'pick': 0, 'right': 1,
     'fix': "I'm waiting <b style='color:var(--ok-l)'>for</b> the bus.",
-    'explain': 'Birini ya da bir şeyi beklerken <b>wait for</b> denir.', 'screen': 'screen_progress.png',
-    's2_title': 'Gerçek ilerlemeni<br><em>gör.</em>', 'cover': '5 dakikada<br><em>1 hata düzelt</em>'},
+    'explain': 'Birini ya da bir şeyi beklerken <b>wait for</b> denir.', 'scene': 'scene_travel',
+    'features': ['Her hata Türkçe açıklanır', "Goof'la sesli prova", 'Seyahat ve yurt dışı yolları'],
+    'cover': 'Hata yap,<br><em>Goof düzeltsin</em>'},
     cap(["“I'm waiting the bus” mı “waiting for the bus” mı? 🚌 LINGOOF'ta Goof farkı hemen açıklıyor.",
          "Beklerken wait for: I'm waiting for you.",
-         "", "Hangi hatayı düzelttiğini, kaç ifadeyi gerçekten kullandığını gör. iPhone'da ücretsiz, link profilde 📲"], 'urun'),
+         "", "Seyahat, Erasmus+ ve yurt dışında yaşam yolları LINGOOF'ta. Ücretsiz indir, link profilde 📲"], 'urun'),
     'Uygulamada: waiting for')
 
 reel((88, '2026-12-28', '19:30', None), {
@@ -333,7 +334,7 @@ reel((88, '2026-12-28', '19:30', None), {
 
 reel((76, '2026-12-29', '20:30', 'SS_PERFORMANCE'), {
     'id': 'r32-pov-bakarim', 'template': 'pov', 'hook': 'POV: Partiye<br><em>çağrıldın</em>',
-    'them_name': 'MAX · EV ARKADAŞIN', 'them': 'Are you coming tonight?', 'wrong': 'Maybe. I will look.',
+    'them_name': 'LEO · EV ARKADAŞIN', 'them_avatar': 'char_leo', 'them': 'Are you coming tonight?', 'wrong': 'Maybe. I will look.',
     'right': "Maybe! I'll see how I feel.", 'wrong_tag': 'KELİMESİ KELİMESİNE',
     'explain': "‘Bakarım’ <b>I will look</b> değil: <b>I'll see</b> ya da <b>maybe</b>.", 'cover': '‘Bakarım’<br><em>nasıl denir?</em>'},
     cap(["“Bakarım” → I will look? 👀 Doğrusu: I'll see!",
